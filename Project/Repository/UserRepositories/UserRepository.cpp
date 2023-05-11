@@ -69,3 +69,7 @@ vector<User> Repository::UserRepository::getAll() {
 shared_ptr<vector<User>> Repository::UserRepository::getAllAsPointer() {
     return std::make_shared<vector<User>>(*data);
 }
+
+void Repository::UserRepository::deleteAllData() {
+    data = make_shared<vector<User>>();
+}

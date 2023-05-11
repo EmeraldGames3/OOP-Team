@@ -4,9 +4,6 @@
 ///Default constructor
 ///@throws invalid_argument If an invalid date is provided
 Domain::Date::Date(int _year, int _month, int _day) {
-    if (_year <= 0 || _month <= 0 || _day <= 0)
-        throw std::invalid_argument("Time is represented as a positive integer");
-
     if (_month > 12)
         throw std::invalid_argument("There are only 12 months in a year");
 

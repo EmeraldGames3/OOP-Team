@@ -1,22 +1,25 @@
-#include "../../Domain/ElectricScooter/ElectricScooter.h"
+#pragma once
+#include "../../Domain/Domain.h"
+#include "../AbstractRepository.h"
 #include <vector>
+#include <memory>
 
-using namespace Domain;
-using namespace std;
+using Domain::ElectricScooter;
+using std::unique_ptr, std::shared_ptr, std::vector, std::string;
 
 namespace Repository {
-    class ElectricScooterRepository {
+    class ElectricScooterRepository : AbstractRepository{
     private:
-        vector<ElectricScooter> repository;
+        shared_ptr<vector<ElectricScooter>> data;
 
     public:
-        ElectricScooterRepository();
+        explicit ElectricScooterRepository(const string &_fileName = "Repository/Data/ScooterDatabase");
 
         void add(ElectricScooter scooter);
 
         void remove(ElectricScooter scooter);
 
-        void updateDatabase();
+        void update() override;
 
         void updateID(const string &id, const string &oldId);
 
@@ -30,7 +33,10 @@ namespace Repository {
 
         void updateCondition(const string &condition, const string &id);
 
+        void deleteAllData();
+
         vector<ElectricScooter> getAll();
 
+        unique_ptr<vector<Domain::ElectricScooter>> getAllAsPointer();
     };
 }

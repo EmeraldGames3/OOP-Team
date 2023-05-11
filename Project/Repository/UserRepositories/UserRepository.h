@@ -22,6 +22,8 @@ namespace Repository {
 
         void update() override;
 
+        void deleteAllData();
+
         virtual vector<User> getAll();
 
         shared_ptr<vector<User>> getAllAsPointer();

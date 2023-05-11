@@ -10,8 +10,8 @@ namespace Repository {
     public:
         explicit ClientRepository(const string &_fileName = "Repository/Data/ClientDatabase");
 
-        void add(const Client& client);
+        void add(const Client &client);
 
-        void remove(const Client& client);
+        void remove(const Client &client);
     };
 }
