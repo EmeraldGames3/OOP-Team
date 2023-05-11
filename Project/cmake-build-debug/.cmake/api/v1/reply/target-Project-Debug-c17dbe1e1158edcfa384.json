@@ -53,11 +53,18 @@
 			"sourceIndexes" : 
 			[
 				0,
+				1,
+				2,
+				3,
+				4,
 				5,
+				6,
 				7,
+				8,
 				9,
+				10,
 				11,
-				13
+				12
 			]
 		}
 	],
@@ -91,26 +98,28 @@
 			"sourceIndexes" : 
 			[
 				0,
+				1,
+				2,
+				3,
+				4,
 				5,
+				6,
 				7,
+				8,
 				9,
+				10,
 				11,
-				13
+				12
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1,
-				2,
-				3,
-				4,
-				6,
-				8,
-				10,
-				12,
-				14
+				13,
+				14,
+				15,
+				16
 			]
 		}
 	],
@@ -124,67 +133,33 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Controller/Controller.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Domain/Domain.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Repository/Repository.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "UI/UI.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "UI/UserInterafce.cpp",
+			"path" : "Repository/ClientRepository.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "UI/UserInterafce.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Repository/ElectricscooterRepository.cpp",
+			"path" : "Domain/User/Client.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Repository/ElectricscooterRepository.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Domain/User/User.cpp",
+			"path" : "Domain/ElectricScooter/ElectricScooter.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Domain/User/User.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Domain/ElectricScooter/EclectricScooter.cpp",
+			"path" : "Controller/ElectricScooterController.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Domain/ElectricScooter/EclectricScooter.h",
-			"sourceGroupIndex" : 1
+			"compileGroupIndex" : 0,
+			"path" : "Repository/ElectricScooterRepository.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
@@ -194,7 +169,58 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Domain/User/Manager.h",
+			"compileGroupIndex" : 0,
+			"path" : "Repository/ManagerRepository.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UI/UserInterface.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Domain/User/User.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Controller/UserController.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Repository/UserRepository.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Domain/Date/Date.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Controller/Controller.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Repository/Repository.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Domain/Domain.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "UI/UI.h",
 			"sourceGroupIndex" : 1
 		}
 	],

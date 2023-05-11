@@ -1,7 +1,13 @@
 #pragma once
 
-#include "ElectricScooter/EclectricScooter.h"
+#include "Date/Date.h"
+#include "User/Client.h"
+#include "User/Manager.h"
+#include "User/User.h"
 
 namespace Domain{
-    class ElectricScooter;
+    class Date;
+    class Client;
+    class Manager;
+    class User;
 }

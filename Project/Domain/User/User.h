@@ -1,24 +1,23 @@
-#pragma once
-
+#include <iostream>
 #include <string>
 
-using std::string;
+#pragma once
+using namespace std;
+namespace user {
+    class User {
+    public:
+        User(string username, string password);
 
-namespace Domain{
-    class User{
+        string getUsername();
+
+        string getPassword();
+
+        void setUsername(string username);
+
+        void setPassword(string password);
+
     protected:
         string username;
         string password;
-
-    public:
-        User(const string &_username, const string &_password);
-
-        virtual string getUsername();
-
-        virtual string getPassword();
-
-        virtual void setUsername(string username) = 0;
-
-        virtual void setPassword(string password) = 0;
     };
 }

@@ -1,5 +1,8 @@
 #pragma once
 
-namespace Controller{
+#include "ElectricScooterController.h"
 
+namespace Controller{
+    class ElectricScooterController;
+    class UserController;
 }

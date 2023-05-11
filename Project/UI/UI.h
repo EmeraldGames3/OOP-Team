@@ -1,6 +1,6 @@
 #pragma once
 
-#include "UserInterafce.h"
+#include "UserInterface.h"
 
 namespace UI{
     class UserInterface;
