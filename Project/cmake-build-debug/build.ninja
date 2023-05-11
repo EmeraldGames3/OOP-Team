@@ -61,11 +61,11 @@ build CMakeFiles/Project.dir/Repository/ClientRepository.cpp.o: CXX_COMPILER__Pr
   OBJECT_DIR = CMakeFiles/Project.dir
   OBJECT_FILE_DIR = CMakeFiles/Project.dir/Repository
 
-build CMakeFiles/Project.dir/Domain/User/Client.cpp.o: CXX_COMPILER__Project_Debug /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Client.cpp || cmake_object_order_depends_target_Project
-  DEP_FILE = CMakeFiles/Project.dir/Domain/User/Client.cpp.o.d
+build CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o: CXX_COMPILER__Project_Debug /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Client/Client.cpp || cmake_object_order_depends_target_Project
+  DEP_FILE = CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++20
   OBJECT_DIR = CMakeFiles/Project.dir
-  OBJECT_FILE_DIR = CMakeFiles/Project.dir/Domain/User
+  OBJECT_FILE_DIR = CMakeFiles/Project.dir/Domain/User/Client
 
 build CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o: CXX_COMPILER__Project_Debug /home/bogdan/Programming/University/OOP-Team/Project/Domain/ElectricScooter/ElectricScooter.cpp || cmake_object_order_depends_target_Project
   DEP_FILE = CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o.d
@@ -73,11 +73,11 @@ build CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o: CXX_C
   OBJECT_DIR = CMakeFiles/Project.dir
   OBJECT_FILE_DIR = CMakeFiles/Project.dir/Domain/ElectricScooter
 
-build CMakeFiles/Project.dir/Controller/ElectricScooterController.cpp.o: CXX_COMPILER__Project_Debug /home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController.cpp || cmake_object_order_depends_target_Project
-  DEP_FILE = CMakeFiles/Project.dir/Controller/ElectricScooterController.cpp.o.d
+build CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o: CXX_COMPILER__Project_Debug /home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.cpp || cmake_object_order_depends_target_Project
+  DEP_FILE = CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++20
   OBJECT_DIR = CMakeFiles/Project.dir
-  OBJECT_FILE_DIR = CMakeFiles/Project.dir/Controller
+  OBJECT_FILE_DIR = CMakeFiles/Project.dir/Controller/ElectricScooterController
 
 build CMakeFiles/Project.dir/Repository/ElectricScooterRepository.cpp.o: CXX_COMPILER__Project_Debug /home/bogdan/Programming/University/OOP-Team/Project/Repository/ElectricScooterRepository.cpp || cmake_object_order_depends_target_Project
   DEP_FILE = CMakeFiles/Project.dir/Repository/ElectricScooterRepository.cpp.o.d
@@ -85,11 +85,11 @@ build CMakeFiles/Project.dir/Repository/ElectricScooterRepository.cpp.o: CXX_COM
   OBJECT_DIR = CMakeFiles/Project.dir
   OBJECT_FILE_DIR = CMakeFiles/Project.dir/Repository
 
-build CMakeFiles/Project.dir/Domain/User/Manager.cpp.o: CXX_COMPILER__Project_Debug /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager.cpp || cmake_object_order_depends_target_Project
-  DEP_FILE = CMakeFiles/Project.dir/Domain/User/Manager.cpp.o.d
+build CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o: CXX_COMPILER__Project_Debug /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/Manager.cpp || cmake_object_order_depends_target_Project
+  DEP_FILE = CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++20
   OBJECT_DIR = CMakeFiles/Project.dir
-  OBJECT_FILE_DIR = CMakeFiles/Project.dir/Domain/User
+  OBJECT_FILE_DIR = CMakeFiles/Project.dir/Domain/User/Manager
 
 build CMakeFiles/Project.dir/Repository/ManagerRepository.cpp.o: CXX_COMPILER__Project_Debug /home/bogdan/Programming/University/OOP-Team/Project/Repository/ManagerRepository.cpp || cmake_object_order_depends_target_Project
   DEP_FILE = CMakeFiles/Project.dir/Repository/ManagerRepository.cpp.o.d
@@ -103,17 +103,17 @@ build CMakeFiles/Project.dir/UI/UserInterface.cpp.o: CXX_COMPILER__Project_Debug
   OBJECT_DIR = CMakeFiles/Project.dir
   OBJECT_FILE_DIR = CMakeFiles/Project.dir/UI
 
-build CMakeFiles/Project.dir/Domain/User/User.cpp.o: CXX_COMPILER__Project_Debug /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/User.cpp || cmake_object_order_depends_target_Project
-  DEP_FILE = CMakeFiles/Project.dir/Domain/User/User.cpp.o.d
+build CMakeFiles/Project.dir/Domain/User/User/User.cpp.o: CXX_COMPILER__Project_Debug /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/User/User.cpp || cmake_object_order_depends_target_Project
+  DEP_FILE = CMakeFiles/Project.dir/Domain/User/User/User.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++20
   OBJECT_DIR = CMakeFiles/Project.dir
-  OBJECT_FILE_DIR = CMakeFiles/Project.dir/Domain/User
+  OBJECT_FILE_DIR = CMakeFiles/Project.dir/Domain/User/User
 
-build CMakeFiles/Project.dir/Controller/UserController.cpp.o: CXX_COMPILER__Project_Debug /home/bogdan/Programming/University/OOP-Team/Project/Controller/UserController.cpp || cmake_object_order_depends_target_Project
-  DEP_FILE = CMakeFiles/Project.dir/Controller/UserController.cpp.o.d
+build CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o: CXX_COMPILER__Project_Debug /home/bogdan/Programming/University/OOP-Team/Project/Controller/UserController/UserController.cpp || cmake_object_order_depends_target_Project
+  DEP_FILE = CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++20
   OBJECT_DIR = CMakeFiles/Project.dir
-  OBJECT_FILE_DIR = CMakeFiles/Project.dir/Controller
+  OBJECT_FILE_DIR = CMakeFiles/Project.dir/Controller/UserController
 
 build CMakeFiles/Project.dir/Repository/UserRepository.cpp.o: CXX_COMPILER__Project_Debug /home/bogdan/Programming/University/OOP-Team/Project/Repository/UserRepository.cpp || cmake_object_order_depends_target_Project
   DEP_FILE = CMakeFiles/Project.dir/Repository/UserRepository.cpp.o.d
@@ -147,7 +147,7 @@ build CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o: CXX_COMPI
 #############################################
 # Link the executable Project
 
-build Project: CXX_EXECUTABLE_LINKER__Project_Debug CMakeFiles/Project.dir/main.cpp.o CMakeFiles/Project.dir/Repository/ClientRepository.cpp.o CMakeFiles/Project.dir/Domain/User/Client.cpp.o CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o CMakeFiles/Project.dir/Controller/ElectricScooterController.cpp.o CMakeFiles/Project.dir/Repository/ElectricScooterRepository.cpp.o CMakeFiles/Project.dir/Domain/User/Manager.cpp.o CMakeFiles/Project.dir/Repository/ManagerRepository.cpp.o CMakeFiles/Project.dir/UI/UserInterface.cpp.o CMakeFiles/Project.dir/Domain/User/User.cpp.o CMakeFiles/Project.dir/Controller/UserController.cpp.o CMakeFiles/Project.dir/Repository/UserRepository.cpp.o CMakeFiles/Project.dir/Domain/Date/Date.cpp.o CMakeFiles/Project.dir/Tests/TestAll.cpp.o CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o
+build Project: CXX_EXECUTABLE_LINKER__Project_Debug CMakeFiles/Project.dir/main.cpp.o CMakeFiles/Project.dir/Repository/ClientRepository.cpp.o CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o CMakeFiles/Project.dir/Repository/ElectricScooterRepository.cpp.o CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o CMakeFiles/Project.dir/Repository/ManagerRepository.cpp.o CMakeFiles/Project.dir/UI/UserInterface.cpp.o CMakeFiles/Project.dir/Domain/User/User/User.cpp.o CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o CMakeFiles/Project.dir/Repository/UserRepository.cpp.o CMakeFiles/Project.dir/Domain/Date/Date.cpp.o CMakeFiles/Project.dir/Tests/TestAll.cpp.o CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Project.dir
   POST_BUILD = :

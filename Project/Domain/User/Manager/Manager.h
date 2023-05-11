@@ -1,6 +1,6 @@
-#include "User.h"
+#include "../User/User.h"
 
-using namespace user;
+using namespace Domain;
 namespace Domain {
     class Manager : public User {
     public:

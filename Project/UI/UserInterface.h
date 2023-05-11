@@ -1,6 +1,6 @@
 #include <iostream>
-#include "../Controller/UserController.h"
-#include "../Controller/ElectricScooterController.h"
+#include "../Controller/UserController/UserController.h"
+#include "../Controller/ElectricScooterController/ElectricScooterController.h"
 
 using std::string, std::cout, std::cin;
 using namespace Controller;
