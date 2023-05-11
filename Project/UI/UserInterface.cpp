@@ -221,13 +221,13 @@ void UserInterface::showAll() {
     vector<ElectricScooter> scooters = scooterController->getAll();
     cout << "----------------------- ELECTRIC ~ SCOOTERS -----------------------" << endl;
     cout << endl;
-    for (int i = 0; i < scooters.size(); i++) {
-        cout << "Model: " << scooters[i].getModel() << endl;
-        cout << "    o Identifier: " << scooters[i].getId() << endl;
-        cout << "    o Date of commissioning: " << scooters[i].getDate() << endl;
-        cout << "    o Mileage: " << scooters[i].getMileage() << endl;
-        cout << "    o Last Location: " << scooters[i].getLocation() << endl;
-        cout << "    o Current Condition: " << scooters[i].getCondition() << endl;
+    for (auto &scooter : scooters) {
+        cout << "Model: " << scooter.getModel() << endl;
+        cout << "    o Identifier: " << scooter.getId() << endl;
+        cout << "    o Date of commissioning: " << scooter.getDateAsString() << endl;
+        cout << "    o Mileage: " << scooter.getMileage() << endl;
+        cout << "    o Last Location: " << scooter.getLocation() << endl;
+        cout << "    o Current Condition: " << scooter.getCondition() << endl;
 
     }
 }

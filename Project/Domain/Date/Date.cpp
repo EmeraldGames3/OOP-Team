@@ -1,3 +1,4 @@
+#include <sstream>
 #include "Date.h"
 
 ///Default constructor
@@ -125,4 +126,12 @@ bool Domain::Date::operator!=(const Domain::Date &other) const {
 
 bool Domain::Date::operator==(const Domain::Date &other) const {
     return (year == other.year && month == other.month && day == other.day);
+}
+
+Domain::Date Domain::Date::getDateFromString(const std::string &str) {
+    std::istringstream iss(str);
+    int year, month, day;
+    char delim;
+    iss >> year >> delim >> month >> delim >> day;
+    return Date(year, month, day);
 }

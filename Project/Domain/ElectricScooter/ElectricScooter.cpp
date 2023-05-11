@@ -1,28 +1,38 @@
 #include "ElectricScooter.h"
 
-using namespace Domain;
+#include <utility>
 
+using Domain::ElectricScooter, Domain::Date;
 
-ElectricScooter::ElectricScooter(const string &_identifier, string _model, string _commissioningDate, float _mileage,
+ElectricScooter::ElectricScooter(string _identifier, string _model, const string &_commissioningDate, float _mileage,
                                  string _lastLocation,
                                  string _currentCondition) {
     if (_identifier.size() != 3)
-        throw std::invalid_argument("");
-    identifier = _identifier;
-    model = _model;
+        throw std::invalid_argument("Invalid ID");
+    identifier = std::move(_identifier);
+    model = std::move(_model);
     mileage = _mileage;
-    lastLocation = _lastLocation;
-    currentCondition = _currentCondition;
-    commissioningDate = _commissioningDate;
+    lastLocation = std::move(_lastLocation);
+    currentCondition = std::move(_currentCondition);
+    commissioningDate = Date::getDateFromString(_commissioningDate);
 }
 
-ElectricScooter::ElectricScooter(const string &_id) {
+ElectricScooter::ElectricScooter(string _id) {
     if (_id.size() != 3)
-        throw std::invalid_argument("");
-    identifier = _id;
+        throw std::invalid_argument("Invalid ID");
+    identifier = std::move(_id);
+    model = "";
+    commissioningDate = Date();
+    mileage = 0.0;
+    lastLocation = "";
+    currentCondition = "";
 }
 
-string ElectricScooter::getDate() { return commissioningDate; }
+string ElectricScooter::getDateAsString() { return commissioningDate.getDateAsFormattedString(); }
+
+Date ElectricScooter::getDate() {
+    return commissioningDate;
+}
 
 string ElectricScooter::getCondition() { return currentCondition; }
 
@@ -34,26 +44,30 @@ float ElectricScooter::getMileage() const { return mileage; }
 
 string ElectricScooter::getModel() { return model; }
 
-void ElectricScooter::setDate(string date) {
-    this->commissioningDate = date;
+void ElectricScooter::setDate(const string &newDate) {
+    commissioningDate = Date::getDateFromString(newDate);
 }
 
-void ElectricScooter::setCondition(string condition) {
-    this->currentCondition = condition;
+void Domain::ElectricScooter::setDate(const Date &newDate) {
+    commissioningDate = newDate;
 }
 
-void ElectricScooter::setModel(string model) {
-    this->model = model;
+void ElectricScooter::setCondition(const string &newCondition) {
+    currentCondition = newCondition;
 }
 
-void ElectricScooter::setLocation(string location) {
-    lastLocation = location;
+void ElectricScooter::setModel(const string &newModel) {
+    model = newModel;
 }
 
-void ElectricScooter::setId(string id) {
-    if (id.size() != 3)
-        throw std::invalid_argument(" ");
-    identifier = id;
+void ElectricScooter::setLocation(const string &newLocation) {
+    lastLocation = newLocation;
 }
 
-void ElectricScooter::setMileage(float mileage) { this->mileage = mileage; }
+void ElectricScooter::setId(const string &newID) {
+    if (newID.size() != 3)
+        throw std::invalid_argument("Invalid ID");
+    identifier = newID;
+}
+
+void ElectricScooter::setMileage(float newMileage) { mileage = newMileage; }

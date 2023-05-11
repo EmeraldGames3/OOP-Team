@@ -6,6 +6,5 @@ namespace Domain {
     class Client : public User {
     public:
         Client(string username, string password);
-
     };
 }

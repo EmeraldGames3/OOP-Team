@@ -41,7 +41,7 @@ void ElectricScooterRepository::updateDatabase() {
     for (auto &i: repository) {
         file << i.getId() << ',';
         file << i.getModel() << ',';
-        file << i.getDate() << ',';
+        file << i.getDateAsString() << ',';
         file << i.getMileage() << ',';
         file << i.getLocation() << ',';
         file << i.getCondition() << endl;

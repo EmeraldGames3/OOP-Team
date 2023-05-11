@@ -1,6 +1,6 @@
 #include "TestAll.h"
-#include "TestDomain/TestDate/TestDate.h"
+#include "TestDomain/TestDomain.h"
 
 void testAll(){
-    testDate();
+    testDomain();
 }

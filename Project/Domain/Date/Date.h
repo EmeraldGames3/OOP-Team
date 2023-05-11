@@ -33,6 +33,9 @@ namespace Domain {
         ///Compute the number of days in a month
         static int daysInMonth(int year, int month);
 
+        ///Get the date from a string
+        static Date getDateFromString(const std::string &str);
+
         ///Overloaded operators
         Date &operator=(const Date& other);
         bool operator==(const Date& other) const;

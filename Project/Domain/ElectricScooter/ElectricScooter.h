@@ -9,40 +9,44 @@ namespace Domain {
     private:
         string identifier;
         string model;
-        string commissioningDate;
+        Date commissioningDate;
         float mileage;
         string lastLocation;
         string currentCondition;
 
     public:
-        ElectricScooter(const string &_identifier, string _model, string _commissioningDate, float _mileage,
+        ElectricScooter(string _identifier, string _model, const string& _commissioningDate, float _mileage,
                         string _lastLocation,
                         string _currentCondition);
 
-        explicit ElectricScooter(const string &_id);
+        explicit ElectricScooter(string _id);
 
-        string getId();
+        [[nodiscard]] string getId();
 
-        string getModel();
+        [[nodiscard]] string getModel();
 
-        string getDate();
+        [[nodiscard]] string getDateAsString();
+
+        [[nodiscard]] Date getDate();
 
         [[nodiscard]] float getMileage() const;
 
-        string getLocation();
+        [[nodiscard]] string getLocation();
 
-        string getCondition();
+        [[nodiscard]] string getCondition();
 
-        void setId(string id);
+        void setId(const string &newID);
 
-        void setModel(string model);
+        void setModel(const string &newModel);
 
-        void setDate(string date);
+        void setDate(const string &newDate);
 
-        void setMileage(float mileage);
+        void setDate(const Date &newDate);
 
-        void setLocation(string location);
+        void setMileage(float newMileage);
 
-        void setCondition(string condition);
+        void setLocation(const string &newLocation);
+
+        void setCondition(const string &newCondition);
     };
 }
