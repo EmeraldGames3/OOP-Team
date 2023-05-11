@@ -12,12 +12,12 @@ namespace Domain {
     public:
         User(string _username, string _password);
 
-        string getUsername();
+        virtual string getUsername();
 
-        string getPassword();
+        virtual string getPassword();
 
-        void setUsername(const string &newUsername);
+        virtual void setUsername(const string &newUsername);
 
-        void setPassword(const string &newPassword);
+        virtual void setPassword(const string &newPassword);
     };
 }

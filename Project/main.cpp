@@ -15,5 +15,6 @@ int main() {
     shared_ptr<ElectricScooterController> controllerS = make_shared<ElectricScooterController>(repo3);
     UserInterface ui(controllerU, controllerS);
     ui.mainMenu();
+
     return 0;
 }
