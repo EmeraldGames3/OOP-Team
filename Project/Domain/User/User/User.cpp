@@ -9,9 +9,9 @@ User::User(string _username, string _password) {
     password = std::move(_password);
 }
 
-string User::getUsername() { return username; }
+string User::getUsername() const { return username; }
 
-string User::getPassword() { return password; }
+string User::getPassword() const { return password; }
 
 void User::setUsername(const string &newUsername) {
     username = newUsername;

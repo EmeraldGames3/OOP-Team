@@ -12,9 +12,9 @@ namespace Domain {
     public:
         User(string _username, string _password);
 
-        virtual string getUsername();
+        [[nodiscard]] virtual string getUsername() const;
 
-        virtual string getPassword();
+        [[nodiscard]] virtual string getPassword() const;
 
         virtual void setUsername(const string &newUsername);
 

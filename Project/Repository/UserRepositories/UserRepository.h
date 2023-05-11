@@ -8,20 +8,22 @@
 using std::vector, std::shared_ptr, std::unique_ptr;
 using Domain::User;
 
-namespace Repository{
+namespace Repository {
     class UserRepository : public AbstractRepository{
     protected:
         shared_ptr<vector<User>> data;
 
     public:
-        UserRepository(const string &fileName);
+        explicit UserRepository(const string &_fileName);
 
-        void add() override;
+        void add(const User &user);
 
-        void remove() override;
+        void remove(const User &user);
 
         void update() override;
 
-        void writeToFile() override;
+        virtual vector<User> getAll();
+
+        shared_ptr<vector<User>> getAllAsPointer();
     };
 }

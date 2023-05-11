@@ -31,7 +31,7 @@ void UserController::removeManager(const string &username, const string &passwor
 }
 
 bool UserController::checkClientAccount(const string &username, const string &password) {
-    vector<Client> clients = clientRepository->getAll();
+    auto clients = clientRepository->getAll();
     for (auto &client: clients)
         if (client.getUsername() == username && client.getPassword() == password)
             return true;
@@ -39,7 +39,7 @@ bool UserController::checkClientAccount(const string &username, const string &pa
 }
 
 bool UserController::checkManagerAccount(const string &username, const string &password) {
-    vector<Manager> managers = managerRepository->getAll();
+    auto managers = managerRepository->getAll();
     for (auto &manager: managers)
         if (manager.getUsername() == username && manager.getPassword() == password)
             return true;
@@ -47,7 +47,7 @@ bool UserController::checkManagerAccount(const string &username, const string &p
 }
 
 bool UserController::findClient(const string &username) {
-    vector<Client> clients = clientRepository->getAll();
+    auto clients = clientRepository->getAll();
     for (auto &client: clients)
         if (client.getUsername() == username)
             return true;
@@ -55,7 +55,7 @@ bool UserController::findClient(const string &username) {
 }
 
 bool UserController::findManager(const string &username) {
-    vector<Manager> managers = managerRepository->getAll();
+    auto managers = managerRepository->getAll();
     for (auto &manager: managers)
         if (manager.getUsername() == username)
             return true;

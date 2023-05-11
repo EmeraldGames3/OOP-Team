@@ -1,23 +1,17 @@
 #include "../../../Domain/User/Client/Client.h"
 #include <vector>
-
+#include "../UserRepository.h"
 
 using namespace Domain;
 using namespace std;
 
 namespace Repository {
-    class ClientRepository {
-    private:
-        vector<Client> clientRepo;
+    class ClientRepository : public UserRepository{
     public:
-        ClientRepository();
+        explicit ClientRepository(const string &_fileName = "Repository/Data/ClientDatabase");
 
-        void updateDatabase();
+        void add(const Client& client);
 
-        void add(Client client);
-
-        void remove(Client client);
-
-        vector<Client> getAll();
+        void remove(const Client& client);
     };
 }
