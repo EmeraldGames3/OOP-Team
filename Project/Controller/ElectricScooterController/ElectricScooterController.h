@@ -1,4 +1,4 @@
-#include "../../Repository/ElectricScooterRepository.h"
+#include "../../Repository/ElectricScooterRepository/ElectricScooterRepository.h"
 #include <memory>
 
 using namespace Repository;

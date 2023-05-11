@@ -1,5 +1,5 @@
-#include "../../Repository/ClientRepository.h"
-#include "../../Repository/ManagerRepository.h"
+#include "../../Repository/UserRepositories/ClientRepository/ClientRepository.h"
+#include "../../Repository/UserRepositories/ManagerRepository/ManagerRepository.h"
 #include <memory>
 
 using namespace Repository;

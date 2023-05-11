@@ -1,13 +1,11 @@
 #pragma once
 
-#include "ClientRepository.h"
-#include "ManagerRepository.h"
-#include "UserRepository.h"
-#include "ElectricScooterRepository.h"
+#include "UserRepositories/ClientRepository/ClientRepository.h"
+#include "UserRepositories/ManagerRepository/ManagerRepository.h"
+#include "ElectricScooterRepository/ElectricScooterRepository.h"
 
 namespace Repository{
     class ClientRepository;
-    class UserRepository;
     class ManagerRepository;
     class ElectricScooterRepository;
 }
