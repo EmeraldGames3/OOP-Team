@@ -44,7 +44,5 @@ namespace Domain {
         void setLocation(string location);
 
         void setCondition(string condition);
-
-
     };
 }
