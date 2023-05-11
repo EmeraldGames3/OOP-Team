@@ -71,3 +71,22 @@ void ElectricScooter::setId(const string &newID) {
 }
 
 void ElectricScooter::setMileage(float newMileage) { mileage = newMileage; }
+
+string Domain::ElectricScooter::toString() {
+    std::ostringstream oss;
+    oss << "Identifier: " << identifier << " ";
+    oss << "Model: " << model << " ";
+    oss << "Commissioning Date: " << getDateAsString() << " ";
+    oss << "Mileage: " << mileage << " ";
+    oss << "Last Location: " << lastLocation << " ";
+    oss << "Current Condition: " << currentCondition << " ";
+    return oss.str();
+}
+
+bool Domain::ElectricScooter::operator==(const ElectricScooter &other) {
+    return this->identifier == other.identifier;
+}
+
+bool Domain::ElectricScooter::operator!=(const ElectricScooter &other) {
+    return !(*this == other);
+}

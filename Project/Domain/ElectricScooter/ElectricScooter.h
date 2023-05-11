@@ -48,5 +48,11 @@ namespace Domain {
         void setLocation(const string &newLocation);
 
         void setCondition(const string &newCondition);
+
+        string toString();
+
+        bool operator==(const ElectricScooter &other);
+
+        bool operator!=(const ElectricScooter &other);
     };
 }
