@@ -5,8 +5,8 @@
 using namespace Controller;
 
 UserController::UserController(shared_ptr<ClientRepository> clientRepo, shared_ptr<ManagerRepository> managerRepo) {
-    clientRepository = clientRepo;
-    managerRepository = managerRepo;
+    clientRepository = std::move(clientRepo);
+    managerRepository = std::move(managerRepo);
 }
 
 void UserController::addClient(const string &username, const string &password) {
@@ -22,7 +22,6 @@ void UserController::addManager(const string &username, const string &password) 
 void UserController::removeClient(const string &username, const string &password) {
     Client client(username, password);
     clientRepository->remove(client);
-
 }
 
 void UserController::removeManager(const string &username, const string &password) {
@@ -62,3 +61,18 @@ bool UserController::findManager(const string &username) {
     return false;
 }
 
+void UserController::updateClientDataBase() {
+    clientRepository->update();
+}
+
+void UserController::updateManagerDataBase() {
+    managerRepository->update();
+}
+
+void UserController::deleteClientData() {
+    clientRepository->deleteAllData();
+}
+
+void UserController::deleteManagerData() {
+    managerRepository->deleteAllData();
+}

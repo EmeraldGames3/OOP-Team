@@ -1,3 +1,4 @@
+#pragma once
 #include "../../../Domain/User/Client/Client.h"
 #include <vector>
 #include "../UserRepository.h"

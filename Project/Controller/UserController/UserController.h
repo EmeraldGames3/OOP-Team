@@ -3,7 +3,6 @@
 #include <memory>
 
 using namespace Repository;
-using namespace Repository;
 
 namespace Controller {
     class UserController {
@@ -11,24 +10,33 @@ namespace Controller {
         shared_ptr<ClientRepository> clientRepository;
         shared_ptr<ManagerRepository> managerRepository;
     public:
-        UserController(shared_ptr<ClientRepository> clientRepo, shared_ptr<ManagerRepository> managerRepo);
+        explicit UserController(
+                shared_ptr<ClientRepository> clientRepo = std::make_shared<ClientRepository>(ClientRepository()),
+                shared_ptr<ManagerRepository> managerRepo = std::make_shared<ManagerRepository>(ManagerRepository())
+        );
 
-        void addClient(const string& username, const string& password);
+        void addClient(const string &username, const string &password);
 
-        void removeClient(const string& username, const string& password);
+        void removeClient(const string &username, const string &password);
 
-        bool checkClientAccount(const string& username, const string& password);
+        bool checkClientAccount(const string &username, const string &password);
 
-        bool findClient(const string& username);
+        bool findClient(const string &username);
 
-        void addManager(const string& username, const string& password);
+        void updateClientDataBase();
 
-        void removeManager(const string& username, const string& password);
+        void deleteClientData();
 
-        bool checkManagerAccount(const string& username, const string& password);
+        void addManager(const string &username, const string &password);
 
-        bool findManager(const string& username);
+        void removeManager(const string &username, const string &password);
 
+        bool checkManagerAccount(const string &username, const string &password);
+
+        bool findManager(const string &username);
+
+        void updateManagerDataBase();
+
+        void deleteManagerData();
     };
-
 }
