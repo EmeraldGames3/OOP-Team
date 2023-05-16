@@ -71,7 +71,6 @@ void ElectricScooterRepository::updateDate(const string &date, const string &id)
     for (auto &i: *data)
         if (i.getId() == id) {
             i.setDate(date);
-            update();
             return;
         }
 }

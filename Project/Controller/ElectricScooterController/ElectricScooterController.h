@@ -11,7 +11,7 @@ namespace Controller {
                 shared_ptr<ElectricScooterRepository> repo = make_shared<ElectricScooterRepository>(
                         ElectricScooterRepository()));
 
-        void add(string id, string model, string date, float mileage, string location, string condition);
+        void add(string id, string model, const string& date, float mileage, string location, string condition);
 
         void remove(const string& id);
 

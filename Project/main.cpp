@@ -1,4 +1,3 @@
-#include <iostream>
 #include "UI/UserInterface.h"
 #include <memory>
 #include "Tests/TestAll.h"

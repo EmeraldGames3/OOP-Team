@@ -141,6 +141,50 @@ void testElectricScooterRepository() {
         ElectricScooter updatedScooter = repository.getAll()[0];
         assert(updatedScooter.getMileage() == 600.0);  // Mileage should be updated
     }
+
+    {
+        // Create a mock data vector
+        vector<ElectricScooter> data;
+        data.emplace_back("123", "Model X",
+                          "2023-01-01", 100.0, "Location A", "Good Condition");
+        data.emplace_back("456", "Model Y",
+                          "2023-02-01", 200.0, "Location B", "Fair Condition");
+        data.emplace_back("789", "Model Z",
+                          "2023-03-01", 300.0, "Location C", "Excellent Condition");
+
+        // Create an ElectricScooterRepository instance using the mock data
+        ElectricScooterRepository repository;
+        repository.deleteAllData();
+
+        repository.add(data[0]);
+        repository.add(data[1]);
+        repository.add(data[2]);
+
+        // Test updating the model
+        repository.updateModel("New Model", "123");
+        assert(repository.getAll()[0].getModel() == "New Model");
+
+        // Test updating the mileage
+        repository.updateMileage(150.0, "456");
+        assert(repository.getAll()[1].getMileage() == 150.0);
+
+        // Test updating the ID
+        repository.updateID("999", "789");
+        assert(repository.getAll()[2].getId() == "999");
+
+        // Test updating the location
+        repository.updateLocation("New Location", "123");
+        assert(repository.getAll()[0].getLocation() == "New Location");
+
+        // Test updating the condition
+        repository.updateCondition("Fair Condition", "456");
+        assert(repository.getAll()[1].getCondition() == "Fair Condition");
+
+        // Test updating the date
+        repository.updateDate("2023-5-5", "999");
+
+        assert(repository.getAll()[2].getDateAsString() == "2023-5-5");
+    }
 }
 
 void testRepository() {

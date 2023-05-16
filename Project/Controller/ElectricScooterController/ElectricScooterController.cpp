@@ -10,8 +10,10 @@ ElectricScooterController::ElectricScooterController(shared_ptr<ElectricScooterR
 }
 
 void ElectricScooterController::add(
-        string id, string model, string date, float mileage, string location, string condition) {
-    ElectricScooter scooter(id, model, date, mileage, location, condition);
+        string id, string model, const string &date, float mileage, string location, string condition
+) {
+    ElectricScooter scooter(std::move(id), std::move(model), date, mileage,
+                            std::move(location), std::move(condition));
     repository->add(scooter);
 }
 
@@ -28,8 +30,8 @@ vector<ElectricScooter> ElectricScooterController::getAll() {
 
 bool ElectricScooterController::find(const string &id) {
     vector<ElectricScooter> scooters = getAll();
-    for (int i = 0; i < scooters.size(); i++)
-        if (scooters[i].getId() == id)
+    for (auto &scooter : scooters)
+        if (scooter.getId() == id)
             return true;
     return false;
 }
@@ -114,7 +116,7 @@ vector<ElectricScooter> ElectricScooterController::lastLocationSearch(const stri
 
     // Search for electric scooters with the specified location
     for (ElectricScooter scooter: scooters) {
-        if(scooter.toString().find(location) != string::npos){
+        if (scooter.toString().find(location) != string::npos) {
             matchingScooters.push_back(scooter);
         }
     }
