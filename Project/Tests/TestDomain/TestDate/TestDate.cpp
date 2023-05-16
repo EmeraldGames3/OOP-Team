@@ -24,7 +24,7 @@ void testDateSimple() {
     assert(d.getDay() == 6);
 }
 
-void testDateExtended(){
+void testDateExtended() {
     {
         // Test constructors and getters
         Date date1(2023, 4, 26);
@@ -116,7 +116,7 @@ void testDateExtended(){
     }
 }
 
-void testDate(){
+void testDate() {
     testDateSimple();
     testDateExtended();
 }

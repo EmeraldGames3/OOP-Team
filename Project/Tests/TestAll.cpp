@@ -3,7 +3,7 @@
 #include "TestRepository/TestRepository.h"
 #include "TestController/TestController.h"
 
-void testAll(){
+void testAll() {
     testDomain();
     testRepository();
     testController();

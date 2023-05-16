@@ -221,7 +221,7 @@ void UserInterface::showAll() {
     vector<ElectricScooter> scooters = scooterController->getAll();
     cout << "----------------------- ELECTRIC ~ SCOOTERS -----------------------" << endl;
     cout << endl;
-    for (auto &scooter : scooters) {
+    for (auto &scooter: scooters) {
         cout << "Model: " << scooter.getModel() << endl;
         cout << "    o Identifier: " << scooter.getId() << endl;
         cout << "    o Date of commissioning: " << scooter.getDateAsString() << endl;

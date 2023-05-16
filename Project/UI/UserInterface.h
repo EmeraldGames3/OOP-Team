@@ -32,17 +32,17 @@ namespace UI {
 
         void updateInfo();
 
-        void updateId(const string& id);
+        void updateId(const string &id);
 
-        void updateModel(const string& id);
+        void updateModel(const string &id);
 
-        void updateDate(const string& id);
+        void updateDate(const string &id);
 
-        void updateMileage(const string& id);
+        void updateMileage(const string &id);
 
-        void updateLocation(const string& id);
+        void updateLocation(const string &id);
 
-        void updateCondition(const string& id);
+        void updateCondition(const string &id);
 
 
     };

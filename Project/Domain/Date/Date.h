@@ -37,12 +37,12 @@ namespace Domain {
         static Date getDateFromString(const std::string &str);
 
         ///Overloaded operators
-        Date &operator=(const Date& other);
-        bool operator==(const Date& other) const;
-        bool operator!=(const Date& other) const;
-        bool operator<(const Date& other) const;
-        bool operator<=(const Date& other) const;
-        bool operator>(const Date& other) const;
-        bool operator>=(const Date& other) const;
+        Date &operator=(const Date &other);
+        bool operator==(const Date &other) const;
+        bool operator!=(const Date &other) const;
+        bool operator<(const Date &other) const;
+        bool operator<=(const Date &other) const;
+        bool operator>(const Date &other) const;
+        bool operator>=(const Date &other) const;
     };
 }

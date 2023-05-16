@@ -2,7 +2,7 @@
 #include "TestDate/TestDate.h"
 #include "TestUser/TestUser.h"
 
-void testDomain(){
+void testDomain() {
     testDate();
     testUser();
 };

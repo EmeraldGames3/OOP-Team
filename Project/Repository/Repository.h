@@ -5,9 +5,12 @@
 #include "ElectricScooterRepository/ElectricScooterRepository.h"
 #include "UserRepositories/UserRepository.h"
 
-namespace Repository{
+namespace Repository {
     class ClientRepository;
+
     class ManagerRepository;
+
     class ElectricScooterRepository;
+
     class UserRepository;
 }

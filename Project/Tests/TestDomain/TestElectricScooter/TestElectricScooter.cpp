@@ -83,7 +83,7 @@ void testElectricScooter() {
 
     {
         ElectricScooter scooter1("ES001", "Model X", "2022-01-01",
-                                1000.5, "Park A", "Good");
+                                 1000.5, "Park A", "Good");
         ElectricScooter scooter2("ES004", "Model X", "2022-01-01",
                                  1000.5, "Park A", "Good");
         ElectricScooter scooter3("ES001");

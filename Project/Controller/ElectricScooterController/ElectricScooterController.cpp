@@ -13,7 +13,7 @@ ElectricScooterController::add(string id, string model, string date, float milea
 }
 
 void ElectricScooterController::remove(string id) {
-    if(!find(id))
+    if (!find(id))
         throw invalid_argument("");
     ElectricScooter scooter(id);
     repository->remove(scooter);

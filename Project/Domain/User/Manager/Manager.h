@@ -1,4 +1,5 @@
 #pragma once
+
 #include "../User/User.h"
 
 using namespace Domain;

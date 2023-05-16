@@ -2,6 +2,6 @@
 
 #include "UserInterface.h"
 
-namespace UI{
+namespace UI {
     class UserInterface;
 }

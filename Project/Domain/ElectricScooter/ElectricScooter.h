@@ -1,4 +1,5 @@
 #pragma once
+
 #include <iostream>
 #include <sstream>
 #include "../Date/Date.h"
@@ -17,7 +18,7 @@ namespace Domain {
 
     public:
         ///Default constructor
-        ElectricScooter(string _identifier, string _model, const string& _commissioningDate, float _mileage,
+        ElectricScooter(string _identifier, string _model, const string &_commissioningDate, float _mileage,
                         string _lastLocation,
                         string _currentCondition);
 

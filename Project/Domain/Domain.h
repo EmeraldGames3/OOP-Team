@@ -6,10 +6,14 @@
 #include "User/User/User.h"
 #include "ElectricScooter/ElectricScooter.h"
 
-namespace Domain{
+namespace Domain {
     class Date;
+
     class Client;
+
     class Manager;
+
     class User;
+
     class ElectricScooter;
 }

@@ -4,8 +4,9 @@
 
 using std::string;
 
-namespace Repository{
-    class AbstractRepository{
+namespace Repository {
+    ///Template repository
+    class AbstractRepository {
     protected:
         string fileName;
     public:

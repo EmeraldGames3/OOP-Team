@@ -2,7 +2,7 @@
 #include <cassert>
 #include "../../../Domain/Domain.h"
 
-void testUser(){
+void testUser() {
     // Create a new user with username "john" and password "12345"
     User user("john", "12345");
 
