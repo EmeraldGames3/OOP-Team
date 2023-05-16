@@ -101,12 +101,12 @@ void ElectricScooter::setMileage(float newMileage) { mileage = newMileage; }
 ///Used for writing to the Data Base
 string Domain::ElectricScooter::toString() {
     std::ostringstream oss;
-    oss << "Identifier: " << identifier << " ";
-    oss << "Model: " << model << " ";
-    oss << "Commissioning Date: " << getDateAsString() << " ";
-    oss << "Mileage: " << mileage << " ";
-    oss << "Last Location: " << lastLocation << " ";
-    oss << "Current Condition: " << currentCondition << " ";
+    oss << identifier << ",";
+    oss << model << ",";
+    oss << getDateAsString() << ",";
+    oss << mileage << ",";
+    oss << lastLocation << ",";
+    oss << currentCondition;
     return oss.str();
 }
 

@@ -43,5 +43,11 @@ namespace Controller {
 
         ///Check if a scooter is in the Data Base
         bool find(const string& id);
+
+        void update();
+
+        void reserveScooter(const string &id);
+
+        void useScooter(const string &id);
     };
 }

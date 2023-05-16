@@ -6,7 +6,7 @@ using namespace Repository;
 
 namespace Controller {
     class UserController {
-    private:
+    public:
         shared_ptr<ClientRepository> clientRepository;
         shared_ptr<ManagerRepository> managerRepository;
     public:
@@ -38,5 +38,7 @@ namespace Controller {
         void updateManagerDataBase();
 
         void deleteManagerData();
+
+        void updateDataBases();
     };
 }

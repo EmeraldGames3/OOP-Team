@@ -76,3 +76,8 @@ void UserController::deleteClientData() {
 void UserController::deleteManagerData() {
     managerRepository->deleteAllData();
 }
+
+void UserController::updateDataBases() {
+    clientRepository->update();
+    managerRepository->update();
+}

@@ -44,6 +44,8 @@ namespace UI {
 
         void updateCondition(const string &id);
 
+        void managerUI();
 
+        void clientUI();
     };
 }

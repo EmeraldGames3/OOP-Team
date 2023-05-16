@@ -17,6 +17,8 @@ void UserInterface::mainMenu() {
     cout << "2. Client" << endl;
     cout << "3. Exit" << endl;
     cout << "Enter your choice and press enter: " << endl;
+    cout << ">";
+
     cin >> choice;
     switch (choice) {
         case 1:
@@ -25,10 +27,17 @@ void UserInterface::mainMenu() {
         case 2:
             clientMenu();
             break;
-        case 3:
+        case 3: {
+            cout << "\n~~~~~~GOOD BYE!~~~~~~\n";
             break;
-        default:
+        }
+
+        default: {
+            cout << "\nInvalid choice...\n";
+            cout << "Try again\n";
+            mainMenu();
             break;
+        }
     }
 }
 
@@ -40,8 +49,9 @@ void UserInterface::managerMenu() {
         cout << "-----------------------  SCOOTERS~RENTAL.COM -----------------------" << endl;
         cout << "1. Register" << endl;
         cout << "2. Log in" << endl;
-        cout << "3. Exit " << endl;
+        cout << "3. Back" << endl;
         cout << "Enter your choice and press enter: " << endl;
+        cout << ">";
         cin >> choice;
         switch (choice) {
             case 1:
@@ -55,12 +65,15 @@ void UserInterface::managerMenu() {
                     managerRegistration();
                 }
                 cout << endl;
-                cout << "Would you like to log out? (yes / no)";
+                cout << "Would you like to log out? (yes / no)\n";
+                cout << ">";
                 cin >> option;
                 if (option == "yes")
                     running = false;
-                if (option == "no")
+                if (option == "no") {
                     option.clear();
+                    managerUI();
+                }
 
                 break;
             case 2:
@@ -74,22 +87,26 @@ void UserInterface::managerMenu() {
                     managerLogIn();
                 }
                 cout << endl;
-                cout << "Would you like to log out? (yes / no)";
+                cout << "Would you like to log out? (yes / no)\n";
+                cout << ">";
                 cin >> option;
                 if (option == "yes")
                     running = false;
-                if (option == "no")
+                if (option == "no") {
                     option.clear();
+                    managerUI();
+                }
                 break;
             case 3:
                 running = false;
+                mainMenu();
                 break;
 
 
             default:
                 cout << "Not a Valid Choice. \n";
                 cout << "Choose again.\n";
-                cin >> choice;
+                managerMenu();
                 break;
         }
 
@@ -100,23 +117,24 @@ void UserInterface::managerRegistration() {
     cout << "----------------------- REGISTRATION FORM -----------------------" << endl;
     string username;
     string password;
-    cout << "Username: " << endl;
+    cout << "Username: ";
     cin >> username;
-    cout << "Password: " << endl;
+    cout << "Password: ";
     cin >> password;
     if (userController->findManager(username))
         throw invalid_argument("Username is taken");
     userController->addManager(username, password);
     cout << "Welcome " << username << endl;
+    userController->updateManagerDataBase();
 }
 
 void UserInterface::managerLogIn() {
     cout << "----------------------- LOGIN -----------------------" << endl;
     string username;
     string password;
-    cout << "Username: " << endl;
+    cout << "Username: ";
     cin >> username;
-    cout << "Password: " << endl;
+    cout << "Password: ";
     cin >> password;
     if (!userController->checkManagerAccount(username, password))
         throw invalid_argument("");
@@ -132,8 +150,9 @@ void UserInterface::clientMenu() {
         cout << "----------------------- WELCOME TO ELECTRONIC~CARS.COM -----------------------" << endl;
         cout << "1. Register" << endl;
         cout << "2. Log in" << endl;
-        cout << "3. Exit " << endl;
+        cout << "3. Back" << endl;
         cout << "Enter your choice and press enter: " << endl;
+        cout << ">";
         cin >> choice;
         switch (choice) {
             case 1:
@@ -147,12 +166,15 @@ void UserInterface::clientMenu() {
                     clientRegistration();
                 }
                 cout << endl;
-                cout << "Would you like to log out? (yes / no)";
+                cout << "Would you like to log out? (yes / no)\n";
+                cout << ">";
                 cin >> option;
                 if (option == "yes")
                     running = false;
-                if (option == "no")
+                if (option == "no") {
                     option.clear();
+                    clientUI();
+                }
 
                 break;
             case 2:
@@ -166,25 +188,27 @@ void UserInterface::clientMenu() {
                     clientLogIn();
                 }
                 cout << endl;
-                cout << "Would you like to log out? (yes / no)";
+                cout << "Would you like to log out? (yes / no)\n";
+                cout << ">";
                 cin >> option;
                 if (option == "yes")
                     running = false;
-                if (option == "no")
+                if (option == "no") {
                     option.clear();
+                    clientUI();
+                }
                 break;
             case 3:
                 running = false;
+                mainMenu();
                 break;
-
 
             default:
                 cout << "Not a Valid Choice. \n";
                 cout << "Choose again.\n";
-                cin >> choice;
+                clientMenu();
                 break;
         }
-
     }
 }
 
@@ -192,29 +216,30 @@ void UserInterface::clientLogIn() {
     cout << "----------------------- LOGIN -----------------------" << endl;
     string username;
     string password;
-    cout << "Username: " << endl;
+    cout << "Username: ";
     cin >> username;
-    cout << "Password: " << endl;
+    cout << "Password: ";
     cin >> password;
-    if (userController->checkClientAccount(username, password))
+
+    if (!userController->checkClientAccount(username, password))
         throw invalid_argument("");
+
     cout << "Welcome back " << username << endl;
-    //movieMenu();
 }
 
 void UserInterface::clientRegistration() {
     cout << "----------------------- REGISTRATION FORM -----------------------" << endl;
     string username;
     string password;
-    cout << "Username: " << endl;
+    cout << "Username: ";
     cin >> username;
-    cout << "Password: " << endl;
+    cout << "Password: ";
     cin >> password;
     if (userController->findClient(username))
         throw invalid_argument("Username is taken");
     userController->addClient(username, password);
     cout << "Welcome " << username << endl;
-    //movieMenu();
+    userController->updateClientDataBase();
 }
 
 void UserInterface::showAll() {
@@ -228,7 +253,7 @@ void UserInterface::showAll() {
         cout << "    o Mileage: " << scooter.getMileage() << endl;
         cout << "    o Last Location: " << scooter.getLocation() << endl;
         cout << "    o Current Condition: " << scooter.getCondition() << endl;
-
+        cout << endl;
     }
 }
 
@@ -284,10 +309,7 @@ void UserInterface::updateInfo() {
             cout << "Choose again.\n";
             cin >> choice;
             break;
-
-
     }
-
 }
 
 void UserInterface::updateId(const string &id) {
@@ -367,5 +389,276 @@ void UserInterface::updateCondition(const string &id) {
 
 }
 
+void UserInterface::managerUI() {
+    int userInput = -1;
+    while(userInput != 0) {
+        cout << "----------------------- MANAGER UI -----------------------";
+        cout << "\n\nChoose one of the followings\n\n";
+        cout << "0. Back\n";
+        cout << "1. Add scooter\n";
+        cout << "2. Remove scooter\n";
+        cout << "3. Update scooter\n";
+        cout << "4. Find scooters by location\n";
+        cout << "5. Find scooters by commissioning date\n";
+        cout << "6. Find scooters by mileage\n";
+        cout << "7. Show all scooters sorted by age\n";
+        cout << "8. See all scooters\n\n";
 
+        cout << ">";
+        cin >> userInput;
+        cout << endl;
 
+        switch (userInput) {
+            case 0: {
+                break;
+            }
+            case 1: {
+                string id, model, date, location, condition;
+                float mileage;
+
+                cout << "ID: ";
+                cin >> id;
+                cout << "Model: ";
+                cin >> model;
+                cout << "Commission Date(Y-M-D): ";
+                cin >> date;
+                cout << "Mileage(km): ";
+                cin >> mileage;
+                cout << "Location: ";
+                cin >> location;
+                cout << "Condition: ";
+                cin >> condition;
+
+                try {
+                    scooterController->add(id, model, date, mileage, location, condition);
+                    scooterController->update();
+                    cout << "\nScooter successfully added\n\n";
+                } catch (exception &e) {
+                    cout << "\nOne or more attributes are not valid\n";
+                }
+                break;
+            }
+            case 2: {
+                string id;
+                cout << "Write the ID of the scooter that you want to remove: ";
+                cin >> id;
+
+                try {
+                    scooterController->remove(id);
+                    scooterController->update();
+                    cout << "\nScooter successfully removed\n\n";
+                } catch (exception &e) {
+                    cout << "\nThe given ID is not valid";
+                }
+                break;
+            }
+            case 3: {
+                updateInfo();
+                scooterController->update();
+                break;
+            }
+            case 4: {
+                string location;
+                cout << "Scooter's location: ";
+                cin >> location;
+
+                try {
+                    scooterController->lastLocationSearch(location);
+                } catch (exception &e) {
+                    cout << "\nThe given location is not valid\n";
+                }
+
+                vector<ElectricScooter> scooters = scooterController->lastLocationSearch(location);
+                for(auto it : scooters)
+                    cout << it.toString() << '\n';
+                break;
+            }
+            case 5: {
+                Date date;
+                int day, month, year;
+
+                cout << "Scooter's commissioning date\n";
+                cout << "Year: ";
+                cin >> year;
+                date.setYear(year);
+                cout << "Month: ";
+                cin >> month;
+                date.setMonth(month);
+                cout << "Day: ";
+                cin >> day;
+                date.setDay(day);
+
+                try {
+                    scooterController->ageFiltered(date);
+                } catch (exception &e) {
+                    cout << "\nThe given date is not valid\n";
+                }
+
+                vector<ElectricScooter> scooters = scooterController->ageFiltered(date);
+                for(auto it : scooters)
+                    cout << it.toString() << '\n';
+                break;
+            }
+            case 6: {
+                float mileage;
+                cout << "Mileage value: ";
+                cin >> mileage;
+
+                try {
+                    scooterController->mileageFiltered(mileage);
+                } catch (exception &e) {
+                    cout << "\nThe given mileage is not valid\n";
+                }
+
+                vector<ElectricScooter> scooters = scooterController->mileageFiltered(mileage);
+                for(auto it : scooters)
+                    cout << it.toString() << '\n';
+                break;
+            }
+            case 7: {
+                vector<ElectricScooter> scooters = scooterController->ageSorted();
+                for(auto it : scooters)
+                    cout << it.toString() << '\n';
+                break;
+            }
+            case 8: {
+                showAll();
+                break;
+            }
+
+            default: {
+                cout << "Invalid choice...\n";
+                cout << "Try again\n";
+                managerUI();
+                break;
+            }
+        }
+    }
+}
+
+void UserInterface::clientUI() {
+    int userInput = -1;
+    while(userInput != 0) {
+        cout << "----------------------- Client UI -----------------------";
+        cout << "\n\nChoose one of the followings\n\n";
+        cout << "0. Back\n";
+        cout << "1. Find scooters by location\n";
+        cout << "2. Find scooters by commissioning date\n";
+        cout << "3. Find scooters by mileage\n";
+        cout << "4. Reserve a scooter\n";
+        cout << "5. Use a scooters\n";
+        cout << "6. See all scooters\n\n";
+
+        cout << ">";
+        cin >> userInput;
+        cout << endl;
+
+        switch (userInput) {
+            case 0: {
+                break;
+            }
+            case 1: {
+                string location;
+                cout << "Scooter's location: ";
+                cin >> location;
+
+                try {
+                    scooterController->lastLocationSearch(location);
+                } catch (exception &e) {
+                    cout << "\nThe given location is not valid\n";
+                }
+
+                vector<ElectricScooter> scooters = scooterController->lastLocationSearch(location);
+                for(auto it : scooters)
+                    cout << it.toString() << '\n';
+                break;
+            }
+            case 2: {
+                Date date;
+                int day, month, year;
+
+                cout << "Scooter's commissioning date\n";
+                cout << "Year: ";
+                cin >> year;
+                date.setYear(year);
+                cout << "Month: ";
+                cin >> month;
+                date.setMonth(month);
+                cout << "Day: ";
+                cin >> day;
+                date.setDay(day);
+
+                try {
+                    scooterController->ageFiltered(date);
+                } catch (exception &e) {
+                    cout << "\nThe given date is not valid\n";
+                }
+
+                vector<ElectricScooter> scooters = scooterController->ageFiltered(date);
+                for(auto it : scooters)
+                    cout << it.toString() << '\n';
+                break;
+            }
+            case 3: {
+                float mileage;
+                cout << "Mileage value: ";
+                cin >> mileage;
+
+                try {
+                    scooterController->mileageFiltered(mileage);
+                } catch (exception &e) {
+                    cout << "\nThe given mileage is not valid\n";
+                }
+
+                vector<ElectricScooter> scooters = scooterController->mileageFiltered(mileage);
+                for(auto it : scooters)
+                    cout << it.toString() << '\n';
+                break;
+            }
+            case 4: {
+                string id;
+                showAll();
+
+                cout << "Write de id of the scooter that you want to reserve:\n";
+                cout << ">";
+                cin >> id;
+
+                try {
+                    scooterController->reserveScooter(id);
+                    scooterController->update();
+                    cout << "The selected scooter was reserved\n\n";
+                } catch (exception &e) {
+                    cout << "\nThe selected scooter is not available\n";
+                }
+                break;
+            }
+            case 5: {
+                string id;
+                showAll();
+
+                cout << "Write de id of the scooter that you want to reserve:\n";
+                cout << ">";
+                cin >> id;
+
+                try {
+                    scooterController->useScooter(id);
+                    scooterController->update();
+                } catch (exception &e) {
+                    cout << "\nThe selected scooter is not available\n";
+                }
+                break;
+            }
+            case 6: {
+                showAll();
+                break;
+            }
+
+            default: {
+                cout << "Invalid choice...\n";
+                cout << "Try again\n";
+                clientUI();
+                break;
+            }
+        }
+    }
+}

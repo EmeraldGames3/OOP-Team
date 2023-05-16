@@ -126,3 +126,23 @@ unique_ptr<vector<ElectricScooter>> ElectricScooterRepository::getAllAsPointer()
 void ElectricScooterRepository::deleteAllData() {
     data = std::make_shared<vector<ElectricScooter>>();
 }
+
+void ElectricScooterRepository::reserveScooter(const string &id) {
+    for (auto &i: *data)
+        if (i.getId() == id) {
+            if(i.getCondition() != "Parked")
+                throw exception();
+            i.setCondition("Reserved");
+            return;
+        }
+}
+
+void ElectricScooterRepository::useScooter(const string &id) {
+    for (auto &i: *data)
+        if (i.getId() == id) {
+            if(i.getCondition() != "Parked")
+                throw exception();
+            i.setCondition("In use");
+            return;
+        }
+}

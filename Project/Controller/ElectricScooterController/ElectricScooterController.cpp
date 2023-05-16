@@ -144,3 +144,19 @@ vector<ElectricScooter> ElectricScooterController::lastLocationSearch(const stri
     }
     return matchingScooters;
 }
+
+void ElectricScooterController::update() {
+    repository->update();
+}
+
+void ElectricScooterController::reserveScooter(const string& id) {
+    if (!find(id))
+        throw invalid_argument("");
+    repository->reserveScooter(id);
+}
+
+void ElectricScooterController::useScooter(const string& id) {
+    if (!find(id))
+        throw invalid_argument("");
+    repository->useScooter(id);
+}

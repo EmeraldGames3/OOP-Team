@@ -82,6 +82,7 @@ void testFindElectricScooterController() {
 void testUpdateElectricScooterController() {
     // Create a mock ElectricScooterRepository
     auto repository = make_shared<ElectricScooterRepository>();
+    repository->deleteAllData();
 
     // Create an ElectricScooterController instance using the mock repository
     ElectricScooterController controller(repository);
@@ -196,6 +197,7 @@ void testMileageFilteredElectricScooterController() {
 void testLastLocationSearchElectricScooterController() {
     // Create a mock ElectricScooterRepository
     auto repository = make_shared<ElectricScooterRepository>();
+    repository->deleteAllData();
 
     // Create an ElectricScooterController instance using the mock repository
     ElectricScooterController controller(repository);
