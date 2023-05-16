@@ -7,11 +7,13 @@ namespace Controller {
     private:
         shared_ptr<ElectricScooterRepository> repository;
     public:
-        explicit ElectricScooterController(shared_ptr<ElectricScooterRepository> repo);
+        explicit ElectricScooterController(
+                shared_ptr<ElectricScooterRepository> repo = make_shared<ElectricScooterRepository>(
+                        ElectricScooterRepository()));
 
         void add(string id, string model, string date, float mileage, string location, string condition);
 
-        void remove(string id);
+        void remove(const string& id);
 
         void updateID(const string &id, const string &oldId);
 
@@ -29,14 +31,12 @@ namespace Controller {
 
         vector<ElectricScooter> ageSorted();
 
-        vector<ElectricScooter> ageFiltered(int value);
+        vector<ElectricScooter> ageFiltered(Domain::Date value);
 
         vector<ElectricScooter> mileageFiltered(float value);
 
-        vector<ElectricScooter> lastLocationSearch(string location);
+        vector<ElectricScooter> lastLocationSearch(const string& location);
 
-        bool find(string id);
-
-
+        bool find(const string& id);
     };
 }

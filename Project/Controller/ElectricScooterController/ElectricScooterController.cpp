@@ -1,18 +1,21 @@
 #include "ElectricScooterController.h"
 
+#include <utility>
+
 using namespace Controller;
+using namespace Domain;
 
 ElectricScooterController::ElectricScooterController(shared_ptr<ElectricScooterRepository> repo) {
-    repository = repo;
+    repository = std::move(repo);
 }
 
-void
-ElectricScooterController::add(string id, string model, string date, float mileage, string location, string condition) {
+void ElectricScooterController::add(
+        string id, string model, string date, float mileage, string location, string condition) {
     ElectricScooter scooter(id, model, date, mileage, location, condition);
     repository->add(scooter);
 }
 
-void ElectricScooterController::remove(string id) {
+void ElectricScooterController::remove(const string &id) {
     if (!find(id))
         throw invalid_argument("");
     ElectricScooter scooter(id);
@@ -23,7 +26,7 @@ vector<ElectricScooter> ElectricScooterController::getAll() {
     return repository->getAll();
 }
 
-bool ElectricScooterController::find(string id) {
+bool ElectricScooterController::find(const string &id) {
     vector<ElectricScooter> scooters = getAll();
     for (int i = 0; i < scooters.size(); i++)
         if (scooters[i].getId() == id)
@@ -67,10 +70,53 @@ void ElectricScooterController::updateDate(const string &date, const string &id)
     repository->updateDate(date, id);
 }
 
-vector<ElectricScooter> ElectricScooterController::ageFiltered(int value) {}
+vector<ElectricScooter> ElectricScooterController::ageFiltered(Date value) {
+    vector<ElectricScooter> scooters = getAll();
+    vector<ElectricScooter> filteredScooters;
 
-vector<ElectricScooter> ElectricScooterController::ageSorted() {}
+    // Filter electric scooters based on age
+    for (ElectricScooter scooter: scooters) {
+        if (scooter.getDate() <= value) {
+            // Add the scooter to the filtered list
+            filteredScooters.push_back(scooter);
+        }
+    }
 
-vector<ElectricScooter> ElectricScooterController::mileageFiltered(float value) {}
+    return filteredScooters;
+}
 
-vector<ElectricScooter> ElectricScooterController::lastLocationSearch(string location) {}
+vector<ElectricScooter> ElectricScooterController::ageSorted() {
+    vector<ElectricScooter> scooters = getAll();
+    sort(scooters.begin(), scooters.end(), [](ElectricScooter a, ElectricScooter b) {
+        return a.getDate() < b.getDate();
+    });
+    return scooters;
+}
+
+vector<ElectricScooter> ElectricScooterController::mileageFiltered(float value) {
+    vector<ElectricScooter> scooters = getAll();
+    vector<ElectricScooter> filteredScooters;
+
+    //Filter the scooter based on mileage
+    for (const ElectricScooter &scooter: scooters) {
+        if (scooter.getMileage() <= value) {
+            // Add the scooter to the filtered list
+            filteredScooters.push_back(scooter);
+        }
+    }
+
+    return filteredScooters;
+}
+
+vector<ElectricScooter> ElectricScooterController::lastLocationSearch(const string &location) {
+    vector<ElectricScooter> scooters = getAll();
+    vector<ElectricScooter> matchingScooters;
+
+    // Search for electric scooters with the specified location
+    for (ElectricScooter scooter: scooters) {
+        if(scooter.toString().find(location) != string::npos){
+            matchingScooters.push_back(scooter);
+        }
+    }
+    return matchingScooters;
+}
