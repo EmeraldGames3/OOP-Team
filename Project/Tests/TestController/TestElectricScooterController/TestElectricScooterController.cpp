@@ -87,7 +87,8 @@ void testUpdateElectricScooterController() {
     ElectricScooterController controller(repository);
 
     // Add an electric scooter
-    controller.add("690", "Model A", "2023-05-01", 100.0, "Location A", "Good Condition");
+    controller.add("690", "Model A", "2023-05-01", 100.0,
+                   "Location A", "Good Condition");
 
     // Test updating the model of an existing electric scooter
     controller.updateModel("New Model", "690");
@@ -115,8 +116,116 @@ void testUpdateElectricScooterController() {
     assert(controller.getAll()[0].getDateAsString() == "2023-5-5");
 }
 
+void testAgeFilteredElectricScooterController() {
+    // Create a mock ElectricScooterRepository
+    auto repository = make_shared<ElectricScooterRepository>();
+    repository->deleteAllData();
+    // Create an ElectricScooterController instance using the mock repository
+    ElectricScooterController controller(repository);
+
+    // Add electric scooters with different dates
+    controller.add("123", "Model A", "2023-01-01", 100.0,
+                   "Location A", "Good Condition");
+    controller.add("456", "Model B", "2023-02-01", 200.0,
+                   "Location B", "Fair Condition");
+    controller.add("789", "Model C", "2023-03-01", 300.0,
+                   "Location C", "Excellent Condition");
+
+    // Define the filter date
+    Date filterDate(2023, 2, 15);
+
+    // Filter electric scooters based on age
+    vector<ElectricScooter> filteredScooters = controller.ageFiltered(filterDate);
+
+    // Verify the filtered electric scooters
+    assert(filteredScooters.size() == 2);
+    assert(filteredScooters[0].getId() == "123");
+    assert(filteredScooters[1].getId() == "456");
+}
+
+void testAgeSortedElectricScooterController() {
+    // Create a mock ElectricScooterRepository
+    auto repository = make_shared<ElectricScooterRepository>();
+    repository->deleteAllData();
+    // Create an ElectricScooterController instance using the mock repository
+    ElectricScooterController controller(repository);
+
+    // Add electric scooters with different dates
+    controller.add("123", "Model A", "2023-01-01",
+                   100.0, "Location A", "Good Condition");
+    controller.add("456", "Model B", "2023-03-01",
+                   200.0, "Location B", "Fair Condition");
+    controller.add("789", "Model C", "2023-02-01",
+                   300.0, "Location C", "Excellent Condition");
+
+    // Sort electric scooters based on age
+    vector<ElectricScooter> sortedScooters = controller.ageSorted();
+
+    // Verify the sorted electric scooters
+    assert(sortedScooters.size() == 3);
+    assert(sortedScooters[0].getId() == "123"); // Oldest scooter
+    assert(sortedScooters[1].getId() == "789");
+    assert(sortedScooters[2].getId() == "456"); // Newest scooter
+}
+
+void testMileageFilteredElectricScooterController() {
+    // Create a mock ElectricScooterRepository
+    auto repository = make_shared<ElectricScooterRepository>();
+    repository->deleteAllData();
+
+    // Create an ElectricScooterController instance using the mock repository
+    ElectricScooterController controller(repository);
+
+    // Add electric scooters with different mileage values
+    controller.add("123", "Model A", "2023-01-01",
+                   100.0, "Location A", "Good Condition");
+    controller.add("456", "Model B", "2023-02-01",
+                   200.0, "Location B", "Fair Condition");
+    controller.add("789", "Model C", "2023-03-01",
+                   300.0, "Location C", "Excellent Condition");
+
+    // Filter electric scooters based on mileage
+    vector<ElectricScooter> filteredScooters = controller.mileageFiltered(250.0);
+
+    // Verify the filtered electric scooters
+    assert(filteredScooters.size() == 2);
+    assert(filteredScooters[0].getId() == "123");
+    assert(filteredScooters[1].getId() == "456");
+}
+
+void testLastLocationSearchElectricScooterController() {
+    // Create a mock ElectricScooterRepository
+    auto repository = make_shared<ElectricScooterRepository>();
+
+    // Create an ElectricScooterController instance using the mock repository
+    ElectricScooterController controller(repository);
+
+    // Add electric scooters with different locations
+    controller.add("123", "Model A", "2023-01-01", 100.0,
+                   "Location A", "Good Condition");
+    controller.add("456", "Model B", "2023-02-01", 200.0,
+                   "Location B", "Fair Condition");
+    controller.add("789", "Model C", "2023-03-01", 300.0,
+                   "Location C", "Excellent Condition");
+
+    // Search for electric scooters with the specified location
+    vector<ElectricScooter> matchingScooters = controller.lastLocationSearch("B");
+
+    // Verify the matching electric scooters
+    assert(matchingScooters.size() == 1);
+    assert(matchingScooters[0].getId() == "456");
+
+    // If an empty string is given all scooters should be returned
+    matchingScooters = controller.lastLocationSearch("");
+    assert(matchingScooters.size() == 3);
+}
+
 void testElectricScooterController() {
     testAddAndRemoveElectricScooterController();
     testFindElectricScooterController();
     testUpdateElectricScooterController();
+    testAgeFilteredElectricScooterController();
+    testAgeSortedElectricScooterController();
+    testMileageFilteredElectricScooterController();
+    testLastLocationSearchElectricScooterController();
 }

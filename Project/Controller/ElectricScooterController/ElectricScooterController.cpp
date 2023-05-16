@@ -30,7 +30,7 @@ vector<ElectricScooter> ElectricScooterController::getAll() {
 
 bool ElectricScooterController::find(const string &id) {
     vector<ElectricScooter> scooters = getAll();
-    for (auto &scooter : scooters)
+    for (auto &scooter: scooters)
         if (scooter.getId() == id)
             return true;
     return false;
@@ -120,5 +120,6 @@ vector<ElectricScooter> ElectricScooterController::lastLocationSearch(const stri
             matchingScooters.push_back(scooter);
         }
     }
+
     return matchingScooters;
 }
