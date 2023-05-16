@@ -49,7 +49,7 @@ void ElectricScooterController::updateMileage(float mileage, const string &id) {
 }
 
 void ElectricScooterController::updateID(const string &id, const string &oldId) {
-    if (!find(id))
+    if (!find(oldId))
         throw invalid_argument("");
     repository->updateID(id, oldId);
 }

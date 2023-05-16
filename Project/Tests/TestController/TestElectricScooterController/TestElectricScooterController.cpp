@@ -97,10 +97,8 @@ void testUpdateElectricScooterController() {
     controller.updateMileage(150.0, "690");
     assert(controller.getAll()[0].getMileage() == 150.0);
 
-
-    /**
     // Test updating the ID of an existing electric scooter
-    controller.updateID("690", "691");
+    controller.updateID("691", "690");
     assert(!controller.find("690"));  // Check that the old ID is not found
     assert(controller.find("691"));  // Check that the new ID is found
 
@@ -113,9 +111,8 @@ void testUpdateElectricScooterController() {
     assert(controller.getAll()[0].getCondition() == "Fair Condition");
 
     // Test updating the date of an existing electric scooter
-    controller.updateDate("2023-5-05", "691");
-    assert(controller.getAll()[0].getDateAsString() == "2023-5-05");
-     ***/
+    controller.updateDate("2023-05-05", "691");
+    assert(controller.getAll()[0].getDateAsString() == "2023-5-5");
 }
 
 void testElectricScooterController() {
