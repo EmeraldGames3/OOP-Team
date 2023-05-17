@@ -44,10 +44,13 @@ namespace Controller {
         ///Check if a scooter is in the Data Base
         bool find(const string& id);
 
+        ///Update the repository
         void update();
 
+        ///Reserve a scooter
         void reserveScooter(const string &id);
 
+        ///Use a scooter
         void useScooter(const string &id);
     };
 }

@@ -54,8 +54,10 @@ namespace Repository {
         ///Get a pointer to all data in the Data Base
         unique_ptr<vector<Domain::ElectricScooter>> getAllAsPointer();
 
+        ///Reserve scooter
         void reserveScooter(const string &id);
 
+        ///Use scooter
         void useScooter(const string &id);
     };
 }

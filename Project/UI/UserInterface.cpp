@@ -35,6 +35,8 @@ void UserInterface::mainMenu() {
         default: {
             cout << "\nInvalid choice...\n";
             cout << "Try again\n";
+            cin.clear();
+            cin.ignore();
             mainMenu();
             break;
         }
@@ -106,6 +108,8 @@ void UserInterface::managerMenu() {
             default:
                 cout << "Not a Valid Choice. \n";
                 cout << "Choose again.\n";
+                cin.clear();
+                cin.ignore();
                 managerMenu();
                 break;
         }
@@ -140,7 +144,6 @@ void UserInterface::managerLogIn() {
         throw invalid_argument("");
     cout << "Welcome back " << username << endl;
 }
-
 
 void UserInterface::clientMenu() {
     bool running = true;
@@ -207,6 +210,8 @@ void UserInterface::clientMenu() {
                 cout << "Not a Valid Choice. \n";
                 cout << "Choose again.\n";
                 clientMenu();
+                cin.clear();
+                cin.ignore();
                 break;
         }
     }
