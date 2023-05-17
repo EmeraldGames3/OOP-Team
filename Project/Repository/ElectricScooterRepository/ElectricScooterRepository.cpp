@@ -29,7 +29,8 @@ ElectricScooterRepository::ElectricScooterRepository(const string &_fileName) {
         mileage = stof(words[3]);
         location = words[4];
         condition = words[5];
-        ElectricScooter scooter(id, model, date, mileage, location, condition);
+        ElectricScooter scooter(id, model, date,
+                                mileage, location, condition);
         data->push_back(scooter);
         words.clear(); // clear the vector for the next line
     }
@@ -130,7 +131,7 @@ void ElectricScooterRepository::deleteAllData() {
 void ElectricScooterRepository::reserveScooter(const string &id) {
     for (auto &i: *data)
         if (i.getId() == id) {
-            if(i.getCondition() != "Parked")
+            if (i.getCondition() != "Parked")
                 throw exception();
             i.setCondition("Reserved");
             return;
@@ -140,7 +141,7 @@ void ElectricScooterRepository::reserveScooter(const string &id) {
 void ElectricScooterRepository::useScooter(const string &id) {
     for (auto &i: *data)
         if (i.getId() == id) {
-            if(i.getCondition() != "Parked")
+            if (i.getCondition() != "Parked")
                 throw exception();
             i.setCondition("In use");
             return;

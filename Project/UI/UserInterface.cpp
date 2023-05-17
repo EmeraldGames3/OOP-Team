@@ -396,7 +396,7 @@ void UserInterface::updateCondition(const string &id) {
 
 void UserInterface::managerUI() {
     int userInput = -1;
-    while(userInput != 0) {
+    while (userInput != 0) {
         cout << "----------------------- MANAGER UI -----------------------";
         cout << "\n\nChoose one of the followings\n\n";
         cout << "0. Back\n";
@@ -474,7 +474,7 @@ void UserInterface::managerUI() {
                 }
 
                 vector<ElectricScooter> scooters = scooterController->lastLocationSearch(location);
-                for(auto it : scooters)
+                for (auto it: scooters)
                     cout << it.toString() << '\n';
                 break;
             }
@@ -500,7 +500,7 @@ void UserInterface::managerUI() {
                 }
 
                 vector<ElectricScooter> scooters = scooterController->ageFiltered(date);
-                for(auto it : scooters)
+                for (auto it: scooters)
                     cout << it.toString() << '\n';
                 break;
             }
@@ -516,13 +516,13 @@ void UserInterface::managerUI() {
                 }
 
                 vector<ElectricScooter> scooters = scooterController->mileageFiltered(mileage);
-                for(auto it : scooters)
+                for (auto it: scooters)
                     cout << it.toString() << '\n';
                 break;
             }
             case 7: {
                 vector<ElectricScooter> scooters = scooterController->ageSorted();
-                for(auto it : scooters)
+                for (auto it: scooters)
                     cout << it.toString() << '\n';
                 break;
             }
@@ -543,7 +543,7 @@ void UserInterface::managerUI() {
 
 void UserInterface::clientUI() {
     int userInput = -1;
-    while(userInput != 0) {
+    while (userInput != 0) {
         cout << "----------------------- Client UI -----------------------";
         cout << "\n\nChoose one of the followings\n\n";
         cout << "0. Back\n";
@@ -574,7 +574,7 @@ void UserInterface::clientUI() {
                 }
 
                 vector<ElectricScooter> scooters = scooterController->lastLocationSearch(location);
-                for(auto it : scooters)
+                for (auto it: scooters)
                     cout << it.toString() << '\n';
                 break;
             }
@@ -600,7 +600,7 @@ void UserInterface::clientUI() {
                 }
 
                 vector<ElectricScooter> scooters = scooterController->ageFiltered(date);
-                for(auto it : scooters)
+                for (auto it: scooters)
                     cout << it.toString() << '\n';
                 break;
             }
@@ -616,7 +616,7 @@ void UserInterface::clientUI() {
                 }
 
                 vector<ElectricScooter> scooters = scooterController->mileageFiltered(mileage);
-                for(auto it : scooters)
+                for (auto it: scooters)
                     cout << it.toString() << '\n';
                 break;
             }
