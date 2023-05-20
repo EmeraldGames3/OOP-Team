@@ -15,6 +15,7 @@ namespace Domain {
         float mileage;
         string lastLocation;
         string currentCondition;
+        bool reserved;
 
     public:
         ///Default constructor
@@ -26,12 +27,13 @@ namespace Domain {
         explicit ElectricScooter(string _id);
 
         ///Getters
-        [[nodiscard]] string getModel();
-        [[nodiscard]] string getDateAsString();
-        [[nodiscard]] Date getDate();
+        [[nodiscard]] string getModel() const;
+        [[nodiscard]] string getDateAsString() const;
+        [[nodiscard]] Date getDate() const;
         [[nodiscard]] float getMileage() const;
-        [[nodiscard]] string getLocation();
-        [[nodiscard]] string getCondition();
+        [[nodiscard]] string getLocation() const;
+        [[nodiscard]] string getCondition() const;
+        [[nodiscard]] bool isReserved() const;
 
         ///Setters
         void setModel(const string &newModel);
@@ -40,6 +42,8 @@ namespace Domain {
         void setMileage(float newMileage);
         void setLocation(const string &newLocation);
         void setCondition(const string &newCondition);
+        void reserve();
+        void free();
 
         ///Convert the object to string form
         string toString();

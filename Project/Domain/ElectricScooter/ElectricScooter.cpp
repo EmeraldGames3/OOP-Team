@@ -8,19 +8,29 @@ using Domain::ElectricScooter, Domain::Date;
  * @brief Default constructor for the class Electric scooter
  * @warning The received strings are moved from their place in memory for efficiency purposes
  *          It is unsafe to use the strings after they have been received by this function
- * @throws invalid_argument if the identifier is invalid
+ * @throws invalid_argument if any of the parameters are invalid
  */
 ElectricScooter::ElectricScooter(string _identifier, string _model, const string &_commissioningDate, float _mileage,
                                  string _lastLocation,
                                  string _currentCondition) {
     if (_identifier.size() != 3)
         throw std::invalid_argument("Invalid ID");
+    if (mileage < 0)
+        throw std::invalid_argument("Mileage should be a positive boolean value");
+
+    try {
+        commissioningDate = Date::getDateFromString(_commissioningDate);
+    } catch (const std::invalid_argument &exception) {
+        throw std::invalid_argument(exception.what()); //propagate the exception
+    }
+
     identifier = std::move(_identifier);
     model = std::move(_model);
     mileage = _mileage;
+
     lastLocation = std::move(_lastLocation);
     currentCondition = std::move(_currentCondition);
-    commissioningDate = Date::getDateFromString(_commissioningDate);
+    reserved = false;
 }
 
 ///Constructor with 1 parameter
@@ -34,27 +44,35 @@ ElectricScooter::ElectricScooter(string _id) {
     mileage = 0.0;
     lastLocation = "";
     currentCondition = "";
+    reserved = false;
 }
 
 ///Get the date in string form
-string ElectricScooter::getDateAsString() { return commissioningDate.getDateAsFormattedString(); }
+string ElectricScooter::getDateAsString() const {
+    return commissioningDate.getDateAsFormattedString();
+}
 
 ///Date getter
-Date ElectricScooter::getDate() {
+Date ElectricScooter::getDate() const {
     return commissioningDate;
 }
 
 ///Condition getter
-string ElectricScooter::getCondition() { return currentCondition; }
+string ElectricScooter::getCondition() const { return currentCondition; }
 
 ///Location getter
-string ElectricScooter::getLocation() { return lastLocation; }
+string ElectricScooter::getLocation() const { return lastLocation; }
 
 ///Mileage getter
 float ElectricScooter::getMileage() const { return mileage; }
 
 ///Model getter
-string ElectricScooter::getModel() { return model; }
+string ElectricScooter::getModel() const { return model; }
+
+///Check if a scooter is or not reserved
+bool Domain::ElectricScooter::isReserved() const {
+    return reserved;
+}
 
 ///Date setter
 ///@details Converts the date from string form and sets the data
@@ -110,3 +128,14 @@ bool Domain::ElectricScooter::operator==(const ElectricScooter &other) {
 bool Domain::ElectricScooter::operator!=(const ElectricScooter &other) {
     return !(*this == other);
 }
+
+///Reserve a scooter
+void Domain::ElectricScooter::reserve() {
+    reserved = true;
+}
+
+///Free a scooter
+void Domain::ElectricScooter::free() {
+    reserved = false;
+}
+
