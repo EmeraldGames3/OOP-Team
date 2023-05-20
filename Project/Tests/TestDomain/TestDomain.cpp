@@ -5,4 +5,4 @@
 void testDomain() {
     testDate();
     testUser();
-};
+}

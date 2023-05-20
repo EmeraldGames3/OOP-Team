@@ -624,7 +624,7 @@ void UserInterface::clientUI() {
                 string id;
                 showAll();
 
-                cout << "Write de id of the scooter that you want to reserve:\n";
+                cout << "Write de identifier of the scooter that you want to reserve:\n";
                 cout << ">";
                 cin >> id;
 
@@ -641,7 +641,7 @@ void UserInterface::clientUI() {
                 string id;
                 showAll();
 
-                cout << "Write de id of the scooter that you want to reserve:\n";
+                cout << "Write de identifier of the scooter that you want to reserve:\n";
                 cout << ">";
                 cin >> id;
 

@@ -7,6 +7,7 @@ using namespace Domain;
 ///Constructor
 User::User(string _username, string _password) {
     username = std::move(_username);
+    identifier = username;
     password = std::move(_password);
 }
 
@@ -22,6 +23,7 @@ string User::getPassword() const { return password; }
 ///@details can be overloaded
 void User::setUsername(const string &newUsername) {
     username = newUsername;
+    identifier = username;
 }
 
 ///Password setter
@@ -29,3 +31,9 @@ void User::setUsername(const string &newUsername) {
 void User::setPassword(const string &newPassword) {
     password = newPassword;
 }
+
+///Override id setter
+void User::setId(const string &newID) {
+    setUsername(newID);
+}
+

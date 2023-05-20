@@ -13,10 +13,11 @@ int main() {
 //    shared_ptr<UserController> controllerU = make_shared<UserController>(repo1, repo2);
 //    shared_ptr<ElectricScooterController> controllerS = make_shared<ElectricScooterController>(repo3);
 
+    /*
     shared_ptr<UserController> controllerU = make_shared<UserController>();
     shared_ptr<ElectricScooterController> controllerS = make_shared<ElectricScooterController>();
     UserInterface ui(controllerU, controllerS);
     ui.mainMenu();
-
+    */
     return 0;
 }

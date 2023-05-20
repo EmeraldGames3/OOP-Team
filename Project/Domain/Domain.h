@@ -8,12 +8,11 @@
 
 namespace Domain {
     class Date;
-
     class Client;
-
     class Manager;
-
     class User;
-
     class ElectricScooter;
+    class ObjectWithId;
+
+    template<typename T> concept IsSubclassOfObjectWithID = std::is_base_of<ObjectWithId, T>::value;
 }

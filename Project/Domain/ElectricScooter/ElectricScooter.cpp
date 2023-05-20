@@ -8,7 +8,7 @@ using Domain::ElectricScooter, Domain::Date;
  * @brief Default constructor for the class Electric scooter
  * @warning The received strings are moved from their place in memory for efficiency purposes
  *          It is unsafe to use the strings after they have been received by this function
- * @throws invalid_argument if the id is invalid
+ * @throws invalid_argument if the identifier is invalid
  */
 ElectricScooter::ElectricScooter(string _identifier, string _model, const string &_commissioningDate, float _mileage,
                                  string _lastLocation,
@@ -24,7 +24,7 @@ ElectricScooter::ElectricScooter(string _identifier, string _model, const string
 }
 
 ///Constructor with 1 parameter
-///@throws invalid_argument if the id has an invalid format
+///@throws invalid_argument if the identifier has an invalid format
 ElectricScooter::ElectricScooter(string _id) {
     if (_id.size() != 3)
         throw std::invalid_argument("Invalid ID");
@@ -46,9 +46,6 @@ Date ElectricScooter::getDate() {
 
 ///Condition getter
 string ElectricScooter::getCondition() { return currentCondition; }
-
-///ID getter
-string ElectricScooter::getId() { return identifier; }
 
 ///Location getter
 string ElectricScooter::getLocation() { return lastLocation; }
@@ -86,14 +83,6 @@ void ElectricScooter::setLocation(const string &newLocation) {
     lastLocation = newLocation;
 }
 
-///ID setter
-///@throws invalid_argument if the id has an invalid format
-void ElectricScooter::setId(const string &newID) {
-    if (newID.size() != 3)
-        throw std::invalid_argument("Invalid ID");
-    identifier = newID;
-}
-
 ///Mileage setter
 void ElectricScooter::setMileage(float newMileage) { mileage = newMileage; }
 
@@ -111,7 +100,7 @@ string Domain::ElectricScooter::toString() {
 }
 
 ///Overloaded == operator
-///Two objects are equal if they have the same id
+///Two objects are equal if they have the same identifier
 bool Domain::ElectricScooter::operator==(const ElectricScooter &other) {
     return this->identifier == other.identifier;
 }

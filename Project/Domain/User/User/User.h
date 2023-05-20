@@ -1,11 +1,13 @@
+#pragma once
+
 #include <iostream>
 #include <string>
+#include "../../ObjectWithID.h"
 
-#pragma once
 using namespace std;
 namespace Domain {
     ///This class represents a generic user
-    class User {
+    class User : public  ObjectWithId{
     protected:
         string username;
         string password;
@@ -21,5 +23,8 @@ namespace Domain {
         ///Setters
         virtual void setUsername(const string &newUsername);
         virtual void setPassword(const string &newPassword);
+
+        ///We consider that username == id for this type of object
+        void setId(const string &newID) override;
     };
 }

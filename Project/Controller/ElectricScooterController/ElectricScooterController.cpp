@@ -20,7 +20,7 @@ void ElectricScooterController::add(
 }
 
 ///Remove a scooter from the Data Base
-///@throws invalid_argument if the id of the scooter to be removed does not exist
+///@throws invalid_argument if the identifier of the scooter to be removed does not exist
 void ElectricScooterController::remove(const string &id) {
     if (!find(id))
         throw invalid_argument("");
@@ -43,7 +43,7 @@ bool ElectricScooterController::find(const string &id) {
 }
 
 ///Update the model of a scooter
-///@throws invalid_argument if the scooter id does not exist
+///@throws invalid_argument if the scooter identifier does not exist
 void ElectricScooterController::updateModel(const string &model, const string &id) {
     if (!find(id))
         throw invalid_argument("");
@@ -51,15 +51,15 @@ void ElectricScooterController::updateModel(const string &model, const string &i
 }
 
 ///Update the mileage of a scooter
-///@throws invalid_argument if the scooter id does not exist
+///@throws invalid_argument if the scooter identifier does not exist
 void ElectricScooterController::updateMileage(float mileage, const string &id) {
     if (!find(id))
         throw invalid_argument("");
     repository->updateMileage(mileage, id);
 }
 
-///Update the id of a scooter
-///@throws invalid_argument if the scooter id does not exist
+///Update the identifier of a scooter
+///@throws invalid_argument if the scooter identifier does not exist
 void ElectricScooterController::updateID(const string &id, const string &oldId) {
     if (!find(oldId))
         throw invalid_argument("");
@@ -67,7 +67,7 @@ void ElectricScooterController::updateID(const string &id, const string &oldId) 
 }
 
 ///Update the last location of scooter
-///@throws invalid_argument if the scooter id does not exist
+///@throws invalid_argument if the scooter identifier does not exist
 void ElectricScooterController::updateLocation(const string &location, const string &id) {
     if (!find(id))
         throw invalid_argument("");
@@ -75,7 +75,7 @@ void ElectricScooterController::updateLocation(const string &location, const str
 }
 
 ///Update the condition of a scooter
-///@throws invalid_argument if the scooter id does not exist
+///@throws invalid_argument if the scooter identifier does not exist
 void ElectricScooterController::updateCondition(const string &condition, const string &id) {
     if (!find(id))
         throw invalid_argument("");
@@ -83,7 +83,7 @@ void ElectricScooterController::updateCondition(const string &condition, const s
 }
 
 ///Update the commissioning Date of a scooter
-///@throws invalid_argument if the scooter id does not exist
+///@throws invalid_argument if the scooter identifier does not exist
 void ElectricScooterController::updateDate(const string &date, const string &id) {
     if (!find(id))
         throw invalid_argument("");

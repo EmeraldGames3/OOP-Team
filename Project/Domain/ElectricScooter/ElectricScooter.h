@@ -3,13 +3,13 @@
 #include <iostream>
 #include <sstream>
 #include "../Date/Date.h"
+#include "../ObjectWithID.h"
 
 using std::string;
 
 namespace Domain {
-    class ElectricScooter {
+    class ElectricScooter : public ObjectWithId{
     private:
-        string identifier;
         string model;
         Date commissioningDate;
         float mileage;
@@ -26,7 +26,6 @@ namespace Domain {
         explicit ElectricScooter(string _id);
 
         ///Getters
-        [[nodiscard]] string getId();
         [[nodiscard]] string getModel();
         [[nodiscard]] string getDateAsString();
         [[nodiscard]] Date getDate();
@@ -35,7 +34,6 @@ namespace Domain {
         [[nodiscard]] string getCondition();
 
         ///Setters
-        void setId(const string &newID);
         void setModel(const string &newModel);
         void setDate(const string &newDate);
         void setDate(const Date &newDate);
