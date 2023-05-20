@@ -128,6 +128,30 @@ Project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/build
 .PHONY : Project/fast
 
+Controller/UserController/UserController.obj: Controller/UserController/UserController.cpp.obj
+.PHONY : Controller/UserController/UserController.obj
+
+# target to build an object file
+Controller/UserController/UserController.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.obj
+.PHONY : Controller/UserController/UserController.cpp.obj
+
+Controller/UserController/UserController.i: Controller/UserController/UserController.cpp.i
+.PHONY : Controller/UserController/UserController.i
+
+# target to preprocess a source file
+Controller/UserController/UserController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.i
+.PHONY : Controller/UserController/UserController.cpp.i
+
+Controller/UserController/UserController.s: Controller/UserController/UserController.cpp.s
+.PHONY : Controller/UserController/UserController.s
+
+# target to generate assembly for a file
+Controller/UserController/UserController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.s
+.PHONY : Controller/UserController/UserController.cpp.s
+
 Domain/Date/Date.obj: Domain/Date/Date.cpp.obj
 .PHONY : Domain/Date/Date.obj
 
@@ -271,6 +295,30 @@ Repository/CSV-FileRepository/CSV-FileRepository.s: Repository/CSV-FileRepositor
 Repository/CSV-FileRepository/CSV-FileRepository.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Repository/CSV-FileRepository/CSV-FileRepository.cpp.s
 .PHONY : Repository/CSV-FileRepository/CSV-FileRepository.cpp.s
+
+Repository/InMemoryRepository/InMemoryRepository.obj: Repository/InMemoryRepository/InMemoryRepository.cpp.obj
+.PHONY : Repository/InMemoryRepository/InMemoryRepository.obj
+
+# target to build an object file
+Repository/InMemoryRepository/InMemoryRepository.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.obj
+.PHONY : Repository/InMemoryRepository/InMemoryRepository.cpp.obj
+
+Repository/InMemoryRepository/InMemoryRepository.i: Repository/InMemoryRepository/InMemoryRepository.cpp.i
+.PHONY : Repository/InMemoryRepository/InMemoryRepository.i
+
+# target to preprocess a source file
+Repository/InMemoryRepository/InMemoryRepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.i
+.PHONY : Repository/InMemoryRepository/InMemoryRepository.cpp.i
+
+Repository/InMemoryRepository/InMemoryRepository.s: Repository/InMemoryRepository/InMemoryRepository.cpp.s
+.PHONY : Repository/InMemoryRepository/InMemoryRepository.s
+
+# target to generate assembly for a file
+Repository/InMemoryRepository/InMemoryRepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.s
+.PHONY : Repository/InMemoryRepository/InMemoryRepository.cpp.s
 
 Tests/TestAll.obj: Tests/TestAll.cpp.obj
 .PHONY : Tests/TestAll.obj
@@ -416,6 +464,30 @@ Tests/TestDomain/TestUser/TestUser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.s
 .PHONY : Tests/TestDomain/TestUser/TestUser.cpp.s
 
+Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.obj: Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.obj
+.PHONY : Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.obj
+
+# target to build an object file
+Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.obj
+.PHONY : Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.obj
+
+Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.i: Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.i
+.PHONY : Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.i
+
+# target to preprocess a source file
+Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.i
+.PHONY : Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.i
+
+Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.s: Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.s
+.PHONY : Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.s
+
+# target to generate assembly for a file
+Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.s
+.PHONY : Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.s
+
 Tests/TestRepository/TestRepository.obj: Tests/TestRepository/TestRepository.cpp.obj
 .PHONY : Tests/TestRepository/TestRepository.obj
 
@@ -473,6 +545,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Project
+	@echo ... Controller/UserController/UserController.obj
+	@echo ... Controller/UserController/UserController.i
+	@echo ... Controller/UserController/UserController.s
 	@echo ... Domain/Date/Date.obj
 	@echo ... Domain/Date/Date.i
 	@echo ... Domain/Date/Date.s
@@ -491,6 +566,9 @@ help:
 	@echo ... Repository/CSV-FileRepository/CSV-FileRepository.obj
 	@echo ... Repository/CSV-FileRepository/CSV-FileRepository.i
 	@echo ... Repository/CSV-FileRepository/CSV-FileRepository.s
+	@echo ... Repository/InMemoryRepository/InMemoryRepository.obj
+	@echo ... Repository/InMemoryRepository/InMemoryRepository.i
+	@echo ... Repository/InMemoryRepository/InMemoryRepository.s
 	@echo ... Tests/TestAll.obj
 	@echo ... Tests/TestAll.i
 	@echo ... Tests/TestAll.s
@@ -509,6 +587,9 @@ help:
 	@echo ... Tests/TestDomain/TestUser/TestUser.obj
 	@echo ... Tests/TestDomain/TestUser/TestUser.i
 	@echo ... Tests/TestDomain/TestUser/TestUser.s
+	@echo ... Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.obj
+	@echo ... Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.i
+	@echo ... Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.s
 	@echo ... Tests/TestRepository/TestRepository.obj
 	@echo ... Tests/TestRepository/TestRepository.i
 	@echo ... Tests/TestRepository/TestRepository.s

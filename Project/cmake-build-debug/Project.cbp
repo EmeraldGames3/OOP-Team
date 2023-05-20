@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Programming/OOP-Team/Project/Controller/UserController/UserController.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="D:/Programming/OOP-Team/Project/Controller/UserController/UserController.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="D:/Programming/OOP-Team/Project/Domain/Date/Date.cpp">
 			<Option target="Project"/>
 		</Unit>
@@ -118,6 +124,12 @@
 		<Unit filename="D:/Programming/OOP-Team/Project/Repository/CSV-FileRepository/CSV-FileRepository.h">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="D:/Programming/OOP-Team/Project/Repository/InMemoryRepository/InMemoryRepository.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="D:/Programming/OOP-Team/Project/Repository/InMemoryRepository/InMemoryRepository.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestAll.cpp">
 			<Option target="Project"/>
 		</Unit>
@@ -152,6 +164,12 @@
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestDomain/TestUser/TestUser.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestRepository/TestRepository.cpp">

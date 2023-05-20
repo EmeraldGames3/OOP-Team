@@ -1,3 +1,4 @@
+#pragma once
 //#include "../../Repository/UserRepositories/ClientRepository/ClientRepository.h"
 //#include "../../Repository/UserRepositories/ManagerRepository/ManagerRepository.h"
 //#include <memory>

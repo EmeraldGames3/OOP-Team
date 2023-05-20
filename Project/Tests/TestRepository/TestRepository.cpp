@@ -1,7 +1,6 @@
 #include "TestRepository.h"
-#include "../../Repository/Repository.h"
-#include <cassert>
+#include "TestInMemoryRepository/TestInMemoryRepository.h"
 
 void testRepository() {
-
+    testInMemoryRepository();
 }

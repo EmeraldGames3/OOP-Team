@@ -264,6 +264,48 @@ CMakeFiles/Project.dir/Domain/Date/Date.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Domain/Date/Date.cpp.s"
 	C:\Users\boboo\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\OOP-Team\Project\Domain\Date\Date.cpp -o CMakeFiles\Project.dir\Domain\Date\Date.cpp.s
 
+CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.obj: D:/Programming/OOP-Team/Project/Repository/InMemoryRepository/InMemoryRepository.cpp
+CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.obj: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\OOP-Team\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.obj"
+	C:\Users\boboo\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.obj -MF CMakeFiles\Project.dir\Repository\InMemoryRepository\InMemoryRepository.cpp.obj.d -o CMakeFiles\Project.dir\Repository\InMemoryRepository\InMemoryRepository.cpp.obj -c D:\Programming\OOP-Team\Project\Repository\InMemoryRepository\InMemoryRepository.cpp
+
+CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.i"
+	C:\Users\boboo\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\OOP-Team\Project\Repository\InMemoryRepository\InMemoryRepository.cpp > CMakeFiles\Project.dir\Repository\InMemoryRepository\InMemoryRepository.cpp.i
+
+CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.s"
+	C:\Users\boboo\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\OOP-Team\Project\Repository\InMemoryRepository\InMemoryRepository.cpp -o CMakeFiles\Project.dir\Repository\InMemoryRepository\InMemoryRepository.cpp.s
+
+CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.obj: D:/Programming/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp
+CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.obj: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\OOP-Team\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.obj"
+	C:\Users\boboo\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.obj -MF CMakeFiles\Project.dir\Tests\TestRepository\TestInMemoryRepository\TestInMemoryRepository.cpp.obj.d -o CMakeFiles\Project.dir\Tests\TestRepository\TestInMemoryRepository\TestInMemoryRepository.cpp.obj -c D:\Programming\OOP-Team\Project\Tests\TestRepository\TestInMemoryRepository\TestInMemoryRepository.cpp
+
+CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.i"
+	C:\Users\boboo\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\OOP-Team\Project\Tests\TestRepository\TestInMemoryRepository\TestInMemoryRepository.cpp > CMakeFiles\Project.dir\Tests\TestRepository\TestInMemoryRepository\TestInMemoryRepository.cpp.i
+
+CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.s"
+	C:\Users\boboo\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\OOP-Team\Project\Tests\TestRepository\TestInMemoryRepository\TestInMemoryRepository.cpp -o CMakeFiles\Project.dir\Tests\TestRepository\TestInMemoryRepository\TestInMemoryRepository.cpp.s
+
+CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.obj: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.obj: D:/Programming/OOP-Team/Project/Controller/UserController/UserController.cpp
+CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.obj: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\OOP-Team\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.obj"
+	C:\Users\boboo\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.obj -MF CMakeFiles\Project.dir\Controller\UserController\UserController.cpp.obj.d -o CMakeFiles\Project.dir\Controller\UserController\UserController.cpp.obj -c D:\Programming\OOP-Team\Project\Controller\UserController\UserController.cpp
+
+CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.i"
+	C:\Users\boboo\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\OOP-Team\Project\Controller\UserController\UserController.cpp > CMakeFiles\Project.dir\Controller\UserController\UserController.cpp.i
+
+CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.s"
+	C:\Users\boboo\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9011.31\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\OOP-Team\Project\Controller\UserController\UserController.cpp -o CMakeFiles\Project.dir\Controller\UserController\UserController.cpp.s
+
 # Object files for target Project
 Project_OBJECTS = \
 "CMakeFiles/Project.dir/main.cpp.obj" \
@@ -279,7 +321,10 @@ Project_OBJECTS = \
 "CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.obj" \
 "CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.obj" \
 "CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.obj" \
-"CMakeFiles/Project.dir/Domain/Date/Date.cpp.obj"
+"CMakeFiles/Project.dir/Domain/Date/Date.cpp.obj" \
+"CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.obj" \
+"CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.obj" \
+"CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.obj"
 
 # External object files for target Project
 Project_EXTERNAL_OBJECTS =
@@ -298,11 +343,14 @@ Project.exe: CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.obj
 Project.exe: CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.obj
 Project.exe: CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.obj
 Project.exe: CMakeFiles/Project.dir/Domain/Date/Date.cpp.obj
+Project.exe: CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.obj
+Project.exe: CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.obj
+Project.exe: CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.obj
 Project.exe: CMakeFiles/Project.dir/build.make
 Project.exe: CMakeFiles/Project.dir/linkLibs.rsp
 Project.exe: CMakeFiles/Project.dir/objects1
 Project.exe: CMakeFiles/Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Programming\OOP-Team\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable Project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Programming\OOP-Team\Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
