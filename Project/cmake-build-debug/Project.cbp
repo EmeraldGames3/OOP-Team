@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Programming/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="D:/Programming/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="D:/Programming/OOP-Team/Project/Controller/UserController/UserController.cpp">
 			<Option target="Project"/>
 		</Unit>

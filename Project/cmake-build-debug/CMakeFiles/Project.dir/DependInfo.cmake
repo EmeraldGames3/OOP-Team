@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/Programming/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.cpp" "CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.obj" "gcc" "CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.obj.d"
   "D:/Programming/OOP-Team/Project/Controller/UserController/UserController.cpp" "CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.obj" "gcc" "CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.obj.d"
   "D:/Programming/OOP-Team/Project/Domain/Date/Date.cpp" "CMakeFiles/Project.dir/Domain/Date/Date.cpp.obj" "gcc" "CMakeFiles/Project.dir/Domain/Date/Date.cpp.obj.d"
   "D:/Programming/OOP-Team/Project/Domain/ElectricScooter/ElectricScooter.cpp" "CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.obj" "gcc" "CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.obj.d"

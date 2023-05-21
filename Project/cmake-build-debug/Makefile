@@ -128,6 +128,30 @@ Project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/build
 .PHONY : Project/fast
 
+Controller/ElectricScooterController/ElectricScooterController.obj: Controller/ElectricScooterController/ElectricScooterController.cpp.obj
+.PHONY : Controller/ElectricScooterController/ElectricScooterController.obj
+
+# target to build an object file
+Controller/ElectricScooterController/ElectricScooterController.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.obj
+.PHONY : Controller/ElectricScooterController/ElectricScooterController.cpp.obj
+
+Controller/ElectricScooterController/ElectricScooterController.i: Controller/ElectricScooterController/ElectricScooterController.cpp.i
+.PHONY : Controller/ElectricScooterController/ElectricScooterController.i
+
+# target to preprocess a source file
+Controller/ElectricScooterController/ElectricScooterController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.i
+.PHONY : Controller/ElectricScooterController/ElectricScooterController.cpp.i
+
+Controller/ElectricScooterController/ElectricScooterController.s: Controller/ElectricScooterController/ElectricScooterController.cpp.s
+.PHONY : Controller/ElectricScooterController/ElectricScooterController.s
+
+# target to generate assembly for a file
+Controller/ElectricScooterController/ElectricScooterController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project.dir\build.make CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.s
+.PHONY : Controller/ElectricScooterController/ElectricScooterController.cpp.s
+
 Controller/UserController/UserController.obj: Controller/UserController/UserController.cpp.obj
 .PHONY : Controller/UserController/UserController.obj
 
@@ -545,6 +569,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Project
+	@echo ... Controller/ElectricScooterController/ElectricScooterController.obj
+	@echo ... Controller/ElectricScooterController/ElectricScooterController.i
+	@echo ... Controller/ElectricScooterController/ElectricScooterController.s
 	@echo ... Controller/UserController/UserController.obj
 	@echo ... Controller/UserController/UserController.i
 	@echo ... Controller/UserController/UserController.s

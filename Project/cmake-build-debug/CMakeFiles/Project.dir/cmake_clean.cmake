@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.obj"
+  "CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.obj.d"
   "CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.obj"
   "CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.obj.d"
   "CMakeFiles/Project.dir/Domain/Date/Date.cpp.obj"
