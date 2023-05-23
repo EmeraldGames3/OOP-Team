@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project.dir/Tests/TestAll.cpp.o.d"
   "CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.o"
   "CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.o.d"
+  "CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o"
+  "CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o.d"
   "CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o"
   "CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o.d"
   "CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o"

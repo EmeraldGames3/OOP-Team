@@ -3,7 +3,7 @@
 
 using namespace Controller;
 
-UserController::UserController(shared_ptr<CrudRepository<User>> clientRepo,
+UserController::UserController(shared_ptr<CrudRepository<Client>> clientRepo,
                                shared_ptr<CrudRepository<Manager>> managerRepo) {
     clientRepository = std::move(clientRepo);
     managerRepository = std::move(managerRepo);

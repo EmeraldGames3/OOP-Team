@@ -393,6 +393,30 @@ Tests/TestController/TestController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.s
 .PHONY : Tests/TestController/TestController.cpp.s
 
+Tests/TestController/TestUserController/TestUserController.o: Tests/TestController/TestUserController/TestUserController.cpp.o
+.PHONY : Tests/TestController/TestUserController/TestUserController.o
+
+# target to build an object file
+Tests/TestController/TestUserController/TestUserController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o
+.PHONY : Tests/TestController/TestUserController/TestUserController.cpp.o
+
+Tests/TestController/TestUserController/TestUserController.i: Tests/TestController/TestUserController/TestUserController.cpp.i
+.PHONY : Tests/TestController/TestUserController/TestUserController.i
+
+# target to preprocess a source file
+Tests/TestController/TestUserController/TestUserController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.i
+.PHONY : Tests/TestController/TestUserController/TestUserController.cpp.i
+
+Tests/TestController/TestUserController/TestUserController.s: Tests/TestController/TestUserController/TestUserController.cpp.s
+.PHONY : Tests/TestController/TestUserController/TestUserController.s
+
+# target to generate assembly for a file
+Tests/TestController/TestUserController/TestUserController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.s
+.PHONY : Tests/TestController/TestUserController/TestUserController.cpp.s
+
 Tests/TestDomain/TestDate/TestDate.o: Tests/TestDomain/TestDate/TestDate.cpp.o
 .PHONY : Tests/TestDomain/TestDate/TestDate.o
 
@@ -627,6 +651,9 @@ help:
 	@echo "... Tests/TestController/TestController.o"
 	@echo "... Tests/TestController/TestController.i"
 	@echo "... Tests/TestController/TestController.s"
+	@echo "... Tests/TestController/TestUserController/TestUserController.o"
+	@echo "... Tests/TestController/TestUserController/TestUserController.i"
+	@echo "... Tests/TestController/TestUserController/TestUserController.s"
 	@echo "... Tests/TestDomain/TestDate/TestDate.o"
 	@echo "... Tests/TestDomain/TestDate/TestDate.i"
 	@echo "... Tests/TestDomain/TestDate/TestDate.s"

@@ -5,6 +5,5 @@
 
 namespace Controller {
     class ElectricScooterController;
-
     class UserController;
 }

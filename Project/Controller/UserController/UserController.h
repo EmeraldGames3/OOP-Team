@@ -8,12 +8,14 @@ using namespace Repository;
 
 namespace Controller {
     class UserController {
-    public:
-        shared_ptr<CrudRepository<User>> clientRepository;
+    private:
+        shared_ptr<CrudRepository<Client>> clientRepository;
         shared_ptr<CrudRepository<Manager>> managerRepository;
 
+        friend class ElectricScooterController;
+
     public:
-        explicit UserController(shared_ptr<CrudRepository<User>> clientRepo,
+        explicit UserController(shared_ptr<CrudRepository<Client>> clientRepo,
                                 shared_ptr<CrudRepository<Manager>> managerRepo);
 
         void addClient(const string &username, const string &password);
@@ -36,8 +38,9 @@ namespace Controller {
 
         bool updateManager(const Manager &oldClient, const Manager &updatedClient);
 
+    private:
+        ///This function can only be used from ElectricScooterController
         bool reserveScooter(Client client, const shared_ptr<ElectricScooter> &electricScooter);
-
         bool freeScooter(Client client, const shared_ptr<ElectricScooter> &electricScooter);
     };
 }

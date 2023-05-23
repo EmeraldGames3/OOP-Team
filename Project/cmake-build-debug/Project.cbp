@@ -148,6 +148,12 @@
 		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestController.h">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestUserController/TestUserController.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestUserController/TestUserController.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDate/TestDate.cpp">
 			<Option target="Project"/>
 		</Unit>
