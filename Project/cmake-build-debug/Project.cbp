@@ -8,186 +8,186 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/Programming/OOP-Team/Project/cmake-build-debug"/>
+				<Option working_dir="/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project">
-				<Option output="D:/Programming/OOP-Team/Project/cmake-build-debug/Project.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Programming/OOP-Team/Project/cmake-build-debug"/>
+				<Option output="/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project"/>
-					<CompileFile command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project/fast">
-				<Option output="D:/Programming/OOP-Team/Project/cmake-build-debug/Project.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Programming/OOP-Team/Project/cmake-build-debug"/>
+				<Option output="/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project/fast"/>
-					<CompileFile command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/Programming/OOP-Team/Project/cmake-build-debug"/>
+				<Option working_dir="/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/Programming/OOP-Team/Project/cmake-build-debug"/>
+				<Option working_dir="/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/boboo/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Programming/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Controller/UserController/UserController.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Controller/UserController/UserController.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Controller/UserController/UserController.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Controller/UserController/UserController.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Domain/Date/Date.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Domain/Date/Date.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Domain/Date/Date.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Domain/Date/Date.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Domain/ElectricScooter/ElectricScooter.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Domain/ElectricScooter/ElectricScooter.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Domain/ElectricScooter/ElectricScooter.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Domain/ElectricScooter/ElectricScooter.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Domain/User/Client/Client.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Client/Client.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Domain/User/Client/Client.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Client/Client.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Domain/User/Manager/Manager.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/Manager.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Domain/User/Manager/Manager.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/Manager.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Domain/User/User/User.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Domain/User/User/User.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Domain/User/User/User.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Domain/User/User/User.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Repository/CSV-FileRepository/CSV-FileRepository.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Repository/CSV-FileRepository/CSV-FileRepository.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Repository/CSV-FileRepository/CSV-FileRepository.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Repository/CSV-FileRepository/CSV-FileRepository.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Repository/InMemoryRepository/InMemoryRepository.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Repository/InMemoryRepository/InMemoryRepository.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Repository/InMemoryRepository/InMemoryRepository.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Repository/InMemoryRepository/InMemoryRepository.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestAll.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestAll.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestAll.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestAll.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestController/TestController.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestController.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestController/TestController.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestController.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestDomain/TestDate/TestDate.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDate/TestDate.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestDomain/TestDate/TestDate.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDate/TestDate.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestDomain/TestDomain.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDomain.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestDomain/TestDomain.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDomain.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestDomain/TestElectricScooter/TestElectricScooter.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestElectricScooter/TestElectricScooter.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestDomain/TestUser/TestUser.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestUser.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestDomain/TestUser/TestUser.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestUser.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestRepository/TestRepository.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestRepository.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/Tests/TestRepository/TestRepository.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestRepository.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/main.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/main.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="D:/Programming/OOP-Team/Project/CMakeLists.txt">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

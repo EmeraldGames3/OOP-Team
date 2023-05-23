@@ -1,8 +1,9 @@
 #pragma once
 
 #include <string>
+#include <memory>
 
-using std::string;
+using std::string, std::unique_ptr;
 
 namespace Domain {
     class ObjectWithId {
@@ -32,6 +33,14 @@ namespace Domain {
         virtual bool operator!=(const ObjectWithId &other){
             return !(*this == other);
         }
+
+        ///Convert the Object to a string
+        virtual string toString() = 0;
+
+        ///Convert a string into an object
+        virtual unique_ptr<ObjectWithId> convertFromString(const string &objectAsString) = 0;
+
+        ///Get a vector with all the attributes of the object as a string
+        virtual string getAttributes() = 0;
     };
 }
-

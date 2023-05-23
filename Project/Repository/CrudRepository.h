@@ -11,7 +11,6 @@ namespace Repository {
     template<typename StoredObject> requires IsSubclassOfObjectWithID<StoredObject>
     class CrudRepository {
     protected:
-        string fileName;
         vector<StoredObject> data;
 
     public:

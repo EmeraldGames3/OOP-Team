@@ -7,7 +7,6 @@ requires IsSubclassOfObjectWithID<StoredObject>
 Repository::InMemoryRepository<StoredObject>::InMemoryRepository(vector<StoredObject> _data) {
     if(_data.size() < 10)
         throw std::invalid_argument("Initialize the repository with a minimum of 10 objects");
-
     this->data = _data;
 }
 
