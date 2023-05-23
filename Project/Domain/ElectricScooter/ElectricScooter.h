@@ -48,11 +48,10 @@ namespace Domain {
         void reserve();
         void free();
 
-        string toString() override;
-
-        shared_ptr<ObjectWithId> convertFromString(const string &user) override;
-
-        string getAttributes() override;
+        ///Functions for writing/reading to/from files
+        [[nodiscard]] string toString() override;
+        [[nodiscard]] shared_ptr<ObjectWithId> convertFromString(string user) override;
+        [[nodiscard]] string getAttributes() override;
 
         ///Overloaded operators
         bool operator==(const ElectricScooter &other);

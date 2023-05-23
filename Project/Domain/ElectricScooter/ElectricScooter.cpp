@@ -139,7 +139,8 @@ void Domain::ElectricScooter::free() {
     reserved = false;
 }
 
-shared_ptr<Domain::ObjectWithId> Domain::ElectricScooter::convertFromString(const string &user) {
+shared_ptr<Domain::ObjectWithId> Domain::ElectricScooter::convertFromString(string user) {
+    //TODO: implement function
     return shared_ptr<ObjectWithId>();
 }
 

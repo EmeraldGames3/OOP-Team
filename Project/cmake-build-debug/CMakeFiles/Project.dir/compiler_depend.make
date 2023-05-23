@@ -1201,7 +1201,9 @@ CMakeFiles/Project.dir/Domain/User/User/User.cpp.o: /home/bogdan/Programming/Uni
   /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/bits/uses_allocator_args.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
-  /usr/include/c++/11/pstl/execution_defs.h
+  /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc
 
 CMakeFiles/Project.dir/Repository/CSV-FileRepository/CSV-FileRepository.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Repository/CSV-FileRepository/CSV-FileRepository.cpp \
   /usr/include/stdc-predef.h \

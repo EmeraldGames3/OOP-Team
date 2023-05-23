@@ -40,7 +40,7 @@ namespace Domain {
         virtual string toString() = 0;
 
         ///Convert a string into an object
-        virtual shared_ptr<ObjectWithId> convertFromString(const string &objectAsString) = 0;
+        virtual shared_ptr<ObjectWithId> convertFromString(string objectAsString) = 0;
 
         ///Get a vector with all the attributes of the object as a string
         virtual string getAttributes() = 0;

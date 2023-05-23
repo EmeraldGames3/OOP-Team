@@ -30,10 +30,9 @@ namespace Domain {
         ///We consider that username == id for this type of object
         void setId(const string &newID) override;
 
-        string toString() override;
-
-        shared_ptr<ObjectWithId> convertFromString(const string &user) override;
-
-        string getAttributes() override;
+        ///Functions for writing/reading to/from files
+        [[nodiscard]] string toString() override;
+        [[nodiscard]] shared_ptr<ObjectWithId> convertFromString(string user) override;
+        [[nodiscard]] string getAttributes() override;
     };
 }

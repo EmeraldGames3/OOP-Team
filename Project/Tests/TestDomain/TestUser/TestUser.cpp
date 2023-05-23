@@ -30,4 +30,12 @@ void testUser() {
 
     user.setPassword("this_is_a_very_long_password_that_exceeds_the_maximum_allowed_length");
     assert(user.getPassword() == "this_is_a_very_long_password_that_exceeds_the_maximum_allowed_length");
+
+    user.setUsername("Name");
+    user.setPassword("password");
+    assert(user.toString() == "Name,password");
+
+    assert(user.getAttributes() == "Username,Password");
+
+    assert(user.convertFromString(user.toString())->getId() == user.getId());
 }
