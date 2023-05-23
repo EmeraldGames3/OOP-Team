@@ -24,10 +24,10 @@ namespace Repository {
         virtual vector<StoredObject> findAll() const = 0;
 
         ///Update an object
-        virtual bool update(const StoredObject &oldObject, const StoredObject &newObject) = 0;
+        [[nodiscard]] virtual bool update(const StoredObject &oldObject, const StoredObject &newObject) = 0;
 
         ///Remove an object
-        virtual bool remove(const StoredObject &object) = 0;
+        [[nodiscard]] virtual bool remove(const StoredObject &object) = 0;
 
         void deleteAllData() {
             data = vector<StoredObject>();

@@ -210,7 +210,10 @@ CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o: \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDate/../../../Domain/User/Manager/Manager.h \
- /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDate/../../../Domain/ElectricScooter/ElectricScooter.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDate/../../../Domain/User/Client/../../ElectricScooter/ElectricScooter.h \
  /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
+ /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc \
+ /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDate/../../../Domain/User/Manager/Manager.h \
  /usr/include/c++/11/cassert /usr/include/assert.h

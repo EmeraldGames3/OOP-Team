@@ -8,7 +8,7 @@
 
 namespace Domain {
     class Date;
-    class Client;
+    class User;
     class Manager;
     class User;
     class ElectricScooter;

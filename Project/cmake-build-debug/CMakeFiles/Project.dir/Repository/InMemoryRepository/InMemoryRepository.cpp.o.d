@@ -211,9 +211,9 @@ CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.o: \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/bogdan/Programming/University/OOP-Team/Project/Repository/InMemoryRepository/../../Domain/User/Manager/Manager.h \
- /home/bogdan/Programming/University/OOP-Team/Project/Repository/InMemoryRepository/../../Domain/ElectricScooter/ElectricScooter.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/Repository/InMemoryRepository/../../Domain/User/Client/../../ElectricScooter/ElectricScooter.h \
  /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc
+ /usr/include/c++/11/bits/vector.tcc \
+ /home/bogdan/Programming/University/OOP-Team/Project/Repository/InMemoryRepository/../../Domain/User/Manager/Manager.h
