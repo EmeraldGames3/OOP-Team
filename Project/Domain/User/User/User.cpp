@@ -1,6 +1,7 @@
 #include "User.h"
 
 #include <utility>
+#include <sstream>
 
 using namespace Domain;
 
@@ -35,5 +36,23 @@ void User::setPassword(const string &newPassword) {
 ///Override id setter
 void User::setId(const string &newID) {
     setUsername(newID);
+}
+
+string User::toString() {
+    std::ostringstream oss;
+    oss << username << ",";
+    oss << password;
+    return oss.str();
+}
+
+shared_ptr<ObjectWithId> User::convertFromString(const string &user) {
+    return shared_ptr<ObjectWithId>();
+}
+
+string User::getAttributes() {
+    std::ostringstream oss;
+    oss << "Username" << ",";
+    oss << "Password";
+    return oss.str();
 }
 

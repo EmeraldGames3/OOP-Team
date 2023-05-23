@@ -7,6 +7,9 @@ namespace Domain {
     class Manager : public User {
     public:
         ///Constructor
-        Manager(const string &username, const string &password);
+        explicit Manager(const string &username = "0", const string &password = "0");
+
+        ///Copy constructor
+        Manager(const Manager &manager) = default;
     };
 }

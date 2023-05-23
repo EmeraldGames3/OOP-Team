@@ -24,7 +24,10 @@ namespace Domain {
                         string _currentCondition);
 
         ///Constructor with 1 parameter
-        explicit ElectricScooter(string _id);
+        explicit ElectricScooter(string _id = "000");
+
+        ///Copy constructor
+        ElectricScooter(const ElectricScooter &electricScooter) = default;
 
         ///Getters
         [[nodiscard]] string getModel() const;
@@ -45,8 +48,11 @@ namespace Domain {
         void reserve();
         void free();
 
-        ///Convert the object to string form
-        string toString();
+        string toString() override;
+
+        shared_ptr<ObjectWithId> convertFromString(const string &user) override;
+
+        string getAttributes() override;
 
         ///Overloaded operators
         bool operator==(const ElectricScooter &other);

@@ -139,3 +139,17 @@ void Domain::ElectricScooter::free() {
     reserved = false;
 }
 
+shared_ptr<Domain::ObjectWithId> Domain::ElectricScooter::convertFromString(const string &user) {
+    return shared_ptr<ObjectWithId>();
+}
+
+string Domain::ElectricScooter::getAttributes() {
+    std::ostringstream oss;
+    oss << "Identifier" << ",";
+    oss << "Model" << ",";
+    oss << "commissioning Date" << ",";
+    oss << "Mileage" << ",";
+    oss << "last Location" << ",";
+    oss << "current Condition";
+    return oss.str();
+}

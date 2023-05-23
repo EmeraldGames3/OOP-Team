@@ -7,21 +7,33 @@ requires IsSubclassOfObjectWithID<StoredObject>
 Repository::InMemoryRepository<StoredObject>::InMemoryRepository(vector<StoredObject> _data) {
     if(_data.size() < 10)
         throw std::invalid_argument("Initialize the repository with a minimum of 10 objects");
-    this->data = _data;
+
+    for(const auto &it : _data){
+        this->data.push_back(make_shared<StoredObject>(it));
+    }
 }
 
 ///Add a new object to the repository
 template<typename StoredObject>
 requires IsSubclassOfObjectWithID<StoredObject>void
 Repository::InMemoryRepository<StoredObject>::create(const StoredObject &object) {
-    this->data.push_back(object);
+    this->data.push_back(make_shared<StoredObject>(object));
 }
 
 ///Returns a vector with all the data in the repository
 template<typename StoredObject>
 requires IsSubclassOfObjectWithID<StoredObject>vector<StoredObject>
 Repository::InMemoryRepository<StoredObject>::findAll() const {
-    return this->data;
+    vector<StoredObject> returnVector{};
+
+    for (const auto &ptr : this->data) {
+        auto *obj = dynamic_cast<StoredObject*>(ptr.get());
+        if (obj) {
+            returnVector.push_back(*obj);
+        }
+    }
+
+    return returnVector;
 }
 
 ///Update an object from the data base
@@ -30,8 +42,8 @@ template<typename StoredObject>
 requires IsSubclassOfObjectWithID<StoredObject>bool
 Repository::InMemoryRepository<StoredObject>::update(const StoredObject &oldObject, const StoredObject &newObject) {
     for (auto &it: this->data) {
-        if (it.getId() == oldObject.getId()) {
-            it = newObject;
+        if (it->getId() == oldObject.getId()) {
+            it = make_unique<StoredObject>(newObject);
             return true;
         }
     }
@@ -44,7 +56,7 @@ template<typename StoredObject>
 requires IsSubclassOfObjectWithID<StoredObject>bool
 Repository::InMemoryRepository<StoredObject>::remove(const StoredObject &object) {
     for (int i = 0; i < this->data.size(); i++) {
-        if (this->data[i].getId() == object.getId()) {
+        if (this->data[i]->getId() == object.getId()) {
             this->data.erase(this->data.begin() + i);
             return true;
         }

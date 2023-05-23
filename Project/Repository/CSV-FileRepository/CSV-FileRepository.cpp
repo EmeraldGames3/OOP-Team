@@ -9,7 +9,7 @@ requires IsSubclassOfObjectWithID<StoredObject>
 CSVFileRepository<StoredObject>::CSVFileRepository(string file) : fileName{std::move(file)} {
     ifstream fin(fileName);
 
-    if(!fin.is_open()){
+    if (!fin.is_open()) {
         throw std::invalid_argument("File cannot be found");
     }
 
@@ -17,7 +17,7 @@ CSVFileRepository<StoredObject>::CSVFileRepository(string file) : fileName{std::
     std::getline(fin, line); //Read the line with the format
 
     StoredObject temp; // I have to use this because c++ does not let me override static functions
-    while (std::getline(fin, line)){
+    while (std::getline(fin, line)) {
         this->data.push_back(temp.convertFromString(line));
     }
 
@@ -30,8 +30,8 @@ requires IsSubclassOfObjectWithID<StoredObject>void CSVFileRepository<StoredObje
 
     StoredObject temp; // I have to use this because c++ does not let me override static functions
     file << temp.getAttributes() << '\n';
-    for(auto &it : this->data){
-        file << it.toString << '\n';
+    for (auto &it: this->data) {
+        file << it->toString() << '\n';
     }
 
     file.close();
@@ -40,14 +40,23 @@ requires IsSubclassOfObjectWithID<StoredObject>void CSVFileRepository<StoredObje
 template<typename StoredObject>
 requires IsSubclassOfObjectWithID<StoredObject>vector<StoredObject>
 CSVFileRepository<StoredObject>::findAll() const {
-    return this->data;
+    vector<StoredObject> returnVector{};
+
+    for (const auto &ptr : this->data) {
+        auto *obj = dynamic_cast<StoredObject*>(ptr.get());
+        if (obj) {
+            returnVector.push_back(*obj);
+        }
+    }
+
+    return returnVector;
 }
 
 template<typename StoredObject>
 requires IsSubclassOfObjectWithID<StoredObject>bool
 CSVFileRepository<StoredObject>::remove(const StoredObject &storedObject) {
     for (int i = 0; i < this->data.size(); i++) {
-        if (this->data[i].getId() == storedObject.getId()) {
+        if (this->data[i]->getId() == storedObject.getId()) {
             this->data.erase(this->data.begin() + i);
             writeToFile();
             return true;
@@ -61,8 +70,8 @@ template<typename StoredObject>
 requires IsSubclassOfObjectWithID<StoredObject>bool
 CSVFileRepository<StoredObject>::update(const StoredObject &oldObject, const StoredObject &newObject) {
     for (auto &it: this->data) {
-        if (it.getId() == oldObject.getId()) {
-            it = newObject;
+        if (it->getId() == oldObject.getId()) {
+            it = make_unique<StoredObject>(newObject);
             writeToFile();
             return true;
         }
@@ -74,7 +83,7 @@ CSVFileRepository<StoredObject>::update(const StoredObject &oldObject, const Sto
 template<typename StoredObject>
 requires IsSubclassOfObjectWithID<StoredObject>void
 CSVFileRepository<StoredObject>::create(const StoredObject &storedObject) {
-    this->data.push_back(storedObject);
+    this->data.push_back(make_unique<StoredObject>(storedObject));
     writeToFile();
 }
 

@@ -14,7 +14,10 @@ namespace Domain {
 
     public:
         ///Constructor
-        User(string _username, string _password);
+        explicit User(string _username = "0", string _password = "0");
+
+        ///Copy constructor
+        User(const User &user) = default;
 
         ///Getters
         [[nodiscard]] virtual string getUsername() const;
@@ -26,5 +29,11 @@ namespace Domain {
 
         ///We consider that username == id for this type of object
         void setId(const string &newID) override;
+
+        string toString() override;
+
+        shared_ptr<ObjectWithId> convertFromString(const string &user) override;
+
+        string getAttributes() override;
     };
 }

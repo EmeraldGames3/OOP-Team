@@ -3,7 +3,7 @@
 #include <string>
 #include <memory>
 
-using std::string, std::unique_ptr;
+using std::string, std::unique_ptr, std::shared_ptr;
 
 namespace Domain {
     class ObjectWithId {
@@ -11,6 +11,8 @@ namespace Domain {
         string identifier;
 
     public:
+        virtual ~ObjectWithId() = default;
+
         ///ID setter
         ///@throws invalid_argument if the identifier has an invalid format
         virtual void setId(const string &newID) {
@@ -38,7 +40,7 @@ namespace Domain {
         virtual string toString() = 0;
 
         ///Convert a string into an object
-        virtual unique_ptr<ObjectWithId> convertFromString(const string &objectAsString) = 0;
+        virtual shared_ptr<ObjectWithId> convertFromString(const string &objectAsString) = 0;
 
         ///Get a vector with all the attributes of the object as a string
         virtual string getAttributes() = 0;

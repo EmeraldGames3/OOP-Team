@@ -8,6 +8,9 @@ namespace Domain {
     class Client : public User {
     public:
         ///Default constructor
-        Client(string username, string password);
+        explicit Client(string username = "0", string password = "0");
+
+        ///Copy constructor
+        Client(const Client &client) = default;
     };
 }
