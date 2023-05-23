@@ -489,6 +489,30 @@ Tests/TestDomain/TestUser/TestUser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.s
 .PHONY : Tests/TestDomain/TestUser/TestUser.cpp.s
 
+Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.o: Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o
+.PHONY : Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.o
+
+# target to build an object file
+Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o
+.PHONY : Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o
+
+Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.i: Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.i
+.PHONY : Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.i
+
+# target to preprocess a source file
+Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.i
+.PHONY : Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.i
+
+Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.s: Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.s
+.PHONY : Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.s
+
+# target to generate assembly for a file
+Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.s
+.PHONY : Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.s
+
 Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.o: Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o
 .PHONY : Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.o
 
@@ -615,6 +639,9 @@ help:
 	@echo "... Tests/TestDomain/TestUser/TestUser.o"
 	@echo "... Tests/TestDomain/TestUser/TestUser.i"
 	@echo "... Tests/TestDomain/TestUser/TestUser.s"
+	@echo "... Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.o"
+	@echo "... Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.i"
+	@echo "... Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.s"
 	@echo "... Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.o"
 	@echo "... Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.i"
 	@echo "... Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.s"

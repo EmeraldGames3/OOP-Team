@@ -29,6 +29,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o.d"
   "CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o"
   "CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o.d"
+  "CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o"
+  "CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o.d"
   "CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o"
   "CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o.d"
   "CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o"

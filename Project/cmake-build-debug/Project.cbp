@@ -172,6 +172,12 @@
 		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestUser.h">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp">
 			<Option target="Project"/>
 		</Unit>
