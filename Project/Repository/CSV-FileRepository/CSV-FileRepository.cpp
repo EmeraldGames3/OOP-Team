@@ -36,3 +36,50 @@ requires IsSubclassOfObjectWithID<StoredObject>void CSVFileRepository<StoredObje
 
     file.close();
 }
+
+template<typename StoredObject>
+requires IsSubclassOfObjectWithID<StoredObject>vector<StoredObject>
+CSVFileRepository<StoredObject>::findAll() const {
+    return this->data;
+}
+
+template<typename StoredObject>
+requires IsSubclassOfObjectWithID<StoredObject>bool
+CSVFileRepository<StoredObject>::remove(const StoredObject &storedObject) {
+    for (int i = 0; i < this->data.size(); i++) {
+        if (this->data[i].getId() == storedObject.getId()) {
+            this->data.erase(this->data.begin() + i);
+            writeToFile();
+            return true;
+        }
+    }
+    writeToFile();
+    return false;
+}
+
+template<typename StoredObject>
+requires IsSubclassOfObjectWithID<StoredObject>bool
+CSVFileRepository<StoredObject>::update(const StoredObject &oldObject, const StoredObject &newObject) {
+    for (auto &it: this->data) {
+        if (it.getId() == oldObject.getId()) {
+            it = newObject;
+            writeToFile();
+            return true;
+        }
+    }
+    writeToFile();
+    return false;
+}
+
+template<typename StoredObject>
+requires IsSubclassOfObjectWithID<StoredObject>void
+CSVFileRepository<StoredObject>::create(const StoredObject &storedObject) {
+    this->data.push_back(storedObject);
+    writeToFile();
+}
+
+//Instantiate the templated class to allow the compiler to generate the necessary code
+template class Repository::CSVFileRepository<ElectricScooter>;
+template class Repository::CSVFileRepository<User>;
+template class Repository::CSVFileRepository<Manager>;
+template class Repository::CSVFileRepository<Client>;
