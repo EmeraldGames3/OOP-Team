@@ -1,6 +1,7 @@
 #include "ElectricScooter.h"
 
 #include <utility>
+#include <vector>
 
 using Domain::ElectricScooter, Domain::Date;
 
@@ -140,8 +141,21 @@ void Domain::ElectricScooter::free() {
 }
 
 shared_ptr<Domain::ObjectWithId> Domain::ElectricScooter::convertFromString(string user) {
-    //TODO: implement function
-    return shared_ptr<ObjectWithId>();
+    std::vector <std::string> tokens;
+    size_t pos = 0;
+    string delimiter = ",";
+
+    while ((pos = user.find(delimiter)) != std::string::npos) {
+        std::string token = user.substr(0, pos);
+        tokens.push_back(token);
+        user.erase(0, pos + delimiter.length());
+    }
+    // The remaining part after the last delimiter
+    tokens.push_back(user);
+
+    return std::make_shared<ElectricScooter>(
+            ElectricScooter(tokens[0], tokens[1], tokens[2],
+                            std::stof(tokens[3]), tokens[4], tokens[5]));
 }
 
 string Domain::ElectricScooter::getAttributes() {

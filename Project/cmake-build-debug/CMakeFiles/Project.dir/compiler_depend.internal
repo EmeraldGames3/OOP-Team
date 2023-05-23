@@ -457,6 +457,10 @@ CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o
  /usr/include/c++/11/bits/uses_allocator_args.h
  /usr/include/c++/11/pstl/glue_memory_defs.h
  /usr/include/c++/11/pstl/execution_defs.h
+ /usr/include/c++/11/vector
+ /usr/include/c++/11/bits/stl_vector.h
+ /usr/include/c++/11/bits/stl_bvector.h
+ /usr/include/c++/11/bits/vector.tcc
 
 CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o
  /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Client/Client.cpp
@@ -1211,6 +1215,10 @@ CMakeFiles/Project.dir/Domain/User/User/User.cpp.o
  /usr/include/c++/11/pstl/execution_defs.h
  /usr/include/c++/11/sstream
  /usr/include/c++/11/bits/sstream.tcc
+ /usr/include/c++/11/vector
+ /usr/include/c++/11/bits/stl_vector.h
+ /usr/include/c++/11/bits/stl_bvector.h
+ /usr/include/c++/11/bits/vector.tcc
 
 CMakeFiles/Project.dir/Repository/CSV-FileRepository/CSV-FileRepository.cpp.o
  /home/bogdan/Programming/University/OOP-Team/Project/Repository/CSV-FileRepository/CSV-FileRepository.cpp
@@ -2022,6 +2030,7 @@ CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o
  /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDomain.h
  /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDate/TestDate.h
  /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestUser.h
+ /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestElectricScooter/TestElectricScooter.h
 
 CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o
  /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp
