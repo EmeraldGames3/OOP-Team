@@ -393,6 +393,30 @@ Tests/TestController/TestController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.s
 .PHONY : Tests/TestController/TestController.cpp.s
 
+Tests/TestController/TestElectricScooterController/TestElectricScooterController.o: Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o
+.PHONY : Tests/TestController/TestElectricScooterController/TestElectricScooterController.o
+
+# target to build an object file
+Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o
+.PHONY : Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o
+
+Tests/TestController/TestElectricScooterController/TestElectricScooterController.i: Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.i
+.PHONY : Tests/TestController/TestElectricScooterController/TestElectricScooterController.i
+
+# target to preprocess a source file
+Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.i
+.PHONY : Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.i
+
+Tests/TestController/TestElectricScooterController/TestElectricScooterController.s: Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.s
+.PHONY : Tests/TestController/TestElectricScooterController/TestElectricScooterController.s
+
+# target to generate assembly for a file
+Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.s
+.PHONY : Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.s
+
 Tests/TestController/TestUserController/TestUserController.o: Tests/TestController/TestUserController/TestUserController.cpp.o
 .PHONY : Tests/TestController/TestUserController/TestUserController.o
 
@@ -651,6 +675,9 @@ help:
 	@echo "... Tests/TestController/TestController.o"
 	@echo "... Tests/TestController/TestController.i"
 	@echo "... Tests/TestController/TestController.s"
+	@echo "... Tests/TestController/TestElectricScooterController/TestElectricScooterController.o"
+	@echo "... Tests/TestController/TestElectricScooterController/TestElectricScooterController.i"
+	@echo "... Tests/TestController/TestElectricScooterController/TestElectricScooterController.s"
 	@echo "... Tests/TestController/TestUserController/TestUserController.o"
 	@echo "... Tests/TestController/TestUserController/TestUserController.i"
 	@echo "... Tests/TestController/TestUserController/TestUserController.s"

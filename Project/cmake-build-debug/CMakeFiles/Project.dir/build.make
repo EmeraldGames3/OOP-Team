@@ -349,6 +349,20 @@ CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserControlle
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestUserController/TestUserController.cpp -o CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.s
 
+CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp
+CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o -MF CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp
+
+CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp > CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.i
+
+CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp -o CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.s
+
 # Object files for target Project
 Project_OBJECTS = \
 "CMakeFiles/Project.dir/main.cpp.o" \
@@ -370,7 +384,8 @@ Project_OBJECTS = \
 "CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o" \
 "CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o" \
 "CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o" \
-"CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o"
+"CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o" \
+"CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o"
 
 # External object files for target Project
 Project_EXTERNAL_OBJECTS =
@@ -395,9 +410,10 @@ Project: CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o
 Project: CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o
 Project: CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o
 Project: CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o
+Project: CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o
 Project: CMakeFiles/Project.dir/build.make
 Project: CMakeFiles/Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable Project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable Project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
