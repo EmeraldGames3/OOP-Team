@@ -1,4 +1,5 @@
 #include "InMemoryRepository.h"
+#include <fstream>
 
 /// Constructor
 /// @throws invalid_argument if the received data is insufficient

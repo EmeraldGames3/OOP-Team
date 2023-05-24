@@ -140,18 +140,18 @@ void Domain::ElectricScooter::free() {
     reserved = false;
 }
 
-shared_ptr<Domain::ObjectWithId> Domain::ElectricScooter::convertFromString(string user) {
-    std::vector <std::string> tokens;
+shared_ptr<Domain::ObjectWithId> Domain::ElectricScooter::convertFromString(string scooter) {
+    std::vector<std::string> tokens;
     size_t pos = 0;
     string delimiter = ",";
 
-    while ((pos = user.find(delimiter)) != std::string::npos) {
-        std::string token = user.substr(0, pos);
+    while ((pos = scooter.find(delimiter)) != std::string::npos) {
+        std::string token = scooter.substr(0, pos);
         tokens.push_back(token);
-        user.erase(0, pos + delimiter.length());
+        scooter.erase(0, pos + delimiter.length());
     }
     // The remaining part after the last delimiter
-    tokens.push_back(user);
+    tokens.push_back(scooter);
 
     return std::make_shared<ElectricScooter>(
             ElectricScooter(tokens[0], tokens[1], tokens[2],
@@ -167,4 +167,21 @@ string Domain::ElectricScooter::getAttributes() {
     oss << "last Location" << ",";
     oss << "current Condition";
     return oss.str();
+}
+
+ElectricScooter Domain::ElectricScooter::convertFromStr(string scooter) {
+    std::vector<std::string> tokens;
+    size_t pos = 0;
+    string delimiter = ",";
+
+    while ((pos = scooter.find(delimiter)) != std::string::npos) {
+        std::string token = scooter.substr(0, pos);
+        tokens.push_back(token);
+        scooter.erase(0, pos + delimiter.length());
+    }
+    // The remaining part after the last delimiter
+    tokens.push_back(scooter);
+
+    return {tokens[0], tokens[1], tokens[2],
+            std::stof(tokens[3]), tokens[4], tokens[5]};
 }

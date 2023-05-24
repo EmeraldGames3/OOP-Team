@@ -1,10 +1,12 @@
 #include "UserInterface.h"
 
+#include <utility>
+
 using namespace UI;
 
 UserInterface::UserInterface(shared_ptr<UserController> ctr1, shared_ptr<ElectricScooterController> ctr2) {
-    userController = ctr1;
-    scooterController = ctr2;
+    userController = std::move(ctr1);
+    scooterController = std::move(ctr2);
 }
 
 void UserInterface::mainMenu() {
@@ -129,7 +131,6 @@ void UserInterface::managerRegistration() {
         throw invalid_argument("Username is taken");
     userController->addManager(username, password);
     cout << "Welcome " << username << endl;
-    userController->updateManagerDataBase();
 }
 
 void UserInterface::managerLogIn() {
@@ -244,7 +245,6 @@ void UserInterface::clientRegistration() {
         throw invalid_argument("Username is taken");
     userController->addClient(username, password);
     cout << "Welcome " << username << endl;
-    userController->updateClientDataBase();
 }
 
 void UserInterface::showAll() {
@@ -352,7 +352,6 @@ void UserInterface::updateDate(const string &id) {
         updateInfo();
     }
     cout << "Update completed.." << endl;
-
 }
 
 void UserInterface::updateMileage(const string &id) {
@@ -365,7 +364,6 @@ void UserInterface::updateMileage(const string &id) {
         updateInfo();
     }
     cout << "Update completed.." << endl;
-
 }
 
 void UserInterface::updateLocation(const string &id) {
@@ -378,7 +376,6 @@ void UserInterface::updateLocation(const string &id) {
         updateInfo();
     }
     cout << "Update completed.." << endl;
-
 }
 
 void UserInterface::updateCondition(const string &id) {
@@ -391,7 +388,6 @@ void UserInterface::updateCondition(const string &id) {
         updateInfo();
     }
     cout << "Update completed.." << endl;
-
 }
 
 void UserInterface::managerUI() {
@@ -436,7 +432,6 @@ void UserInterface::managerUI() {
 
                 try {
                     scooterController->add(id, model, date, mileage, location, condition);
-                    scooterController->update();
                     cout << "\nScooter successfully added\n\n";
                 } catch (exception &e) {
                     cout << "\nOne or more attributes are not valid\n";
@@ -450,7 +445,6 @@ void UserInterface::managerUI() {
 
                 try {
                     scooterController->remove(id);
-                    scooterController->update();
                     cout << "\nScooter successfully removed\n\n";
                 } catch (exception &e) {
                     cout << "\nThe given ID is not valid";
@@ -459,7 +453,6 @@ void UserInterface::managerUI() {
             }
             case 3: {
                 updateInfo();
-                scooterController->update();
                 break;
             }
             case 4: {
@@ -630,7 +623,6 @@ void UserInterface::clientUI() {
 
                 try {
                     scooterController->reserveScooter(id);
-                    scooterController->update();
                     cout << "The selected scooter was reserved\n\n";
                 } catch (exception &e) {
                     cout << "\nThe selected scooter is not available\n";
@@ -647,7 +639,6 @@ void UserInterface::clientUI() {
 
                 try {
                     scooterController->useScooter(id);
-                    scooterController->update();
                 } catch (exception &e) {
                     cout << "\nThe selected scooter is not available\n";
                 }
@@ -666,4 +657,18 @@ void UserInterface::clientUI() {
             }
         }
     }
+}
+
+bool UserInterface::firstPrompt() {
+    cout << "Choose your preferred storage mode\n";
+    cout << "Choose 0 if you want the data not to be saved at the end of the programme\n";
+    cout << "Choose 1 if you want the data to be saved at the end of the programme\n";
+
+    int option;
+    cin >> option;
+
+    if(option == 1)
+        return true;
+
+    return false;
 }

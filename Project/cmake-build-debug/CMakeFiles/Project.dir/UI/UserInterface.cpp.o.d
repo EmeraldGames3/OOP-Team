@@ -1,8 +1,7 @@
-CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o: \
- /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/Manager.cpp \
+CMakeFiles/Project.dir/UI/UserInterface.cpp.o: \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/UserInterface.cpp \
  /usr/include/stdc-predef.h \
- /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/Manager.h \
- /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/../User/User.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/UserInterface.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -159,7 +158,16 @@ CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/../User/../../ObjectWithID.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/Controller.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/ElectricScooterController.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/UserController.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/Repository.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/CrudRepository.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/Domain.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/Date/Date.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/Client.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/../User/User.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/../User/../../ObjectWithID.h \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
@@ -203,7 +211,12 @@ CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o: \
  /usr/include/c++/11/bits/stream_iterator.h \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/pstl/execution_defs.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/../../ElectricScooter/ElectricScooter.h \
+ /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
+ /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc
+ /usr/include/c++/11/bits/vector.tcc \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Manager/Manager.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/InMemoryRepository/InMemoryRepository.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/CSV-FileRepository/CSV-FileRepository.h

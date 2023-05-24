@@ -50,8 +50,10 @@ namespace Domain {
 
         ///Functions for writing/reading to/from files
         [[nodiscard]] string toString() override;
-        [[nodiscard]] shared_ptr<ObjectWithId> convertFromString(string user) override;
+        [[nodiscard]] shared_ptr<ObjectWithId> convertFromString(string scooter) override;
         [[nodiscard]] string getAttributes() override;
+
+        static ElectricScooter convertFromStr(string scooter);
 
         ///Overloaded operators
         bool operator==(const ElectricScooter &other);

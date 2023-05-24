@@ -609,6 +609,30 @@ Tests/TestRepository/TestRepository.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.s
 .PHONY : Tests/TestRepository/TestRepository.cpp.s
 
+UI/UserInterface.o: UI/UserInterface.cpp.o
+.PHONY : UI/UserInterface.o
+
+# target to build an object file
+UI/UserInterface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/UserInterface.cpp.o
+.PHONY : UI/UserInterface.cpp.o
+
+UI/UserInterface.i: UI/UserInterface.cpp.i
+.PHONY : UI/UserInterface.i
+
+# target to preprocess a source file
+UI/UserInterface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/UserInterface.cpp.i
+.PHONY : UI/UserInterface.cpp.i
+
+UI/UserInterface.s: UI/UserInterface.cpp.s
+.PHONY : UI/UserInterface.s
+
+# target to generate assembly for a file
+UI/UserInterface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/UserInterface.cpp.s
+.PHONY : UI/UserInterface.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -702,6 +726,9 @@ help:
 	@echo "... Tests/TestRepository/TestRepository.o"
 	@echo "... Tests/TestRepository/TestRepository.i"
 	@echo "... Tests/TestRepository/TestRepository.s"
+	@echo "... UI/UserInterface.o"
+	@echo "... UI/UserInterface.i"
+	@echo "... UI/UserInterface.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

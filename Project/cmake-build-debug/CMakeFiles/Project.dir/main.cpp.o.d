@@ -220,4 +220,8 @@ CMakeFiles/Project.dir/main.cpp.o: \
  /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Manager/Manager.h \
  /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/InMemoryRepository/InMemoryRepository.h \
  /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/CSV-FileRepository/CSV-FileRepository.h \
- /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestAll.h
+ /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestAll.h \
+ /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc

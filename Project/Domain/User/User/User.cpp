@@ -69,4 +69,3 @@ string User::getAttributes() {
     oss << "Password";
     return oss.str();
 }
-

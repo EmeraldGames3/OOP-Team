@@ -28,6 +28,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp" "CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o" "gcc" "CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp" "CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o" "gcc" "CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestRepository.cpp" "CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o" "gcc" "CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o.d"
+  "/home/bogdan/Programming/University/OOP-Team/Project/UI/UserInterface.cpp" "CMakeFiles/Project.dir/UI/UserInterface.cpp.o" "gcc" "CMakeFiles/Project.dir/UI/UserInterface.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/main.cpp" "CMakeFiles/Project.dir/main.cpp.o" "gcc" "CMakeFiles/Project.dir/main.cpp.o.d"
   )
 

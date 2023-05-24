@@ -11,5 +11,7 @@ namespace Domain {
 
         ///Copy constructor
         Manager(const Manager &manager) = default;
+
+        static Manager convertFromStr(string str);
     };
 }

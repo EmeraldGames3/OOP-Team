@@ -22,3 +22,19 @@ bool Client::freeScooter(const shared_ptr<ElectricScooter> &electricScooter) {
     }
     return false;
 }
+
+Client Client::convertFromStr(string str) {
+    vector<std::string> tokens;
+    size_t pos = 0;
+    string delimiter = ",";
+
+    while ((pos = str.find(delimiter)) != std::string::npos) {
+        std::string token = str.substr(0, pos);
+        tokens.push_back(token);
+        str.erase(0, pos + delimiter.length());
+    }
+    // The remaining part after the last delimiter
+    tokens.push_back(str);
+
+    return Client(tokens[0], tokens[1]);
+}

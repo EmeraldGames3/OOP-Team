@@ -22,5 +22,7 @@ namespace Domain {
         void reserveScooter(const shared_ptr<ElectricScooter>& electricScooter);
 
         bool freeScooter(const shared_ptr<ElectricScooter>& electricScooter);
+
+        static Client convertFromStr(string str);
     };
 }
