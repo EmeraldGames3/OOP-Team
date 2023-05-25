@@ -18,13 +18,13 @@ void UserController::addManager(const string &username, const string &password) 
 }
 
 bool UserController::removeClient(const string &username, const string &password) {
-    if(clientRepository->remove(Client(password, username)))
+    if (clientRepository->remove(Client(password, username)))
         return true;
     return false;
 }
 
 bool UserController::removeManager(const string &username, const string &password) {
-    if(managerRepository->remove(Manager(username, password)))
+    if (managerRepository->remove(Manager(username, password)))
         return true;
     return false;
 }
@@ -58,39 +58,13 @@ bool UserController::findManager(const string &username) {
 }
 
 bool UserController::updateClient(const Client &oldClient, const Client &updatedClient) {
-    if(clientRepository->update(oldClient, updatedClient))
+    if (clientRepository->update(oldClient, updatedClient))
         return true;
     return false;
 }
 
 bool UserController::updateManager(const Manager &oldClient, const Manager &updatedClient) {
-    if(managerRepository->update(oldClient, updatedClient))
+    if (managerRepository->update(oldClient, updatedClient))
         return true;
-    return false;
-}
-
-bool UserController::reserveScooter(Client client, const shared_ptr<ElectricScooter> &electricScooter) {
-    if(electricScooter->isReserved())
-        return false;
-
-    client.reserveScooter(electricScooter);
-    electricScooter->reserve();
-
-    if(clientRepository->update(client, client))
-        return true;
-
-    return false;
-}
-
-bool UserController::freeScooter(Client client, const shared_ptr<ElectricScooter> &electricScooter) {
-    if(!electricScooter->isReserved())
-        return false;
-
-    client.freeScooter(electricScooter);
-    electricScooter->free();
-
-    if(clientRepository->update(client, client))
-        return true;
-
     return false;
 }

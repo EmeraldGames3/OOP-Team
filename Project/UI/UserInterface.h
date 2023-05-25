@@ -10,11 +10,10 @@ namespace UI {
     private:
         shared_ptr<UserController> userController;
         shared_ptr<ElectricScooterController> scooterController;
+        vector<ElectricScooter> currentClientReservedScooters{};
 
     public:
         UserInterface(shared_ptr<UserController> ctr1, shared_ptr<ElectricScooterController> ctr2);
-
-        void saveMethodMeniu();
 
         void mainMenu();
 

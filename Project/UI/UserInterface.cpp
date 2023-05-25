@@ -9,45 +9,8 @@ UserInterface::UserInterface(shared_ptr<UserController> ctr1, shared_ptr<Electri
     scooterController = ctr2;
 }
 
-void UserInterface::saveMethodMeniu() {
-    int choice;
-    cout << "\n------------------------ WELCOME TO SCOOTERS~RENTAL.COM ------------------------\n\n";
-    cout << "Choose a data saving method\n";
-    cout << "1. In DataBase\n";
-    cout << "2. In memory\n";
-    cout << "3. Exit\n";
-    cout << "Enter your choice: " << endl;
-    cout << ">";
-
-    cin >> choice;
-    switch (choice) {
-        case 1: {
-
-            mainMenu();
-            break;
-        }
-        case 2: {
-
-            mainMenu();
-            break;
-        }
-        case 3: {
-            cout << "\n~~~~~~GOOD BYE!~~~~~~\n";
-            break;
-        }
-
-        default: {
-            cout << "\nInvalid choice...\n";
-            cout << "Try again\n";
-            cin.clear();
-            cin.ignore();
-            saveMethodMeniu();
-            break;
-        }
-    }
-}
-
 void UserInterface::mainMenu() {
+    currentClientReservedScooters = {};
     int choice;
     cout << endl;
     cout << "~ Continue as ~" << endl;
@@ -66,7 +29,7 @@ void UserInterface::mainMenu() {
             clientMenu();
             break;
         case 3: {
-            saveMethodMeniu();
+            mainMenu();
             break;
         }
 
@@ -82,6 +45,7 @@ void UserInterface::mainMenu() {
 }
 
 void UserInterface::managerMenu() {
+    currentClientReservedScooters = {};
     bool running = true;
     string option;
     while (running) {
@@ -156,6 +120,7 @@ void UserInterface::managerMenu() {
 }
 
 void UserInterface::managerRegistration() {
+    currentClientReservedScooters = {};
     cout << "----------------------- REGISTRATION FORM -----------------------" << endl;
     string username;
     string password;
@@ -170,6 +135,7 @@ void UserInterface::managerRegistration() {
 }
 
 void UserInterface::managerLogIn() {
+    currentClientReservedScooters = {};
     cout << "----------------------- LOGIN -----------------------" << endl;
     string username;
     string password;
@@ -183,6 +149,7 @@ void UserInterface::managerLogIn() {
 }
 
 void UserInterface::clientMenu() {
+    currentClientReservedScooters = {};
     bool running = true;
     string option;
     while (running) {
@@ -255,6 +222,7 @@ void UserInterface::clientMenu() {
 }
 
 void UserInterface::clientLogIn() {
+    currentClientReservedScooters = {};
     cout << "----------------------- LOGIN -----------------------" << endl;
     string username;
     string password;
@@ -270,6 +238,7 @@ void UserInterface::clientLogIn() {
 }
 
 void UserInterface::clientRegistration() {
+    currentClientReservedScooters = {};
     cout << "----------------------- REGISTRATION FORM -----------------------" << endl;
     string username;
     string password;
@@ -675,7 +644,9 @@ void UserInterface::clientUI() {
         cout << "4. Reserve a scooter\n";
         cout << "5. Use a scooter\n";
         cout << "6. Free a scooter\n";
-        cout << "7. See all scooters\n\n";
+        cout << "7. See all scooters\n";
+        cout << "8. See all reserved scooters\n";
+        cout << "9. See your reserved scooters\n";
 
         cout << ">";
         cin >> userInput;
@@ -711,6 +682,7 @@ void UserInterface::clientUI() {
                 }
                 if (option == "no")
                     userInput = 0;
+                break;
             }
             case 2: {
                 Date date;
@@ -748,6 +720,8 @@ void UserInterface::clientUI() {
                 }
                 if (option == "no")
                     userInput = 0;
+
+                break;
             }
             case 3: {
                 float mileage;
@@ -775,11 +749,11 @@ void UserInterface::clientUI() {
                 }
                 if (option == "no")
                     userInput = 0;
+                break;
             }
             case 4: {
                 string id;
                 vector<ElectricScooter> scooters = scooterController->getAll();
-                vector<ElectricScooter> reservedScooters;
                 showAll();
 
                 cout << "Write de identifier of the scooter that you want to reserve:\n";
@@ -787,12 +761,15 @@ void UserInterface::clientUI() {
                 cin >> id;
 
                 try {
-                    scooterController->reserveScooter(id);
-                    for (const auto &it: scooters)
+                    scooterController->updateCondition("Reserved", id);
+
+                    for (const auto &it: scooterController->getAll()) {
                         if (it.getId() == id) {
-                            reservedScooters.push_back(it);
-                            return;
+                            currentClientReservedScooters.push_back(it);
+                            break;
                         }
+                    }
+
                     cout << "The selected scooter was reserved\n\n";
                 } catch (exception &e) {
                     cout << "\nThe selected scooter is not available\n";
@@ -817,20 +794,28 @@ void UserInterface::clientUI() {
                             cin >> id;
 
                             try {
-                                scooterController->reserveScooter(id);
-                                for (const auto &it: scooters)
+                                scooterController->updateCondition("Reserved", id);
+
+                                for (const auto &it: scooterController->getAll()) {
                                     if (it.getId() == id) {
-                                        reservedScooters.push_back(it);
-                                        return;
+                                        currentClientReservedScooters.push_back(it);
+                                        break;
                                     }
+                                }
+
                                 cout << "The selected scooter was reserved\n\n";
                             } catch (exception &e) {
                                 cout << "\nThe selected scooter is not available\n";
                             }
+                            break;
                         }
                         case 2: {
-                            for (auto it: reservedScooters)
-                                cout << it.toString() << endl;
+                            for (auto it: scooterController->getAll()) {
+                                if (it.getCondition() == "Reserved") {
+                                    cout << it.toString() << endl;
+                                }
+                            }
+                            break;
                         }
 
                         default: {
@@ -852,6 +837,7 @@ void UserInterface::clientUI() {
                 }
                 if (option == "no")
                     userInput = 0;
+                break;
             }
             case 5: {
                 string id;
@@ -862,7 +848,23 @@ void UserInterface::clientUI() {
                 cin >> id;
 
                 try {
-                    scooterController->useScooter(id);
+                    for (auto &it: scooterController->getAll()) {
+                        if (it.getId() == id) {
+                            if (it.getCondition() == "Parked") {
+                                scooterController->updateCondition("In use", it.getId());
+                                currentClientReservedScooters.push_back(it);
+                                cout << "You are using the scooter: " << it.toString() << '\n';
+                                break;
+                            }
+                        }
+                        for(const auto &it2 : currentClientReservedScooters){
+                            if(it == it2){
+                                scooterController->updateCondition("In use", it.getId());
+                                cout << "You are using the scooter: " << it.toString() << '\n';
+                                break;
+                            }
+                        }
+                    }
                 } catch (exception &e) {
                     cout << "\nThe selected scooter is not available\n";
                 }
@@ -878,19 +880,41 @@ void UserInterface::clientUI() {
                 }
                 if (option == "no")
                     userInput = 0;
+                break;
             }
             case 6: {
                 string id;
-                showAll();
+
+                if(currentClientReservedScooters.empty()){
+                    cout << "You have no scooters to free\n";
+                    cout << endl;
+                    string option;
+                    cout << "Would you like to continue? (yes / no)\n";
+                    cout << ">";
+                    cin >> option;
+                    if (option == "yes") {
+                        option.clear();
+                        clientUI();
+                    }
+                    if (option == "no")
+                        userInput = 0;
+                    break;
+                }
+                else{
+                    for(auto it : currentClientReservedScooters){
+                        cout << it.toString() << '\n';
+                    }
+                }
 
                 cout << "Write de identifier of the scooter that you want to free:\n";
                 cout << ">";
                 cin >> id;
 
-                try {
-                    scooterController->freeScooter(id);
-                } catch (exception &e) {
-                    cout << "\nThe selected scooter is not reserved or in use\n";
+                for(int i = 0; i < currentClientReservedScooters.size(); i++){
+                    if(currentClientReservedScooters[i].getId() == id){
+                        cout << "Freed " << currentClientReservedScooters[i].toString() << '\n';
+                             currentClientReservedScooters.erase(currentClientReservedScooters.begin() + i);
+                    }
                 }
 
                 cout << endl;
@@ -904,6 +928,7 @@ void UserInterface::clientUI() {
                 }
                 if (option == "no")
                     userInput = 0;
+                break;
             }
             case 7: {
                 showAll();
@@ -919,6 +944,46 @@ void UserInterface::clientUI() {
                 }
                 if (option == "no")
                     userInput = 0;
+                break;
+            }
+            case 8: {
+                for (auto it: scooterController->getAll()) {
+                    if (it.getCondition() == "Reserved") {
+                        cout << it.toString() << endl;
+                    }
+                }
+
+                cout << endl;
+                string option;
+                cout << "Would you like to continue? (yes / no)\n";
+                cout << ">";
+                cin >> option;
+                if (option == "yes") {
+                    option.clear();
+                    clientUI();
+                }
+                if (option == "no")
+                    userInput = 0;
+                break;
+            }
+            case 9: {
+                if (currentClientReservedScooters.empty())
+                    cout << "You have not reserved any scooters\n";
+                for (auto it: currentClientReservedScooters) {
+                    cout << it.toString() << endl;
+                }
+                cout << endl;
+                string option;
+                cout << "Would you like to continue? (yes / no)\n";
+                cout << ">";
+                cin >> option;
+                if (option == "yes") {
+                    option.clear();
+                    clientUI();
+                }
+                if (option == "no")
+                    userInput = 0;
+                break;
             }
 
             default: {

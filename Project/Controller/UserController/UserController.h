@@ -11,6 +11,7 @@ namespace Controller {
     private:
         shared_ptr<CrudRepository<Client>> clientRepository;
         shared_ptr<CrudRepository<Manager>> managerRepository;
+        shared_ptr<vector<ElectricScooter>> currentClientsReservedScooters;
 
         friend class ElectricScooterController;
 
@@ -37,10 +38,5 @@ namespace Controller {
         bool updateClient(const Client &oldClient, const Client &updatedClient);
 
         bool updateManager(const Manager &oldClient, const Manager &updatedClient);
-
-    private:
-        ///This function can only be used from ElectricScooterController
-        bool reserveScooter(Client client, const shared_ptr<ElectricScooter> &electricScooter);
-        bool freeScooter(Client client, const shared_ptr<ElectricScooter> &electricScooter);
     };
 }

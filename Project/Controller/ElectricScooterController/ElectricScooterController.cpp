@@ -219,7 +219,7 @@ void ElectricScooterController::freeScooter(const string &id) {
         throw invalid_argument("");
     for(auto &it: repository->findAll())
         if(it.getId() == id) {
-            if (it.getCondition() != "Reserved" || it.getCondition() != "In_Use")
+            if (it.getCondition() != "Reserved" || it.getCondition() != "In use")
                 throw exception();
             it.setCondition("Parked");
             return;
