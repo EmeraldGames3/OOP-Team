@@ -9,4 +9,4 @@ Identifier,Model,commissioning Date,Mileage,last Location,current Condition
 008,Model_E,2022-12-20,250,Gheorgheni,Reserved
 009,Model_X,2021-4-14,700,Plopilor,In use
 010,Model_Y,2020-8-31,260,Andrei_Muresan,Reserved
-420,Model_Y,2023-12-1,1,Gheordheni,Good
+420,Model_Y,2023-12-1,1,Gheordheni,Parked

@@ -14,6 +14,8 @@ namespace UI {
     public:
         UserInterface(shared_ptr<UserController> ctr1, shared_ptr<ElectricScooterController> ctr2);
 
+        void saveMethodMeniu();
+
         void mainMenu();
 
         void managerMenu();

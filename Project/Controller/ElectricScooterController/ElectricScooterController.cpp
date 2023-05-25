@@ -191,13 +191,37 @@ vector<ElectricScooter> ElectricScooterController::lastLocationSearch(const stri
 }
 
 void ElectricScooterController::reserveScooter(const string &id) {
-    //TODO: UserController::reserveScooter();
+    if(!find(id))
+        throw invalid_argument("");
+    for(auto &it: repository->findAll())
+        if(it.getId() == id) {
+            if (it.getCondition() != "Parked")
+                throw exception();
+            it.setCondition("Reserved");
+            return;
+        }
 }
 
 void ElectricScooterController::useScooter(const string &id) {
-    ///TODO:
+    if(!find(id))
+        throw invalid_argument("");
+    for(auto &it: repository->findAll())
+        if(it.getId() == id) {
+            if (it.getCondition() != "Parked")
+                throw exception();
+            it.setCondition("In_Use");
+            return;
+        }
 }
 
 void ElectricScooterController::freeScooter(const string &id) {
-    //TODO: UserController::freeScooter();
+    if(!find(id))
+        throw invalid_argument("");
+    for(auto &it: repository->findAll())
+        if(it.getId() == id) {
+            if (it.getCondition() != "Reserved" || it.getCondition() != "In_Use")
+                throw exception();
+            it.setCondition("Parked");
+            return;
+        }
 }
