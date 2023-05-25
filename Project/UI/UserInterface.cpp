@@ -143,8 +143,8 @@ void UserInterface::managerLogIn() {
     cin >> username;
     cout << "Password: ";
     cin >> password;
-    if (!userController->checkManagerAccount(username, password))
-        throw invalid_argument("");
+//    if (!userController->checkManagerAccount(username, password))
+//        throw invalid_argument("");
     cout << "Welcome back " << username << endl;
 }
 
@@ -231,8 +231,8 @@ void UserInterface::clientLogIn() {
     cout << "Password: ";
     cin >> password;
 
-    if (!userController->checkClientAccount(username, password))
-        throw invalid_argument("");
+//    if (!userController->checkClientAccount(username, password))
+//        throw invalid_argument("");
 
     cout << "Welcome back " << username << endl;
 }
@@ -761,6 +761,12 @@ void UserInterface::clientUI() {
                 cin >> id;
 
                 try {
+                    for(const auto &it : scooterController->getAll()){
+                        if(it.getId() == id && it.getCondition() != "Parked"){
+                            throw exception();
+                        }
+                    }
+
                     scooterController->updateCondition("Reserved", id);
 
                     for (const auto &it: scooterController->getAll()) {

@@ -7,6 +7,6 @@ Identifier,Model,commissioning Date,Mileage,last Location,current Condition
 006,Model_O,2022-2-11,800,Zorilor,Parked
 007,Model_S,2023-1-19,550,Bulgaria,Out of service
 008,Model_E,2022-12-20,250,Gheorgheni,Reserved
-009,Model_X,2021-4-14,700,Plopilor,In use
+009,Model_X,2021-4-14,700,Plopilor,Reserved
 010,Model_Y,2020-8-31,260,Andrei_Muresan,Reserved
-420,Model_Y,2023-12-1,1,Gheordheni,Parked
+420,Model_Y,2023-12-1,1,Gheordheni,Reserved
