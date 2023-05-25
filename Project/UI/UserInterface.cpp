@@ -29,7 +29,7 @@ void UserInterface::mainMenu() {
             clientMenu();
             break;
         case 3: {
-            mainMenu();
+            cout << "\n~~~~~~GOOD BYE!~~~~~~\n";
             break;
         }
 
@@ -456,8 +456,11 @@ void UserInterface::managerUI() {
                     option.clear();
                     managerUI();
                 }
-                if (option == "no")
+                if (option == "no") {
+                    option.clear();
                     userInput = 0;
+                }
+                break;
             }
             case 2: {
                 string id;
@@ -480,8 +483,11 @@ void UserInterface::managerUI() {
                     option.clear();
                     managerUI();
                 }
-                if (option == "no")
+                if (option == "no") {
+                    option.clear();
                     userInput = 0;
+                }
+                break;
             }
             case 3: {
                 updateInfo();
@@ -495,8 +501,11 @@ void UserInterface::managerUI() {
                     option.clear();
                     managerUI();
                 }
-                if (option == "no")
+                if (option == "no") {
+                    option.clear();
                     userInput = 0;
+                }
+                break;
             }
             case 4: {
                 string location;
@@ -522,8 +531,11 @@ void UserInterface::managerUI() {
                     option.clear();
                     managerUI();
                 }
-                if (option == "no")
+                if (option == "no") {
+                    option.clear();
                     userInput = 0;
+                }
+                break;
             }
             case 5: {
                 Date date;
@@ -559,8 +571,11 @@ void UserInterface::managerUI() {
                     option.clear();
                     managerUI();
                 }
-                if (option == "no")
+                if (option == "no") {
+                    option.clear();
                     userInput = 0;
+                }
+                break;
             }
             case 6: {
                 float mileage;
@@ -586,8 +601,11 @@ void UserInterface::managerUI() {
                     option.clear();
                     managerUI();
                 }
-                if (option == "no")
+                if (option == "no") {
+                    option.clear();
                     userInput = 0;
+                }
+                break;
             }
             case 7: {
                 vector<ElectricScooter> scooters = scooterController->ageSorted();
@@ -603,8 +621,11 @@ void UserInterface::managerUI() {
                     option.clear();
                     managerUI();
                 }
-                if (option == "no")
+                if (option == "no") {
+                    option.clear();
                     userInput = 0;
+                }
+                break;
             }
             case 8: {
                 showAll();
@@ -618,8 +639,11 @@ void UserInterface::managerUI() {
                     option.clear();
                     managerUI();
                 }
-                if (option == "no")
+                if (option == "no") {
+                    option.clear();
                     userInput = 0;
+                }
+                break;
             }
 
             default: {
@@ -680,8 +704,10 @@ void UserInterface::clientUI() {
                     option.clear();
                     clientUI();
                 }
-                if (option == "no")
+                if (option == "no") {
+                    option.clear();
                     userInput = 0;
+                }
                 break;
             }
             case 2: {
@@ -718,8 +744,10 @@ void UserInterface::clientUI() {
                     option.clear();
                     clientUI();
                 }
-                if (option == "no")
+                if (option == "no") {
+                    option.clear();
                     userInput = 0;
+                }
 
                 break;
             }
@@ -747,8 +775,10 @@ void UserInterface::clientUI() {
                     option.clear();
                     clientUI();
                 }
-                if (option == "no")
+                if (option == "no") {
+                    option.clear();
                     userInput = 0;
+                }
                 break;
             }
             case 4: {
@@ -761,12 +791,6 @@ void UserInterface::clientUI() {
                 cin >> id;
 
                 try {
-                    for(const auto &it : scooterController->getAll()){
-                        if(it.getId() == id && it.getCondition() != "Parked"){
-                            throw exception();
-                        }
-                    }
-
                     scooterController->updateCondition("Reserved", id);
 
                     for (const auto &it: scooterController->getAll()) {
@@ -841,8 +865,10 @@ void UserInterface::clientUI() {
                     option.clear();
                     clientUI();
                 }
-                if (option == "no")
+                if (option == "no") {
+                    option.clear();
                     userInput = 0;
+                }
                 break;
             }
             case 5: {
@@ -884,8 +910,10 @@ void UserInterface::clientUI() {
                     option.clear();
                     clientUI();
                 }
-                if (option == "no")
+                if (option == "no") {
+                    option.clear();
                     userInput = 0;
+                }
                 break;
             }
             case 6: {
@@ -902,8 +930,10 @@ void UserInterface::clientUI() {
                         option.clear();
                         clientUI();
                     }
-                    if (option == "no")
+                    if (option == "no") {
+                        option.clear();
                         userInput = 0;
+                    }
                     break;
                 }
                 else{
@@ -919,7 +949,7 @@ void UserInterface::clientUI() {
                 for(int i = 0; i < currentClientReservedScooters.size(); i++){
                     if(currentClientReservedScooters[i].getId() == id){
                         cout << "Freed " << currentClientReservedScooters[i].toString() << '\n';
-                             currentClientReservedScooters.erase(currentClientReservedScooters.begin() + i);
+                        currentClientReservedScooters.erase(currentClientReservedScooters.begin() + i);
                     }
                 }
 
@@ -932,8 +962,10 @@ void UserInterface::clientUI() {
                     option.clear();
                     clientUI();
                 }
-                if (option == "no")
+                if (option == "no") {
+                    option.clear();
                     userInput = 0;
+                }
                 break;
             }
             case 7: {
@@ -948,8 +980,10 @@ void UserInterface::clientUI() {
                     option.clear();
                     clientUI();
                 }
-                if (option == "no")
+                if (option == "no") {
+                    option.clear();
                     userInput = 0;
+                }
                 break;
             }
             case 8: {
@@ -968,8 +1002,10 @@ void UserInterface::clientUI() {
                     option.clear();
                     clientUI();
                 }
-                if (option == "no")
+                if (option == "no") {
+                    option.clear();
                     userInput = 0;
+                }
                 break;
             }
             case 9: {
@@ -987,8 +1023,10 @@ void UserInterface::clientUI() {
                     option.clear();
                     clientUI();
                 }
-                if (option == "no")
+                if (option == "no") {
+                    option.clear();
                     userInput = 0;
+                }
                 break;
             }
 
@@ -1003,15 +1041,19 @@ void UserInterface::clientUI() {
 }
 
 bool UserInterface::firstPrompt() {
-    cout << "Choose your preferred storage mode\n";
-    cout << "Choose 0 if you want the data not to be saved at the end of the programme\n";
-    cout << "Choose 1 if you want the data to be saved at the end of the programme\n";
+    int choice;
+    cout << "\n------------------------ WELCOME TO SCOOTERS~RENTAL.COM ------------------------\n\n";
+    cout << "Choose a data saving method\n";
+    cout << "1. In DataBase\n";
+    cout << "2. In Memory\n";
+    cout << "Enter your choice: " << endl;
+    cout << ">";
+    cin >> choice;
 
-    int option;
-    cin >> option;
-
-    if (option == 1)
+    if (choice == 1) {
+        cin.clear();
         return true;
-
+    }
+    cin.clear();
     return false;
 }
