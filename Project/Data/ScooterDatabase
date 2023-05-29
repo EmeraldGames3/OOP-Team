@@ -3,7 +3,7 @@ Identifier,Model,commissioning Date,Mileage,last Location,current Condition
 002,Model_E,2021-2-20,350,Faget,Reserved
 003,Model_X,2022-3-10,200,Marasti,In use
 004,Model_Y,2023-7-25,100,Floresti,Under maintenance
-005,Model_O,2022-10-21,450,Centru,Parked
+005,Model_O,2022-10-21,450,Centru,Reserved
 006,Model_O,2022-2-11,800,Zorilor,Parked
 007,Model_S,2023-1-19,550,Bulgaria,Out of service
 008,Model_E,2022-12-20,250,Gheorgheni,Reserved

@@ -11,7 +11,6 @@ namespace Controller {
     private:
         shared_ptr<CrudRepository<Client>> clientRepository;
         shared_ptr<CrudRepository<Manager>> managerRepository;
-        shared_ptr<vector<ElectricScooter>> currentClientsReservedScooters;
 
         friend class ElectricScooterController;
 
