@@ -428,6 +428,9 @@ Project: CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUser
 Project: CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o
 Project: CMakeFiles/Project.dir/UI/UserInterface.cpp.o
 Project: CMakeFiles/Project.dir/build.make
+Project: /home/bogdan/Qt/5.15.2/gcc_64/lib/libQt5Widgets.so.5.15.2
+Project: /home/bogdan/Qt/5.15.2/gcc_64/lib/libQt5Gui.so.5.15.2
+Project: /home/bogdan/Qt/5.15.2/gcc_64/lib/libQt5Core.so.5.15.2
 Project: CMakeFiles/Project.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable Project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Project.dir/link.txt --verbose=$(VERBOSE)

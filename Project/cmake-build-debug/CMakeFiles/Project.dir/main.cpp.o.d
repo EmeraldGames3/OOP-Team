@@ -224,4 +224,102 @@ CMakeFiles/Project.dir/main.cpp.o: \
  /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc
+ /usr/include/c++/11/bits/fstream.tcc \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QApplication \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qapplication.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtguiglobal.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qglobal.h \
+ /usr/include/c++/11/cstddef /usr/include/assert.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qconfig.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qsystemdetection.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qprocessordetection.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qcompilerdetection.h \
+ /usr/include/c++/11/algorithm /usr/include/c++/11/bits/ranges_algo.h \
+ /usr/include/c++/11/bits/ranges_util.h \
+ /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
+ /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/bits/erase_if.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qsysinfo.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qlogging.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qflags.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qatomic.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qgenericatomic.h \
+ /usr/include/c++/11/atomic \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qglobalstatic.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qnumeric.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qversiontagging.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtgui-config.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtwidgets-config.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qcoreapplication.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qstring.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qchar.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qrefcount.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qnamespace.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qarraydata.h \
+ /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/11/stdlib.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qstringliteral.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qstringalgorithms.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qstringview.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qobject.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs_impl.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qlist.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qalgorithms.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qiterator.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qhashfunctions.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qpair.h \
+ /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
+ /usr/include/c++/11/limits /usr/include/c++/11/pstl/glue_numeric_defs.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qvector.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qcontainertools_impl.h \
+ /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
+ /usr/include/c++/11/bits/list.tcc \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qstringlist.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qregexp.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qstringmatcher.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qscopedpointer.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qmetatype.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qvarlengtharray.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qcontainerfwd.h \
+ /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qobject_impl.h \
+ /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
+ /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qcoreevent.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qeventloop.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qwindowdefs.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qpoint.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qsize.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qmargins.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qcursor.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qguiapplication.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qinputmethod.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qlocale.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qvariant.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qmap.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qhash.h \
+ /usr/include/c++/11/variant \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qshareddata.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/QDebug \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qdebug.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qiodevice.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qset.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qcontiguouscache.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer_impl.h

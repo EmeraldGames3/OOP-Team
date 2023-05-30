@@ -238,6 +238,15 @@ Project_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=/home/bogdan/Programming/University/OOP-Team/Project
 
+//The directory containing a CMake configuration file for Qt5Core.
+Qt5Core_DIR:PATH=/home/bogdan/Qt/5.15.2/gcc_64/lib/cmake/Qt5Core
+
+//The directory containing a CMake configuration file for Qt5Gui.
+Qt5Gui_DIR:PATH=/home/bogdan/Qt/5.15.2/gcc_64/lib/cmake/Qt5Gui
+
+//The directory containing a CMake configuration file for Qt5Widgets.
+Qt5Widgets_DIR:PATH=/home/bogdan/Qt/5.15.2/gcc_64/lib/cmake/Qt5Widgets
+
 
 ########################
 # INTERNAL cache entries

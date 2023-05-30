@@ -2,6 +2,8 @@
 #include <memory>
 #include "Tests/TestAll.h"
 #include <fstream>
+#include <QApplication>
+#include <QDebug>
 
 using namespace UI;
 using namespace std;
