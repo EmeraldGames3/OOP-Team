@@ -24,11 +24,11 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDate/TestDate.cpp" "CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o" "gcc" "CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDomain.cpp" "CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o" "gcc" "CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp" "CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o" "gcc" "CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o.d"
+  "/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestClient.cpp" "CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.o" "gcc" "CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestUser.cpp" "CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o" "gcc" "CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp" "CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o" "gcc" "CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp" "CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o" "gcc" "CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestRepository.cpp" "CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o" "gcc" "CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o.d"
-  "/home/bogdan/Programming/University/OOP-Team/Project/UI/UserInterface.cpp" "CMakeFiles/Project.dir/UI/UserInterface.cpp.o" "gcc" "CMakeFiles/Project.dir/UI/UserInterface.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/main.cpp" "CMakeFiles/Project.dir/main.cpp.o" "gcc" "CMakeFiles/Project.dir/main.cpp.o.d"
   )
 

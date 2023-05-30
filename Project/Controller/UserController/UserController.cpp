@@ -1,5 +1,6 @@
 #include "UserController.h"
 #include <utility>
+#include <algorithm>
 
 using namespace Controller;
 
@@ -30,31 +31,28 @@ bool UserController::removeManager(const string &username, const string &passwor
 }
 
 bool UserController::checkClientAccount(const string &username, const string &password) {
-    for (auto &client: clientRepository->findAll())
-        if (client.getUsername() == username && client.getPassword() == password)
-            return true;
-    return false;
+    return std::ranges::any_of(clientRepository->findAll(), [&](const auto &client) {
+        return client.getUsername() == username && client.getPassword() == password;
+    });
 }
 
 bool UserController::checkManagerAccount(const string &username, const string &password) {
-    for (auto &manager: managerRepository->findAll())
-        if (manager.getUsername() == username && manager.getPassword() == password)
-            return true;
-    return false;
+    return std::ranges::any_of(managerRepository->findAll(), [&](const auto &manager) {
+        return manager.getUsername() == username && manager.getPassword() == password;
+    });
 }
 
 bool UserController::findClient(const string &username) {
-    for (auto &client: clientRepository->findAll())
-        if (client.getUsername() == username)
-            return true;
-    return false;
+    return std::ranges::any_of(clientRepository->findAll(), [&](const auto &client) {
+        return client.getUsername() == username;
+    });
 }
 
+
 bool UserController::findManager(const string &username) {
-    for (auto &manager: managerRepository->findAll())
-        if (manager.getUsername() == username)
-            return true;
-    return false;
+    return std::ranges::any_of(managerRepository->findAll(), [&](const auto &manager) {
+        return manager.getUsername() == username;
+    });
 }
 
 bool UserController::updateClient(const Client &oldClient, const Client &updatedClient) {

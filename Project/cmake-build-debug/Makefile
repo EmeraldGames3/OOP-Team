@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/bogdan/Programming/University/OOP-Team/Project/cmake-bu
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -513,6 +513,30 @@ Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.s
 .PHONY : Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.s
 
+Tests/TestDomain/TestUser/TestClient.o: Tests/TestDomain/TestUser/TestClient.cpp.o
+.PHONY : Tests/TestDomain/TestUser/TestClient.o
+
+# target to build an object file
+Tests/TestDomain/TestUser/TestClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.o
+.PHONY : Tests/TestDomain/TestUser/TestClient.cpp.o
+
+Tests/TestDomain/TestUser/TestClient.i: Tests/TestDomain/TestUser/TestClient.cpp.i
+.PHONY : Tests/TestDomain/TestUser/TestClient.i
+
+# target to preprocess a source file
+Tests/TestDomain/TestUser/TestClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.i
+.PHONY : Tests/TestDomain/TestUser/TestClient.cpp.i
+
+Tests/TestDomain/TestUser/TestClient.s: Tests/TestDomain/TestUser/TestClient.cpp.s
+.PHONY : Tests/TestDomain/TestUser/TestClient.s
+
+# target to generate assembly for a file
+Tests/TestDomain/TestUser/TestClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.s
+.PHONY : Tests/TestDomain/TestUser/TestClient.cpp.s
+
 Tests/TestDomain/TestUser/TestUser.o: Tests/TestDomain/TestUser/TestUser.cpp.o
 .PHONY : Tests/TestDomain/TestUser/TestUser.o
 
@@ -609,30 +633,6 @@ Tests/TestRepository/TestRepository.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.s
 .PHONY : Tests/TestRepository/TestRepository.cpp.s
 
-UI/UserInterface.o: UI/UserInterface.cpp.o
-.PHONY : UI/UserInterface.o
-
-# target to build an object file
-UI/UserInterface.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/UserInterface.cpp.o
-.PHONY : UI/UserInterface.cpp.o
-
-UI/UserInterface.i: UI/UserInterface.cpp.i
-.PHONY : UI/UserInterface.i
-
-# target to preprocess a source file
-UI/UserInterface.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/UserInterface.cpp.i
-.PHONY : UI/UserInterface.cpp.i
-
-UI/UserInterface.s: UI/UserInterface.cpp.s
-.PHONY : UI/UserInterface.s
-
-# target to generate assembly for a file
-UI/UserInterface.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/UserInterface.cpp.s
-.PHONY : UI/UserInterface.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -714,6 +714,9 @@ help:
 	@echo "... Tests/TestDomain/TestElectricScooter/TestElectricScooter.o"
 	@echo "... Tests/TestDomain/TestElectricScooter/TestElectricScooter.i"
 	@echo "... Tests/TestDomain/TestElectricScooter/TestElectricScooter.s"
+	@echo "... Tests/TestDomain/TestUser/TestClient.o"
+	@echo "... Tests/TestDomain/TestUser/TestClient.i"
+	@echo "... Tests/TestDomain/TestUser/TestClient.s"
 	@echo "... Tests/TestDomain/TestUser/TestUser.o"
 	@echo "... Tests/TestDomain/TestUser/TestUser.i"
 	@echo "... Tests/TestDomain/TestUser/TestUser.s"
@@ -726,9 +729,6 @@ help:
 	@echo "... Tests/TestRepository/TestRepository.o"
 	@echo "... Tests/TestRepository/TestRepository.i"
 	@echo "... Tests/TestRepository/TestRepository.s"
-	@echo "... UI/UserInterface.o"
-	@echo "... UI/UserInterface.i"
-	@echo "... UI/UserInterface.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

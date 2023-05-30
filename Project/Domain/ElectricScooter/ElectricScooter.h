@@ -15,7 +15,6 @@ namespace Domain {
         float mileage;
         string lastLocation;
         string currentCondition;
-        bool reserved;
 
     public:
         ///Default constructor
@@ -36,7 +35,6 @@ namespace Domain {
         [[nodiscard]] float getMileage() const;
         [[nodiscard]] string getLocation() const;
         [[nodiscard]] string getCondition() const;
-        [[nodiscard]] bool isReserved() const;
 
         ///Setters
         void setModel(const string &newModel);
@@ -45,8 +43,6 @@ namespace Domain {
         void setMileage(float newMileage);
         void setLocation(const string &newLocation);
         void setCondition(const string &newCondition);
-        void reserve();
-        void free();
 
         ///Functions for writing/reading to/from files
         [[nodiscard]] string toString() override;

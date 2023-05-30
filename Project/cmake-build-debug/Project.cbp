@@ -194,6 +194,12 @@
 		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestElectricScooter/TestElectricScooter.h">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestClient.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestClient.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestUser.cpp">
 			<Option target="Project"/>
 		</Unit>
@@ -216,15 +222,6 @@
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestRepository.h">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/UI.h">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/UserInterface.cpp">
-			<Option target="Project"/>
-		</Unit>
-		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/UserInterface.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/main.cpp">

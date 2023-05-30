@@ -11,6 +11,8 @@ namespace Controller {
     class ElectricScooterController {
     private:
         shared_ptr<CrudRepository<ElectricScooter>> repository;
+        User currentUser;
+
     public:
         ///Constructor
         explicit ElectricScooterController(shared_ptr<CrudRepository<ElectricScooter>> repo);
@@ -47,12 +49,9 @@ namespace Controller {
         ///Check if a scooter is in the Data Base
         bool find(const string& id);
 
-        ///Reserve a scooter
-        void reserveScooter(const string &id);
-
-        ///Use a scooter
-        void useScooter(const string &id);
-
-        void freeScooter(const string &id);
+        ///Manipulate a scooter
+        bool reserveScooter(const string &id, Client &client);
+        bool useScooter(const string &id, Client &client);
+        bool freeScooter(const string &id, Client &client);
     };
 }

@@ -7,10 +7,13 @@
 
 using namespace Domain;
 
+#define NULL_SCOOTER_ID "---"
+
 namespace Domain {
     class Client : public User {
     private:
-        vector<shared_ptr<ElectricScooter>> reservedScooters;
+        vector<ElectricScooter> reservedScooters;
+        ElectricScooter scooterInUse;
 
     public:
         ///Default constructor
@@ -19,10 +22,19 @@ namespace Domain {
         ///Copy constructor
         Client(const Client &client) = default;
 
-        void reserveScooter(const shared_ptr<ElectricScooter>& electricScooter);
+        ///Check if a client is already on a ride
+        [[nodiscard]] bool isOnRide() { return scooterInUse.getId() != NULL_SCOOTER_ID; }
+        [[nodiscard]] ElectricScooter getScooterInUse() { return scooterInUse; }
 
-        bool freeScooter(const shared_ptr<ElectricScooter>& electricScooter);
+        ///Manipulate the reserved scooters of this client
+        [[nodiscard]] bool reserveScooter(const ElectricScooter &electricScooter);
+        [[nodiscard]] bool freeScooter(const ElectricScooter &electricScooter);
+        [[nodiscard]] vector<ElectricScooter> getReservedScooters();
 
+        ///Use a scooter
+        [[nodiscard]] bool useScooter(const ElectricScooter &electricScooter);
+
+        ///Get a client from a string
         static Client convertFromStr(string str);
     };
 }

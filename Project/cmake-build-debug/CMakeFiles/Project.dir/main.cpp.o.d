@@ -322,4 +322,37 @@ CMakeFiles/Project.dir/main.cpp.o: \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qset.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qcontiguouscache.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer_impl.h
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer_impl.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QLabel \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlabel.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qframe.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qwidget.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qpaintdevice.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qrect.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qpalette.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qcolor.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qrgb.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qrgba64.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qbrush.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qmatrix.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qpolygon.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qregion.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qdatastream.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qline.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtransform.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qimage.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qpixelformat.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qpixmap.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qfont.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qfontmetrics.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qfontinfo.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qsizepolicy.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qkeysequence.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QVBoxLayout \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qboxlayout.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlayout.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlayoutitem.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qboxlayout.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qgridlayout.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QWidget \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qwidget.h

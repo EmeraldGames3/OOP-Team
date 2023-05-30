@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /home/bogdan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -83,103 +83,103 @@ CMakeFiles/Project.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/main.cpp -o CMakeFiles/Project.dir/main.cpp.s
 
-CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestRepository.cpp
-CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o -MF CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestRepository.cpp
+CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.cpp
+CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o -MF CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o.d -o CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.cpp
 
-CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestRepository.cpp > CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.i
+CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.cpp > CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.i
 
-CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestRepository.cpp -o CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.s
+CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.cpp -o CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.s
 
-CMakeFiles/Project.dir/Tests/TestAll.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/Tests/TestAll.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestAll.cpp
-CMakeFiles/Project.dir/Tests/TestAll.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Project.dir/Tests/TestAll.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestAll.cpp.o -MF CMakeFiles/Project.dir/Tests/TestAll.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestAll.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestAll.cpp
+CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Controller/UserController/UserController.cpp
+CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o -MF CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o.d -o CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Controller/UserController/UserController.cpp
 
-CMakeFiles/Project.dir/Tests/TestAll.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestAll.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestAll.cpp > CMakeFiles/Project.dir/Tests/TestAll.cpp.i
+CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Controller/UserController/UserController.cpp > CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.i
 
-CMakeFiles/Project.dir/Tests/TestAll.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestAll.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestAll.cpp -o CMakeFiles/Project.dir/Tests/TestAll.cpp.s
+CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Controller/UserController/UserController.cpp -o CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.s
 
-CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestController.cpp
-CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.o -MF CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestController.cpp
+CMakeFiles/Project.dir/Domain/Date/Date.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Domain/Date/Date.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Domain/Date/Date.cpp
+CMakeFiles/Project.dir/Domain/Date/Date.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Project.dir/Domain/Date/Date.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Domain/Date/Date.cpp.o -MF CMakeFiles/Project.dir/Domain/Date/Date.cpp.o.d -o CMakeFiles/Project.dir/Domain/Date/Date.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Domain/Date/Date.cpp
 
-CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestController.cpp > CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.i
+CMakeFiles/Project.dir/Domain/Date/Date.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Domain/Date/Date.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Domain/Date/Date.cpp > CMakeFiles/Project.dir/Domain/Date/Date.cpp.i
 
-CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestController.cpp -o CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.s
+CMakeFiles/Project.dir/Domain/Date/Date.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Domain/Date/Date.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Domain/Date/Date.cpp -o CMakeFiles/Project.dir/Domain/Date/Date.cpp.s
 
-CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDate/TestDate.cpp
-CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o -MF CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDate/TestDate.cpp
+CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Domain/ElectricScooter/ElectricScooter.cpp
+CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o -MF CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o.d -o CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Domain/ElectricScooter/ElectricScooter.cpp
 
-CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDate/TestDate.cpp > CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.i
+CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Domain/ElectricScooter/ElectricScooter.cpp > CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.i
 
-CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDate/TestDate.cpp -o CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.s
+CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Domain/ElectricScooter/ElectricScooter.cpp -o CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.s
 
-CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp
-CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o -MF CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp
+CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Client/Client.cpp
+CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o -MF CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o.d -o CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Client/Client.cpp
 
-CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp > CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.i
+CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Client/Client.cpp > CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.i
 
-CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp -o CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.s
+CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Client/Client.cpp -o CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.s
 
-CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDomain.cpp
-CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o -MF CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDomain.cpp
+CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/Manager.cpp
+CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o -MF CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o.d -o CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/Manager.cpp
 
-CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDomain.cpp > CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.i
+CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/Manager.cpp > CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.i
 
-CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDomain.cpp -o CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.s
+CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/Manager.cpp -o CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.s
 
-CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestUser.cpp
-CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o -MF CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestUser.cpp
+CMakeFiles/Project.dir/Domain/User/User/User.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Domain/User/User/User.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/User/User.cpp
+CMakeFiles/Project.dir/Domain/User/User/User.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Project.dir/Domain/User/User/User.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Domain/User/User/User.cpp.o -MF CMakeFiles/Project.dir/Domain/User/User/User.cpp.o.d -o CMakeFiles/Project.dir/Domain/User/User/User.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/User/User.cpp
 
-CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestUser.cpp > CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.i
+CMakeFiles/Project.dir/Domain/User/User/User.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Domain/User/User/User.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/User/User.cpp > CMakeFiles/Project.dir/Domain/User/User/User.cpp.i
 
-CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestUser.cpp -o CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.s
+CMakeFiles/Project.dir/Domain/User/User/User.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Domain/User/User/User.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/User/User.cpp -o CMakeFiles/Project.dir/Domain/User/User/User.cpp.s
 
 CMakeFiles/Project.dir/Repository/CSV-FileRepository/CSV-FileRepository.cpp.o: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/Repository/CSV-FileRepository/CSV-FileRepository.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Repository/CSV-FileRepository/CSV-FileRepository.cpp
@@ -195,80 +195,10 @@ CMakeFiles/Project.dir/Repository/CSV-FileRepository/CSV-FileRepository.cpp.s: c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Repository/CSV-FileRepository/CSV-FileRepository.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Repository/CSV-FileRepository/CSV-FileRepository.cpp -o CMakeFiles/Project.dir/Repository/CSV-FileRepository/CSV-FileRepository.cpp.s
 
-CMakeFiles/Project.dir/Domain/User/User/User.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/Domain/User/User/User.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/User/User.cpp
-CMakeFiles/Project.dir/Domain/User/User/User.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Project.dir/Domain/User/User/User.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Domain/User/User/User.cpp.o -MF CMakeFiles/Project.dir/Domain/User/User/User.cpp.o.d -o CMakeFiles/Project.dir/Domain/User/User/User.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/User/User.cpp
-
-CMakeFiles/Project.dir/Domain/User/User/User.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Domain/User/User/User.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/User/User.cpp > CMakeFiles/Project.dir/Domain/User/User/User.cpp.i
-
-CMakeFiles/Project.dir/Domain/User/User/User.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Domain/User/User/User.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/User/User.cpp -o CMakeFiles/Project.dir/Domain/User/User/User.cpp.s
-
-CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/Manager.cpp
-CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o -MF CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o.d -o CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/Manager.cpp
-
-CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/Manager.cpp > CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.i
-
-CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/Manager.cpp -o CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.s
-
-CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Client/Client.cpp
-CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o -MF CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o.d -o CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Client/Client.cpp
-
-CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Client/Client.cpp > CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.i
-
-CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Client/Client.cpp -o CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.s
-
-CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Domain/ElectricScooter/ElectricScooter.cpp
-CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o -MF CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o.d -o CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Domain/ElectricScooter/ElectricScooter.cpp
-
-CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Domain/ElectricScooter/ElectricScooter.cpp > CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.i
-
-CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Domain/ElectricScooter/ElectricScooter.cpp -o CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.s
-
-CMakeFiles/Project.dir/Domain/Date/Date.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/Domain/Date/Date.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Domain/Date/Date.cpp
-CMakeFiles/Project.dir/Domain/Date/Date.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Project.dir/Domain/Date/Date.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Domain/Date/Date.cpp.o -MF CMakeFiles/Project.dir/Domain/Date/Date.cpp.o.d -o CMakeFiles/Project.dir/Domain/Date/Date.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Domain/Date/Date.cpp
-
-CMakeFiles/Project.dir/Domain/Date/Date.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Domain/Date/Date.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Domain/Date/Date.cpp > CMakeFiles/Project.dir/Domain/Date/Date.cpp.i
-
-CMakeFiles/Project.dir/Domain/Date/Date.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Domain/Date/Date.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Domain/Date/Date.cpp -o CMakeFiles/Project.dir/Domain/Date/Date.cpp.s
-
 CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.o: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Repository/InMemoryRepository/InMemoryRepository.cpp
 CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.o -MF CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.o.d -o CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Repository/InMemoryRepository/InMemoryRepository.cpp
 
 CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.i: cmake_force
@@ -279,80 +209,38 @@ CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.s: c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Repository/InMemoryRepository/InMemoryRepository.cpp -o CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.s
 
-CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp
-CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o -MF CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp
+CMakeFiles/Project.dir/Tests/TestAll.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Tests/TestAll.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestAll.cpp
+CMakeFiles/Project.dir/Tests/TestAll.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Project.dir/Tests/TestAll.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestAll.cpp.o -MF CMakeFiles/Project.dir/Tests/TestAll.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestAll.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestAll.cpp
 
-CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp > CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.i
+CMakeFiles/Project.dir/Tests/TestAll.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestAll.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestAll.cpp > CMakeFiles/Project.dir/Tests/TestAll.cpp.i
 
-CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp -o CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.s
+CMakeFiles/Project.dir/Tests/TestAll.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestAll.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestAll.cpp -o CMakeFiles/Project.dir/Tests/TestAll.cpp.s
 
-CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Controller/UserController/UserController.cpp
-CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o -MF CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o.d -o CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Controller/UserController/UserController.cpp
+CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestController.cpp
+CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.o -MF CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestController.cpp
 
-CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Controller/UserController/UserController.cpp > CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.i
+CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestController.cpp > CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.i
 
-CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Controller/UserController/UserController.cpp -o CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.s
-
-CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.cpp
-CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o -MF CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o.d -o CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.cpp
-
-CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.cpp > CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.i
-
-CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.cpp -o CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.s
-
-CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp
-CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o -MF CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp
-
-CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp > CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.i
-
-CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp -o CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.s
-
-CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestUserController/TestUserController.cpp
-CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o -MF CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestUserController/TestUserController.cpp
-
-CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestUserController/TestUserController.cpp > CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.i
-
-CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestUserController/TestUserController.cpp -o CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.s
+CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestController.cpp -o CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.s
 
 CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp
 CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o -MF CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp
 
 CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.i: cmake_force
@@ -363,70 +251,182 @@ CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestEl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp -o CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.s
 
-CMakeFiles/Project.dir/UI/UserInterface.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/UI/UserInterface.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/UI/UserInterface.cpp
-CMakeFiles/Project.dir/UI/UserInterface.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Project.dir/UI/UserInterface.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/UI/UserInterface.cpp.o -MF CMakeFiles/Project.dir/UI/UserInterface.cpp.o.d -o CMakeFiles/Project.dir/UI/UserInterface.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/UI/UserInterface.cpp
+CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestUserController/TestUserController.cpp
+CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o -MF CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestUserController/TestUserController.cpp
 
-CMakeFiles/Project.dir/UI/UserInterface.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/UI/UserInterface.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/UI/UserInterface.cpp > CMakeFiles/Project.dir/UI/UserInterface.cpp.i
+CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestUserController/TestUserController.cpp > CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.i
 
-CMakeFiles/Project.dir/UI/UserInterface.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/UI/UserInterface.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/UI/UserInterface.cpp -o CMakeFiles/Project.dir/UI/UserInterface.cpp.s
+CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestUserController/TestUserController.cpp -o CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.s
+
+CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDate/TestDate.cpp
+CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o -MF CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDate/TestDate.cpp
+
+CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDate/TestDate.cpp > CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.i
+
+CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDate/TestDate.cpp -o CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.s
+
+CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDomain.cpp
+CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o -MF CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDomain.cpp
+
+CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDomain.cpp > CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.i
+
+CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestDomain.cpp -o CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.s
+
+CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp
+CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o -MF CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp
+
+CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp > CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.i
+
+CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp -o CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.s
+
+CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestClient.cpp
+CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.o -MF CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestClient.cpp
+
+CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestClient.cpp > CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.i
+
+CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestClient.cpp -o CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.s
+
+CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestUser.cpp
+CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o -MF CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestUser.cpp
+
+CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestUser.cpp > CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.i
+
+CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestDomain/TestUser/TestUser.cpp -o CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.s
+
+CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp
+CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o -MF CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp
+
+CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp > CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.i
+
+CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp -o CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.s
+
+CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp
+CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o -MF CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp
+
+CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp > CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.i
+
+CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp -o CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.s
+
+CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestRepository.cpp
+CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o -MF CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o.d -o CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestRepository.cpp
+
+CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestRepository.cpp > CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.i
+
+CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestRepository.cpp -o CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.s
 
 # Object files for target Project
 Project_OBJECTS = \
 "CMakeFiles/Project.dir/main.cpp.o" \
-"CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o" \
+"CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o" \
+"CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o" \
+"CMakeFiles/Project.dir/Domain/Date/Date.cpp.o" \
+"CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o" \
+"CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o" \
+"CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o" \
+"CMakeFiles/Project.dir/Domain/User/User/User.cpp.o" \
+"CMakeFiles/Project.dir/Repository/CSV-FileRepository/CSV-FileRepository.cpp.o" \
+"CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.o" \
 "CMakeFiles/Project.dir/Tests/TestAll.cpp.o" \
 "CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.o" \
-"CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o" \
-"CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o" \
-"CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o" \
-"CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o" \
-"CMakeFiles/Project.dir/Repository/CSV-FileRepository/CSV-FileRepository.cpp.o" \
-"CMakeFiles/Project.dir/Domain/User/User/User.cpp.o" \
-"CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o" \
-"CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o" \
-"CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o" \
-"CMakeFiles/Project.dir/Domain/Date/Date.cpp.o" \
-"CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.o" \
-"CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o" \
-"CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o" \
-"CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o" \
-"CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o" \
-"CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o" \
 "CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o" \
-"CMakeFiles/Project.dir/UI/UserInterface.cpp.o"
+"CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o" \
+"CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o" \
+"CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o" \
+"CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o" \
+"CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.o" \
+"CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o" \
+"CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o" \
+"CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o" \
+"CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o"
 
 # External object files for target Project
 Project_EXTERNAL_OBJECTS =
 
 Project: CMakeFiles/Project.dir/main.cpp.o
-Project: CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o
+Project: CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o
+Project: CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o
+Project: CMakeFiles/Project.dir/Domain/Date/Date.cpp.o
+Project: CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o
+Project: CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o
+Project: CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o
+Project: CMakeFiles/Project.dir/Domain/User/User/User.cpp.o
+Project: CMakeFiles/Project.dir/Repository/CSV-FileRepository/CSV-FileRepository.cpp.o
+Project: CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.o
 Project: CMakeFiles/Project.dir/Tests/TestAll.cpp.o
 Project: CMakeFiles/Project.dir/Tests/TestController/TestController.cpp.o
-Project: CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o
-Project: CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o
-Project: CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o
-Project: CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o
-Project: CMakeFiles/Project.dir/Repository/CSV-FileRepository/CSV-FileRepository.cpp.o
-Project: CMakeFiles/Project.dir/Domain/User/User/User.cpp.o
-Project: CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o
-Project: CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o
-Project: CMakeFiles/Project.dir/Domain/ElectricScooter/ElectricScooter.cpp.o
-Project: CMakeFiles/Project.dir/Domain/Date/Date.cpp.o
-Project: CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.o
-Project: CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o
-Project: CMakeFiles/Project.dir/Controller/UserController/UserController.cpp.o
-Project: CMakeFiles/Project.dir/Controller/ElectricScooterController/ElectricScooterController.cpp.o
-Project: CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o
-Project: CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o
 Project: CMakeFiles/Project.dir/Tests/TestController/TestElectricScooterController/TestElectricScooterController.cpp.o
-Project: CMakeFiles/Project.dir/UI/UserInterface.cpp.o
+Project: CMakeFiles/Project.dir/Tests/TestController/TestUserController/TestUserController.cpp.o
+Project: CMakeFiles/Project.dir/Tests/TestDomain/TestDate/TestDate.cpp.o
+Project: CMakeFiles/Project.dir/Tests/TestDomain/TestDomain.cpp.o
+Project: CMakeFiles/Project.dir/Tests/TestDomain/TestElectricScooter/TestElectricScooter.cpp.o
+Project: CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestClient.cpp.o
+Project: CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o
+Project: CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o
+Project: CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o
+Project: CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o
 Project: CMakeFiles/Project.dir/build.make
 Project: /home/bogdan/Qt/5.15.2/gcc_64/lib/libQt5Widgets.so.5.15.2
 Project: /home/bogdan/Qt/5.15.2/gcc_64/lib/libQt5Gui.so.5.15.2

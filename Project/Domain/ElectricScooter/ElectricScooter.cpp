@@ -31,7 +31,6 @@ ElectricScooter::ElectricScooter(string _identifier, string _model, const string
 
     lastLocation = std::move(_lastLocation);
     currentCondition = std::move(_currentCondition);
-    reserved = false;
 }
 
 ///Constructor with 1 parameter
@@ -45,7 +44,6 @@ ElectricScooter::ElectricScooter(string _id) {
     mileage = 0.0;
     lastLocation = "";
     currentCondition = "";
-    reserved = false;
 }
 
 ///Get the date in string form
@@ -69,11 +67,6 @@ float ElectricScooter::getMileage() const { return mileage; }
 
 ///Model getter
 string ElectricScooter::getModel() const { return model; }
-
-///Check if a scooter is or not reserved
-bool Domain::ElectricScooter::isReserved() const {
-    return reserved;
-}
 
 ///Date setter
 ///@details Converts the date from string form and sets the data
@@ -128,16 +121,6 @@ bool Domain::ElectricScooter::operator==(const ElectricScooter &other) {
 ///Two objects are not equal if they have different ids
 bool Domain::ElectricScooter::operator!=(const ElectricScooter &other) {
     return !(*this == other);
-}
-
-///Reserve a scooter
-void Domain::ElectricScooter::reserve() {
-    reserved = true;
-}
-
-///Free a scooter
-void Domain::ElectricScooter::free() {
-    reserved = false;
 }
 
 shared_ptr<Domain::ObjectWithId> Domain::ElectricScooter::convertFromString(string scooter) {
