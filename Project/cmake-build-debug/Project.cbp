@@ -224,6 +224,12 @@
 		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestRepository.h">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/main.cpp">
 			<Option target="Project"/>
 		</Unit>

@@ -49,8 +49,6 @@ namespace Domain {
         [[nodiscard]] shared_ptr<ObjectWithId> convertFromString(string scooter) override;
         [[nodiscard]] string getAttributes() override;
 
-        static ElectricScooter convertFromStr(string scooter);
-
         ///Overloaded operators
         bool operator==(const ElectricScooter &other);
         bool operator!=(const ElectricScooter &other);

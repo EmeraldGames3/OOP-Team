@@ -153,7 +153,8 @@
 				18,
 				19,
 				20,
-				21
+				21,
+				22
 			]
 		}
 	],
@@ -226,7 +227,8 @@
 				18,
 				19,
 				20,
-				21
+				21,
+				22
 			]
 		}
 	],
@@ -362,6 +364,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "Tests/TestRepository/TestRepository.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UI/ElectricScooterTable.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

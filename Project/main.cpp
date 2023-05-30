@@ -1,26 +1,33 @@
-#include "UI/UserInterface.h"
 #include <memory>
 #include "Tests/TestAll.h"
-#include <fstream>
 #include <QApplication>
-#include <QDebug>
-#include <QLabel>
-#include <QVBoxLayout>
-#include <QWidget>
+#include "Domain/Domain.h"
+#include "Repository/Repository.h"
+#include "Controller/Controller.h"
+#include "UI/UI.h"
+
+using namespace Repository;
+using namespace Domain;
+using namespace Controller;
+using namespace UI;
 
 int main(int argc, char *argv[]) {
     testAll();
-    return 0;
 
-//    QApplication app(argc, argv);
-//
-//    QWidget window;
-//    QLabel label("Hello World!");
-//    QVBoxLayout layout(&window);
-//    layout.addWidget(&label);
-//
-//    window.setWindowTitle("Hello World");
-//    window.show();
-//
-//    return app.exec();
+    QApplication app(argc, argv);
+
+    CSVFileRepository<Client> clientRepo("Data/ClientDatabase");
+    CSVFileRepository<Manager> managerRepo("Data/ManagerDatabase");
+    CSVFileRepository<ElectricScooter> scooterRepo("Data/ScooterDatabase");
+
+    ElectricScooterController electricScooterController(
+            make_shared<CSVFileRepository<ElectricScooter>>(scooterRepo));
+    UserController userController(make_shared<CSVFileRepository<Client>>(clientRepo),
+                                  make_shared<CSVFileRepository<Manager>>(managerRepo));
+
+    ElectricScooterTableWidget objectTableWidget(electricScooterController.getAll());
+    objectTableWidget.setGeometry(100, 100, 650, 600);
+    objectTableWidget.show();
+
+    return QApplication::exec();
 }

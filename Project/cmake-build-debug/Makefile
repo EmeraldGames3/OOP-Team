@@ -633,6 +633,30 @@ Tests/TestRepository/TestRepository.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.s
 .PHONY : Tests/TestRepository/TestRepository.cpp.s
 
+UI/ElectricScooterTable.o: UI/ElectricScooterTable.cpp.o
+.PHONY : UI/ElectricScooterTable.o
+
+# target to build an object file
+UI/ElectricScooterTable.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/ElectricScooterTable.cpp.o
+.PHONY : UI/ElectricScooterTable.cpp.o
+
+UI/ElectricScooterTable.i: UI/ElectricScooterTable.cpp.i
+.PHONY : UI/ElectricScooterTable.i
+
+# target to preprocess a source file
+UI/ElectricScooterTable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/ElectricScooterTable.cpp.i
+.PHONY : UI/ElectricScooterTable.cpp.i
+
+UI/ElectricScooterTable.s: UI/ElectricScooterTable.cpp.s
+.PHONY : UI/ElectricScooterTable.s
+
+# target to generate assembly for a file
+UI/ElectricScooterTable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/ElectricScooterTable.cpp.s
+.PHONY : UI/ElectricScooterTable.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -729,6 +753,9 @@ help:
 	@echo "... Tests/TestRepository/TestRepository.o"
 	@echo "... Tests/TestRepository/TestRepository.i"
 	@echo "... Tests/TestRepository/TestRepository.s"
+	@echo "... UI/ElectricScooterTable.o"
+	@echo "... UI/ElectricScooterTable.i"
+	@echo "... UI/ElectricScooterTable.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

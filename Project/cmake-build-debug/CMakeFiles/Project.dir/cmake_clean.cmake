@@ -41,6 +41,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o.d"
   "CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o"
   "CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o.d"
+  "CMakeFiles/Project.dir/UI/ElectricScooterTable.cpp.o"
+  "CMakeFiles/Project.dir/UI/ElectricScooterTable.cpp.o.d"
   "CMakeFiles/Project.dir/main.cpp.o"
   "CMakeFiles/Project.dir/main.cpp.o.d"
   "Project"
