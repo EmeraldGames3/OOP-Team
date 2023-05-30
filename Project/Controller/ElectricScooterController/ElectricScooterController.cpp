@@ -137,7 +137,57 @@ void ElectricScooterController::updateDate(const string &date, const string &id)
     throw std::invalid_argument("Scooter does not exits");
 }
 
-///Filter all scooters by data
+///Get all scooters sorted by model
+vector<ElectricScooter> ElectricScooterController::modelSorted() {
+    vector<ElectricScooter> scooters = getAll();
+    sort(scooters.begin(), scooters.end(),
+         [](const ElectricScooter &a, const ElectricScooter &b) {
+             return a.getModel() < b.getModel();
+         });
+    return scooters;
+}
+
+///Get all scooters sorted by date
+vector<ElectricScooter> ElectricScooterController::ageSorted() {
+    vector<ElectricScooter> scooters = getAll();
+    sort(scooters.begin(), scooters.end(),
+         [](const ElectricScooter &a, const ElectricScooter &b) {
+             return a.getDate() < b.getDate();
+         });
+    return scooters;
+}
+
+///Get all scooters sorted by mileage
+vector<ElectricScooter> ElectricScooterController::mileageSorted() {
+    vector<ElectricScooter> scooters = getAll();
+    sort(scooters.begin(), scooters.end(),
+         [](const ElectricScooter &a, const ElectricScooter &b) {
+             return a.getMileage() < b.getMileage();
+         });
+    return scooters;
+}
+
+///Get all scooters sorted by last location
+vector<ElectricScooter> ElectricScooterController::lastLocationSorted() {
+    vector<ElectricScooter> scooters = getAll();
+    sort(scooters.begin(), scooters.end(),
+         [](const ElectricScooter &a, const ElectricScooter &b) {
+             return a.getLocation() < b.getLocation();
+         });
+    return scooters;
+}
+
+///Get all scooters sorted by current condition
+vector<ElectricScooter> ElectricScooterController::currentConditionSorted() {
+    vector<ElectricScooter> scooters = getAll();
+    sort(scooters.begin(), scooters.end(),
+         [](const ElectricScooter &a, const ElectricScooter &b) {
+             return a.getCondition() < b.getCondition();
+         });
+    return scooters;
+}
+
+///Filter all scooters by date
 vector<ElectricScooter> ElectricScooterController::ageFiltered(Date value) {
     vector<ElectricScooter> filteredScooters;
 
@@ -150,16 +200,6 @@ vector<ElectricScooter> ElectricScooterController::ageFiltered(Date value) {
     }
 
     return filteredScooters;
-}
-
-///Get all scooters sorted by date
-vector<ElectricScooter> ElectricScooterController::ageSorted() {
-    vector<ElectricScooter> scooters = getAll();
-    sort(scooters.begin(), scooters.end(),
-         [](const ElectricScooter &a, const ElectricScooter &b) {
-             return a.getDate() < b.getDate();
-         });
-    return scooters;
 }
 
 ///Filter all scooters based on mileage
@@ -190,6 +230,7 @@ vector<ElectricScooter> ElectricScooterController::lastLocationSearch(const stri
     return matchingScooters;
 }
 
+///Reserve a scooter
 bool ElectricScooterController::reserveScooter(const string &id, Client &client) {
     for(auto &it: repository->findAll())
         if(it.getId() == id) {
@@ -208,6 +249,7 @@ bool ElectricScooterController::reserveScooter(const string &id, Client &client)
     return false;
 }
 
+///Use a scooter
 bool ElectricScooterController::useScooter(const string &id, Client &client) {
     if(client.isOnRide()){
         return false;
@@ -254,6 +296,7 @@ bool ElectricScooterController::useScooter(const string &id, Client &client) {
     return false;
 }
 
+///Free a scooter
 bool ElectricScooterController::freeScooter(const string &id, Client &client) {
     if(client.isOnRide()){
         if(client.getScooterInUse().getId() == id){

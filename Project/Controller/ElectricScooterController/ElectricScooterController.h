@@ -34,8 +34,12 @@ namespace Controller {
         ///Get all scooters
         vector<ElectricScooter> getAll();
 
-        ///Get all scooters sorted by date
+        ///Get all scooters sorted after every attribute
+        vector<ElectricScooter> modelSorted();
         vector<ElectricScooter> ageSorted();
+        vector<ElectricScooter> mileageSorted();
+        vector<ElectricScooter> lastLocationSorted();
+        vector<ElectricScooter> currentConditionSorted();
 
         ///Filter all scooters by data
         vector<ElectricScooter> ageFiltered(Domain::Date value);

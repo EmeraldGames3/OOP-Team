@@ -11,7 +11,7 @@ void testAgeFiltered() {
         string id = "00" + to_string(i);
         string model = "Model " + to_string(i + 1);
         string date = "202" + to_string(i % 3 + 1) + "-0" +
-                to_string((i + 1) % 9 + 1) + "-0" + to_string((i + 1) % 9 + 1);
+                      to_string((i + 1) % 9 + 1) + "-0" + to_string((i + 1) % 9 + 1);
         double mileage = 100 * (i + 1);
         string location = "Location " + to_string(i + 1);
         string condition = "Condition " + to_string(i + 1);
@@ -40,8 +40,36 @@ void testAgeFiltered() {
     assert(filteredScooters[6].getId() == "009");
 }
 
+void testModelSorted() {
+    // Create a vector of ElectricScooters
+    vector<ElectricScooter> scooters;
+    for (int i = 0; i < 10; i++) {
+        string id = "00" + to_string(i);
+        string model = "Model " + to_string(i + 1);
+        string date =
+                "202" + to_string(i % 3 + 1) + "-0" + to_string((i + 1) % 9 + 1)
+                + "-0" + to_string((i + 1) % 9 + 1);
+        double mileage = 100 * (i + 1);
+        string location = "Location " + to_string(i + 1);
+        string condition = "Condition " + to_string(i + 1);
+        scooters.emplace_back(id, model, date,
+                              mileage, location, condition);
+    }
+
+    // Create a controller with a repository containing the scooters
+    InMemoryRepository<ElectricScooter> repository(scooters);
+    ElectricScooterController controller(std::make_shared<InMemoryRepository<ElectricScooter>>(repository));
+
+    vector<ElectricScooter> sortedScooters = controller.modelSorted();
+
+    assert(sortedScooters.size() == 10);
+    for (int i = 0; i < 9; i++) {
+        assert(sortedScooters[i].getModel() <= sortedScooters[i + 1].getModel());
+    }
+}
+
 void testAgeSorted() {
-    // Create a vector of ElectricScooters with different dates
+    // Create a vector of ElectricScooters
     vector<ElectricScooter> scooters;
     for (int i = 0; i < 10; i++) {
         string id = "00" + to_string(i);
@@ -70,17 +98,103 @@ void testAgeSorted() {
     }
 }
 
+void testMileageSorted() {
+    // Create a vector of ElectricScooters
+    vector<ElectricScooter> scooters;
+    for (int i = 0; i < 10; i++) {
+        string id = "00" + to_string(i);
+        string model = "Model " + to_string(i + 1);
+        string date =
+                "202" + to_string(i % 3 + 1) + "-0" + to_string((i + 1) % 9 + 1)
+                + "-0" + to_string((i + 1) % 9 + 1);
+        double mileage = 100 * (i + 1);
+        string location = "Location " + to_string(i + 1);
+        string condition = "Condition " + to_string(i + 1);
+        scooters.emplace_back(id, model, date,
+                              mileage, location, condition);
+    }
+
+    // Create a controller with a repository containing the scooters
+    InMemoryRepository<ElectricScooter> repository(scooters);
+    ElectricScooterController controller(std::make_shared<InMemoryRepository<ElectricScooter>>(repository));
+
+    vector<ElectricScooter> sortedScooters = controller.mileageSorted();
+
+    assert(sortedScooters.size() == 10);
+    for (int i = 0; i < 9; i++) {
+        assert(sortedScooters[i].getMileage() <= sortedScooters[i + 1].getMileage());
+    }
+}
+
+void testLastLocationSorted() {
+    // Create a vector of ElectricScooters
+    vector<ElectricScooter> scooters;
+    for (int i = 0; i < 10; i++) {
+        string id = "00" + to_string(i);
+        string model = "Model " + to_string(i + 1);
+        string date =
+                "202" + to_string(i % 3 + 1) + "-0" + to_string((i + 1) % 9 + 1)
+                + "-0" + to_string((i + 1) % 9 + 1);
+        double mileage = 100 * (i + 1);
+        string location = "Location " + to_string(i + 1);
+        string condition = "Condition " + to_string(i + 1);
+        scooters.emplace_back(id, model, date,
+                              mileage, location, condition);
+    }
+
+    // Create a controller with a repository containing the scooters
+    InMemoryRepository<ElectricScooter> repository(scooters);
+    ElectricScooterController controller(std::make_shared<InMemoryRepository<ElectricScooter>>(repository));
+
+    vector<ElectricScooter> sortedScooters = controller.lastLocationSorted();
+
+    assert(sortedScooters.size() == 10);
+    for (int i = 0; i < 9; i++) {
+        assert(sortedScooters[i].getLocation() <= sortedScooters[i + 1].getLocation());
+    }
+}
+
+void testCurrentConditionSorted() {
+    // Create a vector of ElectricScooters
+    vector<ElectricScooter> scooters;
+    for (int i = 0; i < 10; i++) {
+        string id = "00" + to_string(i);
+        string model = "Model " + to_string(i + 1);
+        string date =
+                "202" + to_string(i % 3 + 1) + "-0" + to_string((i + 1) % 9 + 1)
+                + "-0" + to_string((i + 1) % 9 + 1);
+        double mileage = 100 * (i + 1);
+        string location = "Location " + to_string(i + 1);
+        string condition = "Condition " + to_string(i + 1);
+        scooters.emplace_back(id, model, date,
+                              mileage, location, condition);
+    }
+
+    // Create a controller with a repository containing the scooters
+    InMemoryRepository<ElectricScooter> repository(scooters);
+    ElectricScooterController controller(std::make_shared<InMemoryRepository<ElectricScooter>>(repository));
+
+    vector<ElectricScooter> sortedScooters = controller.currentConditionSorted();
+
+    assert(sortedScooters.size() == 10);
+    for (int i = 0; i < 9; i++) {
+        assert(sortedScooters[i].getCondition() <= sortedScooters[i + 1].getCondition());
+    }
+}
+
 void testMileageFiltered() {
     // Create a vector of ElectricScooters with different dates
     vector<ElectricScooter> scooters;
     for (int i = 0; i < 10; i++) {
         string id = "00" + to_string(i);
         string model = "Model " + to_string(i + 1);
-        string date = "202" + to_string(i % 3 + 1) + "-0" + to_string((i + 1) % 9 + 1) + "-0" + to_string((i + 1) % 9 + 1);
+        string date = "202" + to_string(i % 3 + 1) + "-0" +
+                      to_string((i + 1) % 9 + 1) + "-0" + to_string((i + 1) % 9 + 1);
         double mileage = 100 * (i + 1);
         string location = "Location " + to_string(i + 1);
         string condition = "Condition " + to_string(i + 1);
-        scooters.emplace_back(id, model, date, mileage, location, condition);
+        scooters.emplace_back(id, model,
+                              date, mileage, location, condition);
     }
 
     // Create a controller with a repository containing the scooters
@@ -110,7 +224,8 @@ void testLastLocationSearch() {
         double mileage = 100 * (i + 1);
         string location = "Location " + to_string(i + 1);
         string condition = "Condition " + to_string(i + 1);
-        scooters.emplace_back(id, model, date, mileage, location, condition);
+        scooters.emplace_back(id, model,
+                              date, mileage, location, condition);
     }
 
     // Create a controller with a repository containing the scooters
@@ -161,7 +276,7 @@ void testReserveScooter() {
     assert(controller.getAll()[1].getCondition() == "Reserved");
 }
 
-void testUseScooter(){
+void testUseScooter() {
     // Create a vector of ElectricScooters
     vector<ElectricScooter> scooters;
     for (int i = 0; i < 10; i++) {
@@ -199,7 +314,8 @@ void testFreeScooter() {
         double mileage = 100 * (i + 1);
         string location = "Location " + to_string(i + 1);
         string condition = (i % 2 == 0) ? "Parked" : "Reserved";
-        scooters.emplace_back(id, model, date, mileage, location, condition);
+        scooters.emplace_back(id, model,
+                              date, mileage, location, condition);
     }
 
     // Create a controller with a repository containing the scooters
@@ -270,7 +386,11 @@ void testElectricScooterController() {
         assert(!controller.find(to_string(i)));
     }
 
+    testModelSorted();
     testAgeSorted();
+    testMileageSorted();
+    testLastLocationSorted();
+    testCurrentConditionSorted();
     testMileageFiltered();
     testAgeFiltered();
     testLastLocationSearch();
