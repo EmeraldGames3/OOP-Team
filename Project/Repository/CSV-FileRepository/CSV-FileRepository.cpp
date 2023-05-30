@@ -6,8 +6,9 @@ using Repository::CSVFileRepository, std::ifstream, std::ofstream;
 
 template<typename StoredObject>
 requires IsSubclassOfObjectWithID<StoredObject>
-CSVFileRepository<StoredObject>::CSVFileRepository(string file) : fileName{std::move(file)} {
-    ifstream fin(fileName);
+CSVFileRepository<StoredObject>::CSVFileRepository(const string &file) {
+    this->fileName = file;
+    ifstream fin(this->fileName);
 
     if (!fin.is_open()) {
         throw std::invalid_argument("File cannot be found");
@@ -26,7 +27,7 @@ CSVFileRepository<StoredObject>::CSVFileRepository(string file) : fileName{std::
 
 template<typename StoredObject>
 requires IsSubclassOfObjectWithID<StoredObject>void CSVFileRepository<StoredObject>::writeToFile() {
-    ofstream file(fileName);
+    ofstream file(this->fileName);
 
     StoredObject temp; // I have to use this because c++ does not let me override static functions
     file << temp.getAttributes() << '\n';
@@ -42,8 +43,8 @@ requires IsSubclassOfObjectWithID<StoredObject>vector<StoredObject>
 CSVFileRepository<StoredObject>::findAll() const {
     vector<StoredObject> returnVector{};
 
-    for (const auto &ptr : this->data) {
-        auto *obj = dynamic_cast<StoredObject*>(ptr.get());
+    for (const auto &ptr: this->data) {
+        auto *obj = dynamic_cast<StoredObject *>(ptr.get());
         if (obj) {
             returnVector.push_back(*obj);
         }

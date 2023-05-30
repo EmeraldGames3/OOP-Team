@@ -14,6 +14,29 @@ Repository::InMemoryRepository<StoredObject>::InMemoryRepository(vector<StoredOb
     }
 }
 
+/// Constructor
+/// @throws invalid_argument if the received file does not exist
+template<typename StoredObject>
+requires IsSubclassOfObjectWithID<StoredObject>
+Repository::InMemoryRepository<StoredObject>::InMemoryRepository(const string &file) {
+    this->fileName = file;
+    ifstream fin(this->fileName);
+
+    if (!fin.is_open()) {
+        throw std::invalid_argument("File cannot be found");
+    }
+
+    string line;
+    std::getline(fin, line); //Read the line with the format
+
+    StoredObject temp; // I have to use this because c++ does not let me override static functions
+    while (std::getline(fin, line)) {
+        this->data.push_back(temp.convertFromString(line));
+    }
+
+    fin.close();
+}
+
 ///Add a new object to the repository
 template<typename StoredObject>
 requires IsSubclassOfObjectWithID<StoredObject>void

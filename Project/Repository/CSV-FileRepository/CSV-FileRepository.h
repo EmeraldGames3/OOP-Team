@@ -6,14 +6,12 @@ namespace Repository {
     template<typename StoredObject> requires IsSubclassOfObjectWithID<StoredObject>
     class CSVFileRepository : public CrudRepository<StoredObject> {
     private:
-        string fileName;
-
         ///Used by the update function
         void writeToFile();
 
     public:
         ///Constructor
-        explicit CSVFileRepository(string file);
+        explicit CSVFileRepository(const string &file);
 
         ///Override the create function
         void create(const StoredObject &storedObject) override;

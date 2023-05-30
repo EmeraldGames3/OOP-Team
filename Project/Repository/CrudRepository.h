@@ -11,6 +11,7 @@ namespace Repository {
     template<typename StoredObject> requires IsSubclassOfObjectWithID<StoredObject>
     class CrudRepository {
     protected:
+        string fileName;
         vector<std::shared_ptr<ObjectWithId>> data;
 
     public:

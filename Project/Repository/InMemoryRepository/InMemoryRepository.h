@@ -9,6 +9,9 @@ namespace Repository {
         ///Constructor
         explicit InMemoryRepository(vector<StoredObject> _data);
 
+        ///Overloaded constructor
+        explicit InMemoryRepository(const string &file);
+
         ///Overloaded functions
         void create(const StoredObject &object) override;
         [[nodiscard]] vector<StoredObject> findAll() const override;
