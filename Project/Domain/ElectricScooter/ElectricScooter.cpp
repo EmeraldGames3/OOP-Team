@@ -126,13 +126,13 @@ bool Domain::ElectricScooter::operator!=(const ElectricScooter &other) {
 shared_ptr<Domain::ObjectWithId> Domain::ElectricScooter::convertFromString(std::string scooter) {
     std::vector<std::string> tokens;
     size_t pos = 0;
-    std::string delimiter = ",";
+    string delimiter = ",";
 
     // Create a custom locale with the decimal separator set to a dot ('.')
     std::locale customLocale(std::locale::classic(), new std::numpunct<char>('.'));
 
     while ((pos = scooter.find(delimiter)) != std::string::npos) {
-        std::string token = scooter.substr(0, pos);
+        string token = scooter.substr(0, pos);
         tokens.push_back(token);
         scooter.erase(0, pos + delimiter.length());
     }
@@ -142,7 +142,7 @@ shared_ptr<Domain::ObjectWithId> Domain::ElectricScooter::convertFromString(std:
     // Set the custom locale before calling std::stod
     std::locale originalLocale = std::locale::global(customLocale);
 
-    std::shared_ptr<ElectricScooter> electricScooter = std::make_shared<ElectricScooter>(
+    shared_ptr<ElectricScooter> electricScooter = std::make_shared<ElectricScooter>(
             ElectricScooter(tokens[0], tokens[1], tokens[2],
                             std::stod(tokens[3]), tokens[4], tokens[5]));
 
