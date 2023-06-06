@@ -13,5 +13,7 @@ namespace Domain {
         Manager(const Manager &manager) = default;
 
         static Manager convertFromStr(string str);
+
+        [[nodiscard]] shared_ptr<ObjectWithId> convertFromString(string user) override;
     };
 }

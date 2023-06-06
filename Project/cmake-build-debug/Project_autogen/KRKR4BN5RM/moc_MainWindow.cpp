@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_UI__MainWindow_t {
-    QByteArrayData data[9];
-    char stringdata0[87];
+    QByteArrayData data[10];
+    char stringdata0[97];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -39,13 +39,14 @@ QT_MOC_LITERAL(3, 25, 8), // "username"
 QT_MOC_LITERAL(4, 34, 11), // "handleLogin"
 QT_MOC_LITERAL(5, 46, 8), // "password"
 QT_MOC_LITERAL(6, 55, 8), // "saveData"
-QT_MOC_LITERAL(7, 64, 7), // "manager"
-QT_MOC_LITERAL(8, 72, 14) // "handleRegister"
+QT_MOC_LITERAL(7, 64, 9), // "isManager"
+QT_MOC_LITERAL(8, 74, 14), // "handleRegister"
+QT_MOC_LITERAL(9, 89, 7) // "manager"
 
     },
     "UI::MainWindow\0loggedIn\0\0username\0"
-    "handleLogin\0password\0saveData\0manager\0"
-    "handleRegister"
+    "handleLogin\0password\0saveData\0isManager\0"
+    "handleRegister\0manager"
 };
 #undef QT_MOC_LITERAL
 
@@ -74,7 +75,7 @@ static const uint qt_meta_data_UI__MainWindow[] = {
 
  // slots: parameters
     QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::Bool, QMetaType::Bool,    3,    5,    6,    7,
-    QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::Bool, QMetaType::Bool,    3,    5,    6,    7,
+    QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::Bool, QMetaType::Bool,    3,    5,    6,    9,
 
        0        // eod
 };

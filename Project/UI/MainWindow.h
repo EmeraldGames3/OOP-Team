@@ -7,7 +7,7 @@
 #include <QMainWindow>
 #include <QVBoxLayout>
 #include "LoginPage/LoginPage.h"
-
+#include <memory>
 #include "../Controller/Controller.h"
 #include "../Repository/Repository.h"
 
@@ -28,10 +28,11 @@ namespace UI {
         QLabel *welcomeLabel;
         LoginPage *loginPage;
 
-        shared_ptr
+        shared_ptr<UserController> userController;
+        shared_ptr<ElectricScooterController> scooterController;
 
     private slots:
-        void handleLogin(const QString &username, const QString &password, bool saveData, bool manager);
+        void handleLogin(const QString &username, const QString &password, bool saveData, bool isManager);
         void handleRegister(const QString &username, const QString &password, bool saveData, bool manager);
 
     signals:

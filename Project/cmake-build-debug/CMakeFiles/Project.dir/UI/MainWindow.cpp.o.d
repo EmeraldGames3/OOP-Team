@@ -1,9 +1,8 @@
 CMakeFiles/Project.dir/UI/MainWindow.cpp.o: \
  /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.cpp \
  /usr/include/stdc-predef.h \
- /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QMainWindow \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qmainwindow.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QMessageBox \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qmessagebox.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtguiglobal.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qglobal.h \
@@ -217,6 +216,7 @@ CMakeFiles/Project.dir/UI/MainWindow.cpp.o: \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qversiontagging.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtgui-config.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtwidgets-config.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qdialog.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qwidget.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qwindowdefs.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs.h \
@@ -310,6 +310,9 @@ CMakeFiles/Project.dir/UI/MainWindow.cpp.o: \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qsizepolicy.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qcursor.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qkeysequence.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QMainWindow \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qmainwindow.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtabwidget.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qicon.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QWidget \
@@ -338,4 +341,21 @@ CMakeFiles/Project.dir/UI/MainWindow.cpp.o: \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtextoption.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QCheckBox \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qcheckbox.h
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qcheckbox.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/Controller.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/ElectricScooterController.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/UserController.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/Repository.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/CrudRepository.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/Domain.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/Date/Date.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/Client.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/../User/User.h \
+ /usr/include/c++/11/iostream /usr/include/c++/11/istream \
+ /usr/include/c++/11/bits/istream.tcc \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/../User/../../ObjectWithID.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/../../ElectricScooter/ElectricScooter.h \
+ /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Manager/Manager.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/InMemoryRepository/InMemoryRepository.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/../Controller/ElectricScooterController/../UserController/../../Repository/CSV-FileRepository/CSV-FileRepository.h

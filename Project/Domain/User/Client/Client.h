@@ -34,6 +34,8 @@ namespace Domain {
         ///Use a scooter
         [[nodiscard]] bool useScooter(const ElectricScooter &electricScooter);
 
+        [[nodiscard]] shared_ptr<ObjectWithId> convertFromString(string user);
+
         ///Get a client from a string
         static Client convertFromStr(string str);
     };

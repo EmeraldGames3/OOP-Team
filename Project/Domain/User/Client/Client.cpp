@@ -64,3 +64,19 @@ Client Client::convertFromStr(string str) {
 
     return Client(tokens[0], tokens[1]);
 }
+
+shared_ptr<ObjectWithId> Client::convertFromString(string user) {
+    vector<std::string> tokens;
+    size_t pos = 0;
+    string delimiter = ",";
+
+    while ((pos = user.find(delimiter)) != std::string::npos) {
+        std::string token = user.substr(0, pos);
+        tokens.push_back(token);
+        user.erase(0, pos + delimiter.length());
+    }
+    // The remaining part after the last delimiter
+    tokens.push_back(user);
+
+    return std::make_shared<Client>(Client(tokens[0], tokens[1]));
+}

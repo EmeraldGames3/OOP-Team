@@ -1,5 +1,19 @@
 /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/moc_MainWindow.cpp: /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.h \
   /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/moc_predefs.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Controller/Controller.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Controller/UserController/UserController.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/Date/Date.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/Domain.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/ElectricScooter/ElectricScooter.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/ObjectWithID.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Client/Client.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/Manager.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/User/User.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Repository/CSV-FileRepository/CSV-FileRepository.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Repository/CrudRepository.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Repository/InMemoryRepository/InMemoryRepository.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Repository/Repository.h \
   /home/bogdan/Programming/University/OOP-Team/Project/UI/LoginPage/LoginPage.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qalgorithms.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qarraydata.h \
@@ -147,6 +161,7 @@
   /usr/include/c++/11/bits/hash_bytes.h \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/bits/iterator_concepts.h \
   /usr/include/c++/11/bits/list.tcc \
   /usr/include/c++/11/bits/locale_classes.h \
@@ -175,6 +190,7 @@
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/std_function.h \
   /usr/include/c++/11/bits/std_mutex.h \
@@ -234,6 +250,8 @@
   /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/istream \
   /usr/include/c++/11/iterator \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/list \
@@ -247,6 +265,7 @@
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/glue_numeric_defs.h \
+  /usr/include/c++/11/sstream \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/streambuf \
   /usr/include/c++/11/string \

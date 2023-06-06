@@ -338,4 +338,21 @@ CMakeFiles/Project.dir/Project_autogen/mocs_compilation.cpp.o: \
  /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/MainWindow.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QMainWindow \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qmainwindow.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtabwidget.h
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtabwidget.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/Controller.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/ElectricScooterController.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/UserController.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/Repository.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/CrudRepository.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/Domain.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/Date/Date.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/Client.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/../User/User.h \
+ /usr/include/c++/11/iostream /usr/include/c++/11/istream \
+ /usr/include/c++/11/bits/istream.tcc \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/../User/../../ObjectWithID.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/../../ElectricScooter/ElectricScooter.h \
+ /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Manager/Manager.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/InMemoryRepository/InMemoryRepository.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/CSV-FileRepository/CSV-FileRepository.h

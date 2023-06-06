@@ -2171,7 +2171,26 @@ CMakeFiles/Project.dir/Project_autogen/mocs_compilation.cpp.o: Project_autogen/m
   /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QMainWindow \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qmainwindow.h \
-  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtabwidget.h
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtabwidget.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Controller/Controller.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Controller/UserController/UserController.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Repository/Repository.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Repository/CrudRepository.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/Domain.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/Date/Date.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Client/Client.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/User/User.h \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/bits/istream.tcc \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/ObjectWithID.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/ElectricScooter/ElectricScooter.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/Manager.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Repository/InMemoryRepository/InMemoryRepository.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Repository/CSV-FileRepository/CSV-FileRepository.h
 
 CMakeFiles/Project.dir/Repository/CSV-FileRepository/CSV-FileRepository.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/Repository/CSV-FileRepository/CSV-FileRepository.cpp \
   /usr/include/stdc-predef.h \
@@ -5684,9 +5703,8 @@ CMakeFiles/Project.dir/UI/LoginPage/LoginPage.cpp.o: /home/bogdan/Programming/Un
 
 CMakeFiles/Project.dir/UI/MainWindow.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.cpp \
   /usr/include/stdc-predef.h \
-  /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.h \
-  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QMainWindow \
-  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qmainwindow.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QMessageBox \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qmessagebox.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtguiglobal.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qglobal.h \
@@ -5943,6 +5961,7 @@ CMakeFiles/Project.dir/UI/MainWindow.cpp.o: /home/bogdan/Programming/University/
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qversiontagging.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtgui-config.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtwidgets-config.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qdialog.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qwidget.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qwindowdefs.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs.h \
@@ -6047,6 +6066,9 @@ CMakeFiles/Project.dir/UI/MainWindow.cpp.o: /home/bogdan/Programming/University/
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qsizepolicy.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qcursor.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qkeysequence.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QMainWindow \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qmainwindow.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtabwidget.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qicon.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QWidget \
@@ -6075,7 +6097,26 @@ CMakeFiles/Project.dir/UI/MainWindow.cpp.o: /home/bogdan/Programming/University/
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtextoption.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QCheckBox \
-  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qcheckbox.h
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qcheckbox.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Controller/Controller.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Controller/UserController/UserController.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Repository/Repository.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Repository/CrudRepository.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/Domain.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/Date/Date.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Client/Client.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/User/User.h \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/bits/istream.tcc \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/ObjectWithID.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/ElectricScooter/ElectricScooter.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/Manager.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Repository/InMemoryRepository/InMemoryRepository.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Repository/CSV-FileRepository/CSV-FileRepository.h
 
 CMakeFiles/Project.dir/main.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/main.cpp \
   /usr/include/stdc-predef.h \
@@ -6599,8 +6640,6 @@ CMakeFiles/Project.dir/main.cpp.o: /home/bogdan/Programming/University/OOP-Team/
 
 /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestUserController/TestUserController.cpp:
 
-/home/bogdan/Programming/University/OOP-Team/Project/Controller/Controller.h:
-
 /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestElectricScooterController/TestElectricScooterController.h:
 
 /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestController/TestUserController/TestUserController.h:
@@ -6616,6 +6655,8 @@ CMakeFiles/Project.dir/main.cpp.o: /home/bogdan/Programming/University/OOP-Team/
 /home/bogdan/Programming/University/OOP-Team/Project/Repository/InMemoryRepository/InMemoryRepository.cpp:
 
 /home/bogdan/Programming/University/OOP-Team/Project/Repository/CSV-FileRepository/CSV-FileRepository.cpp:
+
+/home/bogdan/Programming/University/OOP-Team/Project/Controller/Controller.h:
 
 /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QMainWindow:
 
