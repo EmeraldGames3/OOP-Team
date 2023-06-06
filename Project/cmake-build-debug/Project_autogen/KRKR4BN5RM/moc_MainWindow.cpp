@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_UI__MainWindow_t {
     QByteArrayData data[10];
-    char stringdata0[97];
+    char stringdata0[98];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -40,13 +40,13 @@ QT_MOC_LITERAL(4, 34, 11), // "handleLogin"
 QT_MOC_LITERAL(5, 46, 8), // "password"
 QT_MOC_LITERAL(6, 55, 8), // "saveData"
 QT_MOC_LITERAL(7, 64, 9), // "isManager"
-QT_MOC_LITERAL(8, 74, 14), // "handleRegister"
-QT_MOC_LITERAL(9, 89, 7) // "manager"
+QT_MOC_LITERAL(8, 74, 8), // "fileName"
+QT_MOC_LITERAL(9, 83, 14) // "handleRegister"
 
     },
     "UI::MainWindow\0loggedIn\0\0username\0"
     "handleLogin\0password\0saveData\0isManager\0"
-    "handleRegister\0manager"
+    "fileName\0handleRegister"
 };
 #undef QT_MOC_LITERAL
 
@@ -67,15 +67,15 @@ static const uint qt_meta_data_UI__MainWindow[] = {
        1,    1,   29,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       4,    4,   32,    2, 0x08 /* Private */,
-       8,    4,   41,    2, 0x08 /* Private */,
+       4,    5,   32,    2, 0x08 /* Private */,
+       9,    5,   43,    2, 0x08 /* Private */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::QString,    3,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::Bool, QMetaType::Bool,    3,    5,    6,    7,
-    QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::Bool, QMetaType::Bool,    3,    5,    6,    9,
+    QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::Bool, QMetaType::Bool, QMetaType::QString,    3,    5,    6,    7,    8,
+    QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::Bool, QMetaType::Bool, QMetaType::QString,    3,    5,    6,    7,    8,
 
        0        // eod
 };
@@ -87,8 +87,8 @@ void UI::MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->loggedIn((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 1: _t->handleLogin((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2])),(*reinterpret_cast< bool(*)>(_a[3])),(*reinterpret_cast< bool(*)>(_a[4]))); break;
-        case 2: _t->handleRegister((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2])),(*reinterpret_cast< bool(*)>(_a[3])),(*reinterpret_cast< bool(*)>(_a[4]))); break;
+        case 1: _t->handleLogin((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2])),(*reinterpret_cast< bool(*)>(_a[3])),(*reinterpret_cast< bool(*)>(_a[4])),(*reinterpret_cast< const QString(*)>(_a[5]))); break;
+        case 2: _t->handleRegister((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2])),(*reinterpret_cast< bool(*)>(_a[3])),(*reinterpret_cast< bool(*)>(_a[4])),(*reinterpret_cast< const QString(*)>(_a[5]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {

@@ -18,8 +18,10 @@ namespace UI {
         ~LoginPage() override;
 
     signals:
-        void loginClicked(const QString &username, const QString &password, bool saveData, bool manager);
-        void registerClicked(const QString &username, const QString &password, bool saveData, bool manager);
+        void loginClicked(const QString &username, const QString &password, bool saveData, bool manager,
+                          const QString &fileName);
+        void registerClicked(const QString &username, const QString &password, bool saveData, bool manager,
+                             const QString &fileName);
 
     private slots:
         void handleLoginButtonClicked();
@@ -30,6 +32,8 @@ namespace UI {
         QLineEdit *usernameLineEdit;
         QLabel *passwordLabel;
         QLineEdit *passwordLineEdit;
+        QLabel *fileNameLabel;
+        QLineEdit *fileNameLineEdit;
         QPushButton *loginButton;
         QPushButton *registerButton;
         QCheckBox *saveDataButton;

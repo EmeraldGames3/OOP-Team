@@ -32,8 +32,10 @@ namespace UI {
         shared_ptr<ElectricScooterController> scooterController;
 
     private slots:
-        void handleLogin(const QString &username, const QString &password, bool saveData, bool isManager);
-        void handleRegister(const QString &username, const QString &password, bool saveData, bool manager);
+        void handleLogin(const QString &username, const QString &password, bool saveData, bool isManager,
+                         const QString &fileName);
+        void handleRegister(const QString &username, const QString &password, bool saveData, bool isManager,
+                            const QString &fileName);
 
     signals:
         void loggedIn(QString username);

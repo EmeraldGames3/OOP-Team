@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_UI__LoginPage_t {
-    QByteArrayData data[10];
-    char stringdata0[132];
+    QByteArrayData data[11];
+    char stringdata0[141];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -39,14 +39,15 @@ QT_MOC_LITERAL(3, 28, 8), // "username"
 QT_MOC_LITERAL(4, 37, 8), // "password"
 QT_MOC_LITERAL(5, 46, 8), // "saveData"
 QT_MOC_LITERAL(6, 55, 7), // "manager"
-QT_MOC_LITERAL(7, 63, 15), // "registerClicked"
-QT_MOC_LITERAL(8, 79, 24), // "handleLoginButtonClicked"
-QT_MOC_LITERAL(9, 104, 27) // "handleRegisterButtonClicked"
+QT_MOC_LITERAL(7, 63, 8), // "fileName"
+QT_MOC_LITERAL(8, 72, 15), // "registerClicked"
+QT_MOC_LITERAL(9, 88, 24), // "handleLoginButtonClicked"
+QT_MOC_LITERAL(10, 113, 27) // "handleRegisterButtonClicked"
 
     },
     "UI::LoginPage\0loginClicked\0\0username\0"
-    "password\0saveData\0manager\0registerClicked\0"
-    "handleLoginButtonClicked\0"
+    "password\0saveData\0manager\0fileName\0"
+    "registerClicked\0handleLoginButtonClicked\0"
     "handleRegisterButtonClicked"
 };
 #undef QT_MOC_LITERAL
@@ -65,16 +66,16 @@ static const uint qt_meta_data_UI__LoginPage[] = {
        2,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    4,   34,    2, 0x06 /* Public */,
-       7,    4,   43,    2, 0x06 /* Public */,
+       1,    5,   34,    2, 0x06 /* Public */,
+       8,    5,   45,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       8,    0,   52,    2, 0x08 /* Private */,
-       9,    0,   53,    2, 0x08 /* Private */,
+       9,    0,   56,    2, 0x08 /* Private */,
+      10,    0,   57,    2, 0x08 /* Private */,
 
  // signals: parameters
-    QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::Bool, QMetaType::Bool,    3,    4,    5,    6,
-    QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::Bool, QMetaType::Bool,    3,    4,    5,    6,
+    QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::Bool, QMetaType::Bool, QMetaType::QString,    3,    4,    5,    6,    7,
+    QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::Bool, QMetaType::Bool, QMetaType::QString,    3,    4,    5,    6,    7,
 
  // slots: parameters
     QMetaType::Void,
@@ -89,8 +90,8 @@ void UI::LoginPage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         auto *_t = static_cast<LoginPage *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->loginClicked((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2])),(*reinterpret_cast< bool(*)>(_a[3])),(*reinterpret_cast< bool(*)>(_a[4]))); break;
-        case 1: _t->registerClicked((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2])),(*reinterpret_cast< bool(*)>(_a[3])),(*reinterpret_cast< bool(*)>(_a[4]))); break;
+        case 0: _t->loginClicked((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2])),(*reinterpret_cast< bool(*)>(_a[3])),(*reinterpret_cast< bool(*)>(_a[4])),(*reinterpret_cast< const QString(*)>(_a[5]))); break;
+        case 1: _t->registerClicked((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2])),(*reinterpret_cast< bool(*)>(_a[3])),(*reinterpret_cast< bool(*)>(_a[4])),(*reinterpret_cast< const QString(*)>(_a[5]))); break;
         case 2: _t->handleLoginButtonClicked(); break;
         case 3: _t->handleRegisterButtonClicked(); break;
         default: ;
@@ -98,14 +99,14 @@ void UI::LoginPage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (LoginPage::*)(const QString & , const QString & , bool , bool );
+            using _t = void (LoginPage::*)(const QString & , const QString & , bool , bool , const QString & );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&LoginPage::loginClicked)) {
                 *result = 0;
                 return;
             }
         }
         {
-            using _t = void (LoginPage::*)(const QString & , const QString & , bool , bool );
+            using _t = void (LoginPage::*)(const QString & , const QString & , bool , bool , const QString & );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&LoginPage::registerClicked)) {
                 *result = 1;
                 return;
@@ -155,16 +156,16 @@ int UI::LoginPage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void UI::LoginPage::loginClicked(const QString & _t1, const QString & _t2, bool _t3, bool _t4)
+void UI::LoginPage::loginClicked(const QString & _t1, const QString & _t2, bool _t3, bool _t4, const QString & _t5)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t4))) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t4))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t5))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
 // SIGNAL 1
-void UI::LoginPage::registerClicked(const QString & _t1, const QString & _t2, bool _t3, bool _t4)
+void UI::LoginPage::registerClicked(const QString & _t1, const QString & _t2, bool _t3, bool _t4, const QString & _t5)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t4))) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t4))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t5))) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 QT_WARNING_POP

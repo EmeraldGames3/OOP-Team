@@ -21,7 +21,8 @@ UI::MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     connect(loginPage, &LoginPage::registerClicked, this, &MainWindow::handleRegister);
 }
 
-void UI::MainWindow::handleLogin(const QString &username, const QString &password, bool saveData, bool isManager) {
+void UI::MainWindow::handleLogin(const QString &username, const QString &password, bool saveData, bool isManager,
+                                 const QString &fileName) {
     if(saveData){
         CSVFileRepository<Client> clientRepo("Data/ClientDatabase");
         CSVFileRepository<Manager> managerRepo("Data/ManagerDatabase");
@@ -43,7 +44,7 @@ void UI::MainWindow::handleLogin(const QString &username, const QString &passwor
                                                      make_shared<InMemoryRepository<Manager>>(managerRepo));
     }
 
-    bool loginSuccess = false;
+    bool loginSuccess;
     if (isManager) {
         loginSuccess = userController->checkManagerAccount(username.toStdString(), password.toStdString());
     } else {
@@ -62,7 +63,7 @@ void UI::MainWindow::handleLogin(const QString &username, const QString &passwor
     welcomeLabel = new QLabel("Welcome, " + username + "!");
 
     // Clear the existing layout of the central widget
-    QLayout *existingLayout = centralWidget->layout();
+    auto *existingLayout = centralWidget->layout();
     if (existingLayout) {
         QLayoutItem *item;
         while ((item = existingLayout->takeAt(0)) != nullptr) {
@@ -81,7 +82,41 @@ void UI::MainWindow::handleLogin(const QString &username, const QString &passwor
     centralWidget->layout()->update();
 }
 
-void UI::MainWindow::handleRegister(const QString &username, const QString &password, bool saveData, bool manager) {
+void UI::MainWindow::handleRegister(const QString &username, const QString &password, bool saveData, bool isManager,
+                                    const QString &fileName) {
+    if(saveData){
+        CSVFileRepository<Client> clientRepo("Data/ClientDatabase");
+        CSVFileRepository<Manager> managerRepo("Data/ManagerDatabase");
+        CSVFileRepository<ElectricScooter> scooterRepo("Data/" + fileName.toStdString());
+
+        scooterController = make_shared<ElectricScooterController>(
+                make_shared<CSVFileRepository<ElectricScooter>>(scooterRepo));
+        userController = make_shared<UserController>(make_shared<CSVFileRepository<Client>>(clientRepo),
+                                                     make_shared<CSVFileRepository<Manager>>(managerRepo));
+
+    } else{
+        InMemoryRepository<Client> clientRepo("Data/ClientDatabase");
+        InMemoryRepository<Manager> managerRepo("Data/ManagerDatabase");
+        InMemoryRepository<ElectricScooter> scooterRepo("Data/" + fileName.toStdString());
+
+        scooterController = make_shared<ElectricScooterController>(
+                make_shared<InMemoryRepository<ElectricScooter>>(scooterRepo));
+        userController = make_shared<UserController>(make_shared<InMemoryRepository<Client>>(clientRepo),
+                                                     make_shared<InMemoryRepository<Manager>>(managerRepo));
+    }
+
+    bool registerSuccess;
+    if (isManager) {
+        registerSuccess = !userController->findManager(username.toStdString());
+    } else {
+        registerSuccess = !userController->findClient(username.toStdString());
+    }
+
+    if (!registerSuccess) {
+        QMessageBox::critical(this, "Register Error", "Username is already taken");
+        return;
+    }
+
     // Hide the login page
     loginPage->hide();
 

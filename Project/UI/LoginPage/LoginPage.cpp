@@ -10,6 +10,10 @@ UI::LoginPage::LoginPage(QWidget *parent) : QWidget(parent) {
     passwordLineEdit = new QLineEdit();
     passwordLineEdit->setEchoMode(QLineEdit::Password); // Mask the entered password
 
+    // Create the fileName label and text box
+    fileNameLabel = new QLabel("File Name:");
+    fileNameLineEdit = new QLineEdit();
+
     // Create the login and register buttons
     loginButton = new QPushButton("Login");
     registerButton = new QPushButton("Register");
@@ -19,6 +23,8 @@ UI::LoginPage::LoginPage(QWidget *parent) : QWidget(parent) {
     usernameLineEdit->setFixedSize(200, 30);
     passwordLabel->setFixedSize(100, 30);
     passwordLineEdit->setFixedSize(200, 30);
+    fileNameLabel->setFixedSize(100, 30);
+    fileNameLineEdit->setFixedSize(200, 30);
     loginButton->setFixedSize(100, 30);
     registerButton->setFixedSize(100, 30);
 
@@ -40,6 +46,11 @@ UI::LoginPage::LoginPage(QWidget *parent) : QWidget(parent) {
     passwordLayout->addWidget(passwordLabel);
     passwordLayout->addWidget(passwordLineEdit);
 
+    // Create a fileName for the password line
+    auto *fileNameLayout = new QHBoxLayout();
+    fileNameLayout->addWidget(fileNameLabel);
+    fileNameLayout->addWidget(fileNameLineEdit);
+
     // Create a layout for the buttons
     auto *buttonLayout = new QHBoxLayout();
     buttonLayout->addWidget(loginButton);
@@ -48,6 +59,7 @@ UI::LoginPage::LoginPage(QWidget *parent) : QWidget(parent) {
     // Add the username line, password line, and buttons to the main layout
     mainLayout->addWidget(saveDataButton);
     mainLayout->addWidget(managerButton);
+    mainLayout->addLayout(fileNameLayout);
     mainLayout->addLayout(usernameLayout);
     mainLayout->addLayout(passwordLayout);
     mainLayout->addLayout(buttonLayout);
@@ -64,20 +76,22 @@ UI::LoginPage::LoginPage(QWidget *parent) : QWidget(parent) {
 
 void UI::LoginPage::handleLoginButtonClicked() {
     // Get the entered username and password
-    QString username = usernameLineEdit->text();
-    QString password = passwordLineEdit->text();
+    auto username = usernameLineEdit->text();
+    auto password = passwordLineEdit->text();
+    auto fileName = fileNameLineEdit->text();
 
     // Emit the loginClicked signal with the username and password
-    emit loginClicked(username, password, saveDataButton->isChecked(), managerButton->isChecked());
+    emit loginClicked(username, password, saveDataButton->isChecked(), managerButton->isChecked(), fileName);
 }
 
 void UI::LoginPage::handleRegisterButtonClicked() {
     // Get the entered username and password
-    QString username = usernameLineEdit->text();
-    QString password = passwordLineEdit->text();
+    auto username = usernameLineEdit->text();
+    auto password = passwordLineEdit->text();
+    auto fileName = fileNameLineEdit->text();
 
     // Emit the registerClicked signal with the username and password
-    emit registerClicked(username, password, saveDataButton->isChecked(), managerButton->isChecked());
+    emit registerClicked(username, password, saveDataButton->isChecked(), managerButton->isChecked(), fileName);
 }
 
 UI::LoginPage::~LoginPage() {
