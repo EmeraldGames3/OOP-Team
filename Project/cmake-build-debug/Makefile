@@ -129,6 +129,19 @@ Project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/build
 .PHONY : Project/fast
 
+#=============================================================================
+# Target rules for targets named Project_autogen
+
+# Build rule for target.
+Project_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Project_autogen
+.PHONY : Project_autogen
+
+# fast build rule for target.
+Project_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project_autogen.dir/build.make CMakeFiles/Project_autogen.dir/build
+.PHONY : Project_autogen/fast
+
 Controller/ElectricScooterController/ElectricScooterController.o: Controller/ElectricScooterController/ElectricScooterController.cpp.o
 .PHONY : Controller/ElectricScooterController/ElectricScooterController.o
 
@@ -296,6 +309,30 @@ Domain/User/User/User.s: Domain/User/User/User.cpp.s
 Domain/User/User/User.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Domain/User/User/User.cpp.s
 .PHONY : Domain/User/User/User.cpp.s
+
+Project_autogen/mocs_compilation.o: Project_autogen/mocs_compilation.cpp.o
+.PHONY : Project_autogen/mocs_compilation.o
+
+# target to build an object file
+Project_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Project_autogen/mocs_compilation.cpp.o
+.PHONY : Project_autogen/mocs_compilation.cpp.o
+
+Project_autogen/mocs_compilation.i: Project_autogen/mocs_compilation.cpp.i
+.PHONY : Project_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+Project_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Project_autogen/mocs_compilation.cpp.i
+.PHONY : Project_autogen/mocs_compilation.cpp.i
+
+Project_autogen/mocs_compilation.s: Project_autogen/mocs_compilation.cpp.s
+.PHONY : Project_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+Project_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Project_autogen/mocs_compilation.cpp.s
+.PHONY : Project_autogen/mocs_compilation.cpp.s
 
 Repository/CSV-FileRepository/CSV-FileRepository.o: Repository/CSV-FileRepository/CSV-FileRepository.cpp.o
 .PHONY : Repository/CSV-FileRepository/CSV-FileRepository.o
@@ -633,29 +670,77 @@ Tests/TestRepository/TestRepository.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.s
 .PHONY : Tests/TestRepository/TestRepository.cpp.s
 
-UI/ElectricScooterTable.o: UI/ElectricScooterTable.cpp.o
-.PHONY : UI/ElectricScooterTable.o
+UI/ElectricScooterTable/ElectricScooterTable.o: UI/ElectricScooterTable/ElectricScooterTable.cpp.o
+.PHONY : UI/ElectricScooterTable/ElectricScooterTable.o
 
 # target to build an object file
-UI/ElectricScooterTable.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/ElectricScooterTable.cpp.o
-.PHONY : UI/ElectricScooterTable.cpp.o
+UI/ElectricScooterTable/ElectricScooterTable.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.o
+.PHONY : UI/ElectricScooterTable/ElectricScooterTable.cpp.o
 
-UI/ElectricScooterTable.i: UI/ElectricScooterTable.cpp.i
-.PHONY : UI/ElectricScooterTable.i
+UI/ElectricScooterTable/ElectricScooterTable.i: UI/ElectricScooterTable/ElectricScooterTable.cpp.i
+.PHONY : UI/ElectricScooterTable/ElectricScooterTable.i
 
 # target to preprocess a source file
-UI/ElectricScooterTable.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/ElectricScooterTable.cpp.i
-.PHONY : UI/ElectricScooterTable.cpp.i
+UI/ElectricScooterTable/ElectricScooterTable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.i
+.PHONY : UI/ElectricScooterTable/ElectricScooterTable.cpp.i
 
-UI/ElectricScooterTable.s: UI/ElectricScooterTable.cpp.s
-.PHONY : UI/ElectricScooterTable.s
+UI/ElectricScooterTable/ElectricScooterTable.s: UI/ElectricScooterTable/ElectricScooterTable.cpp.s
+.PHONY : UI/ElectricScooterTable/ElectricScooterTable.s
 
 # target to generate assembly for a file
-UI/ElectricScooterTable.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/ElectricScooterTable.cpp.s
-.PHONY : UI/ElectricScooterTable.cpp.s
+UI/ElectricScooterTable/ElectricScooterTable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.s
+.PHONY : UI/ElectricScooterTable/ElectricScooterTable.cpp.s
+
+UI/LoginPage/LoginPage.o: UI/LoginPage/LoginPage.cpp.o
+.PHONY : UI/LoginPage/LoginPage.o
+
+# target to build an object file
+UI/LoginPage/LoginPage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/LoginPage/LoginPage.cpp.o
+.PHONY : UI/LoginPage/LoginPage.cpp.o
+
+UI/LoginPage/LoginPage.i: UI/LoginPage/LoginPage.cpp.i
+.PHONY : UI/LoginPage/LoginPage.i
+
+# target to preprocess a source file
+UI/LoginPage/LoginPage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/LoginPage/LoginPage.cpp.i
+.PHONY : UI/LoginPage/LoginPage.cpp.i
+
+UI/LoginPage/LoginPage.s: UI/LoginPage/LoginPage.cpp.s
+.PHONY : UI/LoginPage/LoginPage.s
+
+# target to generate assembly for a file
+UI/LoginPage/LoginPage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/LoginPage/LoginPage.cpp.s
+.PHONY : UI/LoginPage/LoginPage.cpp.s
+
+UI/MainWindow.o: UI/MainWindow.cpp.o
+.PHONY : UI/MainWindow.o
+
+# target to build an object file
+UI/MainWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/MainWindow.cpp.o
+.PHONY : UI/MainWindow.cpp.o
+
+UI/MainWindow.i: UI/MainWindow.cpp.i
+.PHONY : UI/MainWindow.i
+
+# target to preprocess a source file
+UI/MainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/MainWindow.cpp.i
+.PHONY : UI/MainWindow.cpp.i
+
+UI/MainWindow.s: UI/MainWindow.cpp.s
+.PHONY : UI/MainWindow.s
+
+# target to generate assembly for a file
+UI/MainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/MainWindow.cpp.s
+.PHONY : UI/MainWindow.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -689,6 +774,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Project_autogen"
 	@echo "... Project"
 	@echo "... Controller/ElectricScooterController/ElectricScooterController.o"
 	@echo "... Controller/ElectricScooterController/ElectricScooterController.i"
@@ -711,6 +797,9 @@ help:
 	@echo "... Domain/User/User/User.o"
 	@echo "... Domain/User/User/User.i"
 	@echo "... Domain/User/User/User.s"
+	@echo "... Project_autogen/mocs_compilation.o"
+	@echo "... Project_autogen/mocs_compilation.i"
+	@echo "... Project_autogen/mocs_compilation.s"
 	@echo "... Repository/CSV-FileRepository/CSV-FileRepository.o"
 	@echo "... Repository/CSV-FileRepository/CSV-FileRepository.i"
 	@echo "... Repository/CSV-FileRepository/CSV-FileRepository.s"
@@ -753,9 +842,15 @@ help:
 	@echo "... Tests/TestRepository/TestRepository.o"
 	@echo "... Tests/TestRepository/TestRepository.i"
 	@echo "... Tests/TestRepository/TestRepository.s"
-	@echo "... UI/ElectricScooterTable.o"
-	@echo "... UI/ElectricScooterTable.i"
-	@echo "... UI/ElectricScooterTable.s"
+	@echo "... UI/ElectricScooterTable/ElectricScooterTable.o"
+	@echo "... UI/ElectricScooterTable/ElectricScooterTable.i"
+	@echo "... UI/ElectricScooterTable/ElectricScooterTable.s"
+	@echo "... UI/LoginPage/LoginPage.o"
+	@echo "... UI/LoginPage/LoginPage.i"
+	@echo "... UI/LoginPage/LoginPage.s"
+	@echo "... UI/MainWindow.o"
+	@echo "... UI/MainWindow.i"
+	@echo "... UI/MainWindow.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

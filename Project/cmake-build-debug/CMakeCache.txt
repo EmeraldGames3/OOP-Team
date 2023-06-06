@@ -247,6 +247,9 @@ Qt5Gui_DIR:PATH=/home/bogdan/Qt/5.15.2/gcc_64/lib/cmake/Qt5Gui
 //The directory containing a CMake configuration file for Qt5Widgets.
 Qt5Widgets_DIR:PATH=/home/bogdan/Qt/5.15.2/gcc_64/lib/cmake/Qt5Widgets
 
+//The directory containing a CMake configuration file for Qt5.
+Qt5_DIR:PATH=/home/bogdan/Qt/5.15.2/gcc_64/lib/cmake/Qt5
+
 
 ########################
 # INTERNAL cache entries

@@ -5,7 +5,7 @@
 		<Option title="Project"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\Qt\;CMake Files\..\..\..\..\Qt\5.15.2\;CMake Files\..\..\..\..\Qt\5.15.2\gcc_64\;CMake Files\..\..\..\..\Qt\5.15.2\gcc_64\lib\;CMake Files\..\..\..\..\Qt\5.15.2\gcc_64\lib\cmake\;CMake Files\..\..\..\..\Qt\5.15.2\gcc_64\lib\cmake\Qt5Widgets\;CMake Files\..\..\..\..\Qt\5.15.2\gcc_64\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\Qt\5.15.2\gcc_64\lib\cmake\Qt5Core\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\Qt\;CMake Files\..\..\..\..\Qt\5.15.2\;CMake Files\..\..\..\..\Qt\5.15.2\gcc_64\;CMake Files\..\..\..\..\Qt\5.15.2\gcc_64\lib\;CMake Files\..\..\..\..\Qt\5.15.2\gcc_64\lib\cmake\;CMake Files\..\..\..\..\Qt\5.15.2\gcc_64\lib\cmake\Qt5\;CMake Files\..\..\..\..\Qt\5.15.2\gcc_64\lib\cmake\Qt5Widgets\;CMake Files\..\..\..\..\Qt\5.15.2\gcc_64\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\Qt\5.15.2\gcc_64\lib\cmake\Qt5Core\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug"/>
@@ -27,6 +27,7 @@
 					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/include"/>
 					<Add directory="/home/bogdan/Qt/5.15.2/gcc_64/include"/>
 					<Add directory="/home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets"/>
 					<Add directory="/home/bogdan/Qt/5.15.2/gcc_64/include/QtGui"/>
@@ -57,6 +58,7 @@
 					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/include"/>
 					<Add directory="/home/bogdan/Qt/5.15.2/gcc_64/include"/>
 					<Add directory="/home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets"/>
 					<Add directory="/home/bogdan/Qt/5.15.2/gcc_64/include/QtGui"/>
@@ -92,6 +94,16 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Project_autogen">
+				<Option working_dir="/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_autogen"/>
 					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -224,10 +236,25 @@
 		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestRepository.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable/ElectricScooterTable.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable/ElectricScooterTable.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/LoginPage/LoginPage.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/LoginPage/LoginPage.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/mocs_compilation.cpp">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/main.cpp">
@@ -235,6 +262,15 @@
 		</Unit>
 		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/../../../../Qt/5.15.2/gcc_64/lib/cmake/Qt5/Qt5Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\gcc_64\lib\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/../../../../Qt/5.15.2/gcc_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\gcc_64\lib\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/../../../../Qt/5.15.2/gcc_64/lib/cmake/Qt5/Qt5ModuleLocation.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\gcc_64\lib\cmake\Qt5\"/>
 		</Unit>
 		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/../../../../Qt/5.15.2/gcc_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\gcc_64\lib\cmake\Qt5Widgets\"/>

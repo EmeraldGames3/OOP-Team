@@ -310,7 +310,7 @@ CMakeFiles/Project.dir/main.cpp.o: \
  /home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.h \
  /home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController/../UserController/UserController.h \
  /home/bogdan/Programming/University/OOP-Team/Project/UI/UI.h \
- /home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable/ElectricScooterTable.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/QDebug \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qdebug.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h \
@@ -372,4 +372,20 @@ CMakeFiles/Project.dir/main.cpp.o: \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qdatetime.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QTableWidget \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtablewidget.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtableview.h
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtableview.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/LoginPage/LoginPage.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QLabel \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlabel.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QLineEdit \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlineedit.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtextcursor.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtextformat.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qpen.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtextoption.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QPushButton \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qpushbutton.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractbutton.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QMainWindow \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qmainwindow.h

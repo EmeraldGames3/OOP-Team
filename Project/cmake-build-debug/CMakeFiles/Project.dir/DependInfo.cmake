@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Client/Client.cpp" "CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o" "gcc" "CMakeFiles/Project.dir/Domain/User/Client/Client.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/Manager.cpp" "CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o" "gcc" "CMakeFiles/Project.dir/Domain/User/Manager/Manager.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/Domain/User/User/User.cpp" "CMakeFiles/Project.dir/Domain/User/User/User.cpp.o" "gcc" "CMakeFiles/Project.dir/Domain/User/User/User.cpp.o.d"
+  "/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/mocs_compilation.cpp" "CMakeFiles/Project.dir/Project_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/Project.dir/Project_autogen/mocs_compilation.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/Repository/CSV-FileRepository/CSV-FileRepository.cpp" "CMakeFiles/Project.dir/Repository/CSV-FileRepository/CSV-FileRepository.cpp.o" "gcc" "CMakeFiles/Project.dir/Repository/CSV-FileRepository/CSV-FileRepository.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/Repository/InMemoryRepository/InMemoryRepository.cpp" "CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.o" "gcc" "CMakeFiles/Project.dir/Repository/InMemoryRepository/InMemoryRepository.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestAll.cpp" "CMakeFiles/Project.dir/Tests/TestAll.cpp.o" "gcc" "CMakeFiles/Project.dir/Tests/TestAll.cpp.o.d"
@@ -29,7 +30,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp" "CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o" "gcc" "CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp" "CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o" "gcc" "CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestRepository.cpp" "CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o" "gcc" "CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o.d"
-  "/home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable.cpp" "CMakeFiles/Project.dir/UI/ElectricScooterTable.cpp.o" "gcc" "CMakeFiles/Project.dir/UI/ElectricScooterTable.cpp.o.d"
+  "/home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable/ElectricScooterTable.cpp" "CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.o" "gcc" "CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.o.d"
+  "/home/bogdan/Programming/University/OOP-Team/Project/UI/LoginPage/LoginPage.cpp" "CMakeFiles/Project.dir/UI/LoginPage/LoginPage.cpp.o" "gcc" "CMakeFiles/Project.dir/UI/LoginPage/LoginPage.cpp.o.d"
+  "/home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.cpp" "CMakeFiles/Project.dir/UI/MainWindow.cpp.o" "gcc" "CMakeFiles/Project.dir/UI/MainWindow.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/main.cpp" "CMakeFiles/Project.dir/main.cpp.o" "gcc" "CMakeFiles/Project.dir/main.cpp.o.d"
   )
 
