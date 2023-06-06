@@ -332,4 +332,6 @@ CMakeFiles/Project.dir/UI/LoginPage/LoginPage.cpp.o: \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlayoutitem.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qboxlayout.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qgridlayout.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QCheckBox \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qcheckbox.h

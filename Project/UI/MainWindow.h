@@ -8,6 +8,12 @@
 #include <QVBoxLayout>
 #include "LoginPage/LoginPage.h"
 
+#include "../Controller/Controller.h"
+#include "../Repository/Repository.h"
+
+using namespace Repository;
+using namespace Controller;
+
 namespace UI {
     class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -15,8 +21,20 @@ namespace UI {
     public:
         explicit MainWindow(QWidget *parent = nullptr);
 
+        ~MainWindow() override;
+
     private:
         QWidget *centralWidget;
+        QLabel *welcomeLabel;
         LoginPage *loginPage;
+
+        shared_ptr
+
+    private slots:
+        void handleLogin(const QString &username, const QString &password, bool saveData, bool manager);
+        void handleRegister(const QString &username, const QString &password, bool saveData, bool manager);
+
+    signals:
+        void loggedIn(QString username);
     };
 }

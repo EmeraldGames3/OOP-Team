@@ -336,4 +336,6 @@ CMakeFiles/Project.dir/UI/MainWindow.cpp.o: \
  /usr/include/c++/11/variant \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qpen.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtextoption.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QCheckBox \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qcheckbox.h

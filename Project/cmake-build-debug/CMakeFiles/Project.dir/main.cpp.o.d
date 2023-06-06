@@ -386,6 +386,8 @@ CMakeFiles/Project.dir/main.cpp.o: \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qpushbutton.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractbutton.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QCheckBox \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qcheckbox.h \
  /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QMainWindow \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qmainwindow.h

@@ -2165,6 +2165,8 @@ CMakeFiles/Project.dir/Project_autogen/mocs_compilation.cpp.o: Project_autogen/m
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qboxlayout.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qgridlayout.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QCheckBox \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qcheckbox.h \
   Project_autogen/KRKR4BN5RM/moc_MainWindow.cpp \
   /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QMainWindow \
@@ -5676,7 +5678,9 @@ CMakeFiles/Project.dir/UI/LoginPage/LoginPage.cpp.o: /home/bogdan/Programming/Un
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlayoutitem.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qboxlayout.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qgridlayout.h \
-  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QCheckBox \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qcheckbox.h
 
 CMakeFiles/Project.dir/UI/MainWindow.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.cpp \
   /usr/include/stdc-predef.h \
@@ -6069,7 +6073,9 @@ CMakeFiles/Project.dir/UI/MainWindow.cpp.o: /home/bogdan/Programming/University/
   /usr/include/c++/11/variant \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qpen.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtextoption.h \
-  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QCheckBox \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qcheckbox.h
 
 CMakeFiles/Project.dir/main.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/main.cpp \
   /usr/include/stdc-predef.h \
@@ -6516,6 +6522,8 @@ CMakeFiles/Project.dir/main.cpp.o: /home/bogdan/Programming/University/OOP-Team/
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qpushbutton.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractbutton.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QCheckBox \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qcheckbox.h \
   /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QMainWindow \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qmainwindow.h
@@ -6614,6 +6622,10 @@ CMakeFiles/Project.dir/main.cpp.o: /home/bogdan/Programming/University/OOP-Team/
 /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.h:
 
 Project_autogen/KRKR4BN5RM/moc_MainWindow.cpp:
+
+/home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qcheckbox.h:
+
+/home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QCheckBox:
 
 /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qgridlayout.h:
 

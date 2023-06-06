@@ -84,6 +84,7 @@
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtguiglobal.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtransform.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qwindowdefs.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QCheckBox \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QLabel \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QLineEdit \
@@ -92,6 +93,7 @@
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QWidget \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractbutton.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qboxlayout.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qcheckbox.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qframe.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qgridlayout.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlabel.h \

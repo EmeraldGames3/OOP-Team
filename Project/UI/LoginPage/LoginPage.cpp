@@ -24,7 +24,11 @@ UI::LoginPage::LoginPage(QWidget *parent) : QWidget(parent) {
 
     // Create a layout for the login page
     auto *mainLayout = new QVBoxLayout(this);
-    mainLayout->setAlignment(Qt::AlignCenter); // Set alignment to center
+    mainLayout->setAlignment(Qt::AlignCenter);
+
+    // Create the toggle buttons
+    saveDataButton = new QCheckBox("Save Data");
+    managerButton = new QCheckBox("Manager");
 
     // Create a layout for the username line
     auto *usernameLayout = new QHBoxLayout();
@@ -42,10 +46,47 @@ UI::LoginPage::LoginPage(QWidget *parent) : QWidget(parent) {
     buttonLayout->addWidget(registerButton);
 
     // Add the username line, password line, and buttons to the main layout
+    mainLayout->addWidget(saveDataButton);
+    mainLayout->addWidget(managerButton);
     mainLayout->addLayout(usernameLayout);
     mainLayout->addLayout(passwordLayout);
     mainLayout->addLayout(buttonLayout);
 
     // Set the main layout for the login page widget
     setLayout(mainLayout);
+
+    // Connect the login button signal to the appropriate slot
+    connect(loginButton, &QPushButton::clicked, this, &LoginPage::handleLoginButtonClicked);
+
+    // Connect the register button signal to the handleRegisterButtonClicked slot
+    connect(registerButton, &QPushButton::clicked, this, &LoginPage::handleRegisterButtonClicked);
+}
+
+void UI::LoginPage::handleLoginButtonClicked() {
+    // Get the entered username and password
+    QString username = usernameLineEdit->text();
+    QString password = passwordLineEdit->text();
+
+    // Emit the loginClicked signal with the username and password
+    emit loginClicked(username, password, saveDataButton->isChecked(), managerButton->isChecked());
+}
+
+void UI::LoginPage::handleRegisterButtonClicked() {
+    // Get the entered username and password
+    QString username = usernameLineEdit->text();
+    QString password = passwordLineEdit->text();
+
+    // Emit the registerClicked signal with the username and password
+    emit registerClicked(username, password, saveDataButton->isChecked(), managerButton->isChecked());
+}
+
+UI::LoginPage::~LoginPage() {
+    // Clean up the dynamically allocated memory
+    delete usernameLabel;
+    delete usernameLineEdit;
+    delete passwordLabel;
+    delete passwordLineEdit;
+    delete loginButton;
+    delete registerButton;
+    delete saveDataButton;
 }
