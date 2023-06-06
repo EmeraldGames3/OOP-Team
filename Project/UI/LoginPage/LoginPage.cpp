@@ -5,14 +5,15 @@ UI::LoginPage::LoginPage(QWidget *parent) : QWidget(parent) {
     usernameLabel = new QLabel("Username:");
     usernameLineEdit = new QLineEdit();
 
+    // Create the fileName label and text box
+    fileNameLabel = new QLabel("File Name:");
+    fileNameLineEdit = new QLineEdit();
+    fileNameLineEdit->setText("ScooterDatabase");
+
     // Create the password label and text box
     passwordLabel = new QLabel("Password:");
     passwordLineEdit = new QLineEdit();
     passwordLineEdit->setEchoMode(QLineEdit::Password); // Mask the entered password
-
-    // Create the fileName label and text box
-    fileNameLabel = new QLabel("File Name:");
-    fileNameLineEdit = new QLineEdit();
 
     // Create the login and register buttons
     loginButton = new QPushButton("Login");
