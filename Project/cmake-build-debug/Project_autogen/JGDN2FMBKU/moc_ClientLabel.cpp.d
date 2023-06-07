@@ -1,5 +1,20 @@
 /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/JGDN2FMBKU/moc_ClientLabel.cpp: /home/bogdan/Programming/University/OOP-Team/Project/UI/ClientLabel/ClientLabel.h \
   /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/moc_predefs.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Controller/Controller.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Controller/UserController/UserController.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/Date/Date.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/Domain.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/ElectricScooter/ElectricScooter.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/ObjectWithID.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Client/Client.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/Manager/Manager.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Domain/User/User/User.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Repository/CSV-FileRepository/CSV-FileRepository.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Repository/CrudRepository.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Repository/InMemoryRepository/InMemoryRepository.h \
+  /home/bogdan/Programming/University/OOP-Team/Project/Repository/Repository.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qabstractitemmodel.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qalgorithms.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qarraydata.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qatomic.h \
@@ -20,10 +35,13 @@
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qhash.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qhashfunctions.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qiodevice.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qitemselectionmodel.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qiterator.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qline.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qlist.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qlocale.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qlogging.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qmap.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qmargins.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qmetatype.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qnamespace.h \
@@ -38,7 +56,9 @@
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qrect.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qrefcount.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qregexp.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qregularexpression.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qscopedpointer.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qset.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qshareddata.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer_impl.h \
@@ -53,6 +73,7 @@
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qsystemdetection.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qvariant.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qvarlengtharray.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qvector.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qversiontagging.h \
@@ -62,6 +83,7 @@
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qfont.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qfontinfo.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qfontmetrics.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qicon.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qimage.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qkeysequence.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qmatrix.h \
@@ -76,17 +98,35 @@
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtgui-config.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtguiglobal.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtransform.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qvalidator.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qwindowdefs.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QLabel \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QPushButton \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QTableWidget \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QVBoxLayout \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QWidget \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractbutton.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractitemview.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractslider.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractspinbox.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qboxlayout.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qframe.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qgridlayout.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlabel.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlayout.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlayoutitem.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qpushbutton.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qrubberband.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qsizepolicy.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qslider.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qstyle.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qstyleoption.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtabbar.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtableview.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtablewidget.h \
+  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtabwidget.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtwidgets-config.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
   /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qwidget.h \
@@ -128,6 +168,7 @@
   /usr/include/c++/11/bits/hash_bytes.h \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/bits/iterator_concepts.h \
   /usr/include/c++/11/bits/list.tcc \
   /usr/include/c++/11/bits/locale_classes.h \
@@ -156,6 +197,7 @@
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/std_function.h \
   /usr/include/c++/11/bits/std_mutex.h \
@@ -215,6 +257,8 @@
   /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/istream \
   /usr/include/c++/11/iterator \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/list \
@@ -228,6 +272,7 @@
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/glue_numeric_defs.h \
+  /usr/include/c++/11/sstream \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/streambuf \
   /usr/include/c++/11/string \

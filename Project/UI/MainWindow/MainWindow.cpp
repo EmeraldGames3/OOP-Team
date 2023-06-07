@@ -10,9 +10,9 @@ UI::MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     loginPage = std::make_unique<LoginPage>(centralWidget.get());
 
     // Set the layout for the central widget
-    auto *layout = new QVBoxLayout(centralWidget.get());
+    std::unique_ptr<QVBoxLayout> layout = std::make_unique<QVBoxLayout>(centralWidget.get());
     layout->addWidget(loginPage.get());
-    centralWidget->setLayout(layout);
+    centralWidget->setLayout(layout.release());
 
     // Connect the loginClicked signal from the login page to a slot in MainWindow
     connect(loginPage.get(), &LoginPage::loginClicked, this, &MainWindow::handleLogin);
@@ -64,19 +64,19 @@ void UI::MainWindow::handleLogin(const QString &username, const QString &passwor
     // Hide the login page
     loginPage->hide();
 
+    Client currentUser = Client(username.toStdString(), password.toStdString());
+
     // Create the manager and client labels
     managerLabel = std::make_unique<UI::ManagerLabel>(scooterController);
-//    clientLabel = std::make_unique<UI::ClientLabel>(scooterController);
+    clientLabel = std::make_unique<UI::ClientLabel>(scooterController, currentUser);
 
     // Clear the existing layout of the central widget
-    auto *existingLayout = centralWidget->layout();
+    auto existingLayout = centralWidget->layout();
     if (existingLayout) {
         QLayoutItem *item;
         while ((item = existingLayout->takeAt(0)) != nullptr) {
             delete item->widget();
-            delete item;
         }
-        delete existingLayout;
     }
 
     // Create a new layout for the central widget
@@ -140,20 +140,21 @@ void UI::MainWindow::handleRegister(const QString &username, const QString &pass
     // Hide the login page
     loginPage->hide();
 
+    Client currentUser = Client(username.toStdString(), password.toStdString());
+
     // Create the manager and client labels
     managerLabel = std::make_unique<UI::ManagerLabel>(scooterController);
-//    clientLabel = std::make_unique<UI::ClientLabel>(scooterController);
-    clientLabel = std::make_unique<UI::ClientLabel>();
+    clientLabel = std::make_unique<UI::ClientLabel>(scooterController, currentUser);
 
     // Clear the existing layout of the central widget
-    auto *existingLayout = centralWidget->layout();
+    auto existingLayout = centralWidget->layout();
     if (existingLayout) {
         QLayoutItem *item;
         while ((item = existingLayout->takeAt(0)) != nullptr) {
             delete item->widget();
-            delete item;
+            delete item; // Delete the layout item itself
         }
-        delete existingLayout;
+        delete existingLayout; // Delete the layout
     }
 
     // Create a new layout for the central widget

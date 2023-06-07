@@ -360,7 +360,6 @@ CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.o: \
  /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow/../../Controller/ElectricScooterController/../UserController/../../Repository/InMemoryRepository/InMemoryRepository.h \
  /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow/../../Controller/ElectricScooterController/../UserController/../../Repository/CSV-FileRepository/CSV-FileRepository.h \
  /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow/../ClientLabel/ClientLabel.h \
- /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow/../ManagerLabel/ManagerLabel.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QTableWidget \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtablewidget.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtableview.h \
@@ -380,5 +379,6 @@ CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.o: \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qstyle.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtabbar.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qrubberband.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow/../ManagerLabel/ManagerLabel.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHeaderView \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qheaderview.h
