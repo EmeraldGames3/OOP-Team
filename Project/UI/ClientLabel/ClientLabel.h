@@ -21,11 +21,22 @@ namespace UI {
         void handleHeaderClicked(int index);
         void exitApplication();
         void cellDoubleClicked(int rowIndex, int columnIndex);
+        void reserveScooter();
+        void useScooter();
+        void freeScooter();
+        void seeMyReservedScooters();
+        void seeAllFreeScooters();
 
     private:
         QPushButton *viewAllScootersButton;
         QTableWidget *table;
         QPushButton *exitButton;
+
+        std::shared_ptr<QPushButton> reserveScooterButton;
+        std::shared_ptr<QPushButton> useScooterButton;
+        std::shared_ptr<QPushButton> freeScooterButton;
+        std::shared_ptr<QPushButton> seeMyReservedScootersButton;
+        std::shared_ptr<QPushButton> seeAllFreeScootersButton;
 
         std::shared_ptr<ElectricScooterController> scooterController;
         Client currentUser;

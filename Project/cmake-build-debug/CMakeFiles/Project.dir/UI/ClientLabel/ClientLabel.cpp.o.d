@@ -375,4 +375,7 @@ CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.o: \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qcoreevent.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qeventloop.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qguiapplication.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qinputmethod.h
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qinputmethod.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QMessageBox \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qmessagebox.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qdialog.h

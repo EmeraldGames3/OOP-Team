@@ -32,30 +32,31 @@ namespace Controller {
         void updateCondition(const string &condition, const string &id);
 
         ///Get all scooters
-        vector<ElectricScooter> getAll();
+        [[nodiscard]] vector<ElectricScooter> getAll();
 
         ///Get all scooters sorted after every attribute
-        vector<ElectricScooter> modelSorted();
-        vector<ElectricScooter> ageSorted();
-        vector<ElectricScooter> mileageSorted();
-        vector<ElectricScooter> lastLocationSorted();
-        vector<ElectricScooter> currentConditionSorted();
+        [[nodiscard]] vector<ElectricScooter> modelSorted();
+        [[nodiscard]] vector<ElectricScooter> ageSorted();
+        [[nodiscard]] vector<ElectricScooter> mileageSorted();
+        [[nodiscard]] vector<ElectricScooter> lastLocationSorted();
+        [[nodiscard]] vector<ElectricScooter> currentConditionSorted();
 
         ///Filter all scooters by data
-        vector<ElectricScooter> ageFiltered(Domain::Date value);
+        [[nodiscard]] vector<ElectricScooter> ageFiltered(Domain::Date value);
 
         ///Filter all scooters based on mileage
-        vector<ElectricScooter> mileageFiltered(float value);
+        [[nodiscard]] vector<ElectricScooter> mileageFiltered(float value);
 
         ///Search for a string in the last location of a scooter
-        vector<ElectricScooter> lastLocationSearch(const string& location);
+        [[nodiscard]] vector<ElectricScooter> lastLocationSearch(const string& location);
 
         ///Check if a scooter is in the Data Base
-        bool find(const string& id);
+        [[nodiscard]] bool find(const string& id);
 
         ///Manipulate a scooter
-        bool reserveScooter(const string &id, Client &client);
-        bool useScooter(const string &id, Client &client);
-        bool freeScooter(const string &id, Client &client);
+        [[nodiscard]] bool reserveScooter(const string &id, Client &client);
+        [[nodiscard]] bool useScooter(const string &id, Client &client);
+        [[nodiscard]] bool freeScooter(const string &id, Client &client);
+        [[nodiscard]] std::vector<ElectricScooter> getParkedScooters() const;
     };
 }

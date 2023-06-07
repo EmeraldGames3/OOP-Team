@@ -2,12 +2,18 @@
 #include <QHeaderView>
 #include <QMenu>
 #include <QApplication>
+#include <QMessageBox>
 
 UI::ClientLabel::ClientLabel(std::shared_ptr<ElectricScooterController> controller, const Client &user, QWidget *parent)
         : scooterController(std::move(controller)), currentUser(user), QWidget(parent) {
     // Create the buttons
     viewAllScootersButton = new QPushButton("View All Scooters");
     exitButton = new QPushButton("Exit", this);
+    reserveScooterButton = std::make_shared<QPushButton>("Reserve Scooter");
+    useScooterButton = std::make_shared<QPushButton>("Use Scooter");
+    freeScooterButton = std::make_shared<QPushButton>("Free Scooter");
+    seeMyReservedScootersButton = std::make_shared<QPushButton>("View my reserved scooters");;
+    seeAllFreeScootersButton = std::make_shared<QPushButton>("View free scooters");;
 
     // Create the table widget
     table = new QTableWidget();
@@ -26,6 +32,11 @@ UI::ClientLabel::ClientLabel(std::shared_ptr<ElectricScooterController> controll
     auto buttonLayout = new QVBoxLayout();
     buttonLayout->addWidget(exitButton);
     buttonLayout->addWidget(viewAllScootersButton);
+    buttonLayout->addWidget(reserveScooterButton.get());
+    buttonLayout->addWidget(useScooterButton.get());
+    buttonLayout->addWidget(freeScooterButton.get());
+    buttonLayout->addWidget(seeMyReservedScootersButton.get());
+    buttonLayout->addWidget(seeAllFreeScootersButton.get());
 
     // Create a layout for the table and buttons
     auto mainLayout = new QVBoxLayout();
@@ -37,6 +48,11 @@ UI::ClientLabel::ClientLabel(std::shared_ptr<ElectricScooterController> controll
 
     // Connect the button signals to their respective slots
     connect(viewAllScootersButton, &QPushButton::clicked, this, &ClientLabel::viewAllScooters);
+    connect(reserveScooterButton.get(), &QPushButton::clicked, this, &ClientLabel::reserveScooter);
+    connect(useScooterButton.get(), &QPushButton::clicked, this, &ClientLabel::useScooter);
+    connect(freeScooterButton.get(), &QPushButton::clicked, this, &ClientLabel::freeScooter);
+    connect(seeMyReservedScootersButton.get(), &QPushButton::clicked, this, &ClientLabel::seeMyReservedScooters);
+    connect(seeAllFreeScootersButton.get(), &QPushButton::clicked, this, &ClientLabel::seeAllFreeScooters);
 
     // Connect the headerClicked signal to the handleHeaderClicked slot
     connect(table->horizontalHeader(), &QHeaderView::sectionClicked, this, &ClientLabel::handleHeaderClicked);
@@ -60,14 +76,14 @@ void UI::ClientLabel::cellDoubleClicked(int row, int column) {
     // Loop through the columns and add actions for each column's data in the clicked row
     for (int col = 0; col < numColumns; ++col) {
         // Get the item text from the table's model
-        QTableWidgetItem* item = table->item(row, col);
+        QTableWidgetItem *item = table->item(row, col);
         if (item) {
             QString columnName = table->horizontalHeaderItem(col)->text();
             QString columnData = item->text();
 
             // Create a QAction for the column's data and add it to the popup menu
             QString actionText = QString("%1: %2").arg(columnName).arg(columnData);
-            QAction* action = popupMenu.addAction(actionText);
+            QAction *action = popupMenu.addAction(actionText);
             action->setEnabled(false); // Disable the action to make it non-clickable
         }
     }
@@ -76,7 +92,7 @@ void UI::ClientLabel::cellDoubleClicked(int row, int column) {
     popupMenu.exec(QCursor::pos());
 }
 
-void UI::ClientLabel::exitApplication(){
+void UI::ClientLabel::exitApplication() {
     // Implement the exit functionality here
     QApplication::quit();
 }
@@ -150,4 +166,106 @@ void UI::ClientLabel::populateTable(vector<ElectricScooter> scooters) {
         table->setItem(row, 4, new QTableWidgetItem(QString::fromStdString(scooter.getLocation())));
         table->setItem(row, 5, new QTableWidgetItem(QString::fromStdString(scooter.getCondition())));
     }
+}
+
+void UI::ClientLabel::reserveScooter() {
+    // Get the selected row from the table
+    int selectedRow = table->currentRow();
+    if (selectedRow >= 0 && selectedRow < table->rowCount()) {
+        // Get the ID of the selected scooter
+        QString id = table->item(selectedRow, 0)->text();
+
+        // Convert the ID to std::string
+        std::string scooterId = id.toStdString();
+
+        // Call the reserveScooter function
+        bool success = scooterController->reserveScooter(scooterId, currentUser);
+
+        // Show a message based on the result
+        if (success) {
+            QMessageBox::information(this, "Reservation Successful", "Scooter reserved successfully.");
+        } else {
+            QMessageBox::warning(this, "Reservation Failed", "Failed to reserve the scooter. Please try again.");
+        }
+    } else {
+        QMessageBox::warning(this, "No Scooter Selected", "Please select a scooter from the table.");
+    }
+
+    populateTable(scooterController->getAll());
+}
+
+void UI::ClientLabel::useScooter() {
+    // Get the selected row from the table
+    int selectedRow = table->currentRow();
+    if (selectedRow >= 0 && selectedRow < table->rowCount()) {
+        // Get the ID of the selected scooter
+        QString id = table->item(selectedRow, 0)->text();
+
+        // Convert the ID to std::string
+        std::string scooterId = id.toStdString();
+
+        // Call the useScooter function
+        bool success = scooterController->useScooter(scooterId, currentUser);
+
+        // Show a message based on the result
+        if (success) {
+            QMessageBox::information(this, "Scooter Usage Successful", "You are now using the scooter.");
+        } else {
+            QMessageBox::warning(this, "Scooter Usage Failed", "Failed to use the scooter. Please try again.");
+        }
+    } else {
+        QMessageBox::warning(this, "No Scooter Selected", "Please select a scooter from the table.");
+    }
+
+    populateTable(scooterController->getAll());
+}
+
+void UI::ClientLabel::freeScooter() {
+    // Get the selected row from the table
+    int selectedRow = table->currentRow();
+    if (selectedRow >= 0 && selectedRow < table->rowCount()) {
+        // Get the ID of the selected scooter
+        QString id = table->item(selectedRow, 0)->text();
+
+        // Convert the ID to std::string
+        std::string scooterId = id.toStdString();
+
+        // Call the freeScooter function
+        bool success = scooterController->freeScooter(scooterId, currentUser);
+
+        // Show a message based on the result
+        if (success) {
+            QMessageBox::information(this, "Scooter Freed", "You have successfully freed the scooter.");
+        } else {
+            QMessageBox::warning(this, "Scooter Freeing Failed", "Failed to free the scooter. Please try again.");
+        }
+    } else {
+        QMessageBox::warning(this, "No Scooter Selected", "Please select a scooter from the table.");
+    }
+
+    populateTable(scooterController->getAll());
+}
+
+void UI::ClientLabel::seeMyReservedScooters() {
+    // Get the reserved scooters of the current user
+    std::vector<ElectricScooter> reservedScooters = currentUser.getReservedScooters();
+
+    if (reservedScooters.empty()) {
+        QMessageBox::information(this, "No Reserved Scooters", "You have not reserved any scooters.");
+        return;
+    }
+
+    populateTable(reservedScooters);
+}
+
+void UI::ClientLabel::seeAllFreeScooters() {
+    // Retrieve the parked scooters from the controller
+    std::vector<ElectricScooter> parkedScooters = scooterController->getParkedScooters();
+
+    if (parkedScooters.empty()) {
+        QMessageBox::information(this, "No free Scooters", "There are no available scooters at the moment");
+        return;
+    }
+
+    populateTable(parkedScooters);
 }

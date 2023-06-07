@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_UI__ClientLabel_t {
-    QByteArrayData data[9];
-    char stringdata0[114];
+    QByteArrayData data[14];
+    char stringdata0[193];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -40,12 +40,19 @@ QT_MOC_LITERAL(4, 53, 5), // "index"
 QT_MOC_LITERAL(5, 59, 15), // "exitApplication"
 QT_MOC_LITERAL(6, 75, 17), // "cellDoubleClicked"
 QT_MOC_LITERAL(7, 93, 8), // "rowIndex"
-QT_MOC_LITERAL(8, 102, 11) // "columnIndex"
+QT_MOC_LITERAL(8, 102, 11), // "columnIndex"
+QT_MOC_LITERAL(9, 114, 14), // "reserveScooter"
+QT_MOC_LITERAL(10, 129, 10), // "useScooter"
+QT_MOC_LITERAL(11, 140, 11), // "freeScooter"
+QT_MOC_LITERAL(12, 152, 21), // "seeMyReservedScooters"
+QT_MOC_LITERAL(13, 174, 18) // "seeAllFreeScooters"
 
     },
     "UI::ClientLabel\0viewAllScooters\0\0"
     "handleHeaderClicked\0index\0exitApplication\0"
-    "cellDoubleClicked\0rowIndex\0columnIndex"
+    "cellDoubleClicked\0rowIndex\0columnIndex\0"
+    "reserveScooter\0useScooter\0freeScooter\0"
+    "seeMyReservedScooters\0seeAllFreeScooters"
 };
 #undef QT_MOC_LITERAL
 
@@ -55,7 +62,7 @@ static const uint qt_meta_data_UI__ClientLabel[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
+       9,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -63,16 +70,26 @@ static const uint qt_meta_data_UI__ClientLabel[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   34,    2, 0x08 /* Private */,
-       3,    1,   35,    2, 0x08 /* Private */,
-       5,    0,   38,    2, 0x08 /* Private */,
-       6,    2,   39,    2, 0x08 /* Private */,
+       1,    0,   59,    2, 0x08 /* Private */,
+       3,    1,   60,    2, 0x08 /* Private */,
+       5,    0,   63,    2, 0x08 /* Private */,
+       6,    2,   64,    2, 0x08 /* Private */,
+       9,    0,   69,    2, 0x08 /* Private */,
+      10,    0,   70,    2, 0x08 /* Private */,
+      11,    0,   71,    2, 0x08 /* Private */,
+      12,    0,   72,    2, 0x08 /* Private */,
+      13,    0,   73,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void, QMetaType::Int,    4,
     QMetaType::Void,
     QMetaType::Void, QMetaType::Int, QMetaType::Int,    7,    8,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -87,6 +104,11 @@ void UI::ClientLabel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         case 1: _t->handleHeaderClicked((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 2: _t->exitApplication(); break;
         case 3: _t->cellDoubleClicked((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 4: _t->reserveScooter(); break;
+        case 5: _t->useScooter(); break;
+        case 6: _t->freeScooter(); break;
+        case 7: _t->seeMyReservedScooters(); break;
+        case 8: _t->seeAllFreeScooters(); break;
         default: ;
         }
     }
@@ -121,13 +143,13 @@ int UI::ClientLabel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 9;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 9)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 4;
+        _id -= 9;
     }
     return _id;
 }

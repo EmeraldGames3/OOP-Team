@@ -232,15 +232,15 @@ vector<ElectricScooter> ElectricScooterController::lastLocationSearch(const stri
 
 ///Reserve a scooter
 bool ElectricScooterController::reserveScooter(const string &id, Client &client) {
-    for(auto &it: repository->findAll())
-        if(it.getId() == id) {
+    for (auto &it: repository->findAll())
+        if (it.getId() == id) {
             if (it.getCondition() != "Parked")
                 return false;
             it.setCondition("Reserved");
-            if(!repository->update(it, it)){
+            if (!repository->update(it, it)) {
                 return false;
             }
-            if(!client.reserveScooter(it)){
+            if (!client.reserveScooter(it)) {
                 return false;
             }
             return true;
@@ -251,29 +251,29 @@ bool ElectricScooterController::reserveScooter(const string &id, Client &client)
 
 ///Use a scooter
 bool ElectricScooterController::useScooter(const string &id, Client &client) {
-    if(client.isOnRide()){
+    if (client.isOnRide()) {
         return false;
     }
 
-    for(auto &it: repository->findAll())
-        if(it.getId() == id) {
-            if(it.getCondition() == "Reserved"){
+    for (auto &it: repository->findAll())
+        if (it.getId() == id) {
+            if (it.getCondition() == "Reserved") {
                 bool wasReserved = false;
-                for(const auto &it2 : client.getReservedScooters()){
-                    if(it2.getId() == id){
+                for (const auto &it2: client.getReservedScooters()) {
+                    if (it2.getId() == id) {
                         wasReserved = true;
                     }
                 }
-                if(!wasReserved){
+                if (!wasReserved) {
                     return false;
                 }
 
                 it.setCondition("In_Use");
-                if(!repository->update(it, it)){
+                if (!repository->update(it, it)) {
                     return false;
                 }
 
-                if(!client.useScooter(it)){
+                if (!client.useScooter(it)) {
                     return false;
                 }
 
@@ -284,10 +284,10 @@ bool ElectricScooterController::useScooter(const string &id, Client &client) {
                 return false;
 
             it.setCondition("In_Use");
-            if(!repository->update(it, it)){
+            if (!repository->update(it, it)) {
                 return false;
             }
-            if(!client.useScooter(it)){
+            if (!client.useScooter(it)) {
                 return false;
             }
             return true;
@@ -298,14 +298,14 @@ bool ElectricScooterController::useScooter(const string &id, Client &client) {
 
 ///Free a scooter
 bool ElectricScooterController::freeScooter(const string &id, Client &client) {
-    if(client.isOnRide()){
-        if(client.getScooterInUse().getId() == id){
+    if (client.isOnRide()) {
+        if (client.getScooterInUse().getId() == id) {
             auto it = client.getScooterInUse();
             it.setCondition("Parked");
-            if(!repository->update(it, it)){
+            if (!repository->update(it, it)) {
                 return false;
             }
-            if(!client.freeScooter(it)){
+            if (!client.freeScooter(it)) {
                 return false;
             }
             return true;
@@ -314,31 +314,43 @@ bool ElectricScooterController::freeScooter(const string &id, Client &client) {
         return false;
     }
 
-    for(auto &it: repository->findAll())
-        if(it.getId() == id) {
+    for (auto &it: repository->findAll())
+        if (it.getId() == id) {
             if (it.getCondition() != "Reserved")
                 return false;
 
             bool wasReserved = false;
-            for(const auto &it2 : client.getReservedScooters()){
-                if(it2.getId() == id){
+            for (const auto &it2: client.getReservedScooters()) {
+                if (it2.getId() == id) {
                     wasReserved = true;
                     break;
                 }
             }
-            if(!wasReserved){
+            if (!wasReserved) {
                 return false;
             }
 
             it.setCondition("Parked");
-            if(!repository->update(it, it)){
+            if (!repository->update(it, it)) {
                 return false;
             }
-            if(!client.freeScooter(it)){
+            if (!client.freeScooter(it)) {
                 return false;
             }
             return true;
         }
 
     return false;
+}
+
+std::vector<ElectricScooter> ElectricScooterController::getParkedScooters() const {
+    std::vector<ElectricScooter> parkedScooters;
+
+    for (const ElectricScooter &scooter: repository->findAll()) {
+        if (scooter.getCondition() == "Parked") {
+            parkedScooters.push_back(scooter);
+        }
+    }
+
+    return parkedScooters;
 }
