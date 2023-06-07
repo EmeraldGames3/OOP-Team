@@ -4,6 +4,8 @@
 #include <QLineEdit>
 #include <utility>
 #include <QMessageBox>
+#include <QApplication>
+#include <QMenu>
 
 UI::ManagerLabel::ManagerLabel(std::shared_ptr<ElectricScooterController> controller, QWidget *parent)
         : scooterController(std::move(controller)), QWidget(parent) {
@@ -15,6 +17,7 @@ UI::ManagerLabel::ManagerLabel(std::shared_ptr<ElectricScooterController> contro
     ageFilteredButton = new QPushButton("Age Filtered");
     mileageFilteredButton = new QPushButton("Mileage Filtered");
     lastLocationSearchButton = new QPushButton("Last Location Search");
+    exitButton = new QPushButton("Exit", this);
 
     // Create the table widget
     table = new QTableWidget();
@@ -31,6 +34,7 @@ UI::ManagerLabel::ManagerLabel(std::shared_ptr<ElectricScooterController> contro
 
     // Create a layout for the buttons
     auto buttonLayout = new QVBoxLayout();
+    buttonLayout->addWidget(exitButton);
     buttonLayout->addWidget(viewAllScootersButton);
     buttonLayout->addWidget(modifyScooterButton);
     buttonLayout->addWidget(addScooterButton);
@@ -58,6 +62,45 @@ UI::ManagerLabel::ManagerLabel(std::shared_ptr<ElectricScooterController> contro
 
     // Connect the headerClicked signal to the handleHeaderClicked slot
     connect(table->horizontalHeader(), &QHeaderView::sectionClicked, this, &ManagerLabel::handleHeaderClicked);
+
+    // Connect button signals to slots
+    connect(exitButton, &QPushButton::clicked, this, &ManagerLabel::exitApplication);
+
+    // Connect the cellDoubleClicked signal to a lambda function that emits the signal with the row and column index
+    connect(table, &QTableWidget::cellDoubleClicked, this, [this](int row, int column) {
+        emit cellDoubleClicked(row, column);
+    });
+}
+
+void UI::ManagerLabel::cellDoubleClicked(int row, int column) {
+    // Get the number of columns in the table
+    int numColumns = table->columnCount();
+
+    // Create a QMenu for the popup menu
+    QMenu popupMenu;
+
+    // Loop through the columns and add actions for each column's data in the clicked row
+    for (int col = 0; col < numColumns; ++col) {
+        // Get the item text from the table's model
+        QTableWidgetItem* item = table->item(row, col);
+        if (item) {
+            QString columnName = table->horizontalHeaderItem(col)->text();
+            QString columnData = item->text();
+
+            // Create a QAction for the column's data and add it to the popup menu
+            QString actionText = QString("%1: %2").arg(columnName).arg(columnData);
+            QAction* action = popupMenu.addAction(actionText);
+            action->setEnabled(false); // Disable the action to make it non-clickable
+        }
+    }
+
+    // Show the popup menu at the current cursor position
+    popupMenu.exec(QCursor::pos());
+}
+
+void UI::ManagerLabel::exitApplication(){
+    // Implement the exit functionality here
+    QApplication::quit();
 }
 
 void UI::ManagerLabel::handleHeaderClicked(int index) {

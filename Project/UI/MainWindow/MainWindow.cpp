@@ -21,28 +21,32 @@ UI::MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     connect(loginPage.get(), &LoginPage::registerClicked, this, &MainWindow::handleRegister);
 }
 
-
 void UI::MainWindow::handleLogin(const QString &username, const QString &password, bool saveData, bool isManager,
                                  const QString &fileName) {
-    if(saveData){
-        CSVFileRepository<Client> clientRepo("Data/ClientDatabase");
-        CSVFileRepository<Manager> managerRepo("Data/ManagerDatabase");
-        CSVFileRepository<ElectricScooter> scooterRepo("Data/" + fileName.toStdString());
+    try{
+        if(saveData){
+            CSVFileRepository<Client> clientRepo("Data/ClientDatabase");
+            CSVFileRepository<Manager> managerRepo("Data/ManagerDatabase");
+            CSVFileRepository<ElectricScooter> scooterRepo("Data/" + fileName.toStdString());
 
-        scooterController = make_shared<ElectricScooterController>(
-                make_shared<CSVFileRepository<ElectricScooter>>(scooterRepo));
-        userController = make_shared<UserController>(make_shared<CSVFileRepository<Client>>(clientRepo),
-                                                     make_shared<CSVFileRepository<Manager>>(managerRepo));
+            scooterController = make_shared<ElectricScooterController>(
+                    make_shared<CSVFileRepository<ElectricScooter>>(scooterRepo));
+            userController = make_shared<UserController>(make_shared<CSVFileRepository<Client>>(clientRepo),
+                                                         make_shared<CSVFileRepository<Manager>>(managerRepo));
 
-    } else{
-        InMemoryRepository<Client> clientRepo("Data/ClientDatabase");
-        InMemoryRepository<Manager> managerRepo("Data/ManagerDatabase");
-        InMemoryRepository<ElectricScooter> scooterRepo("Data/ScooterDatabase");
+        } else{
+            InMemoryRepository<Client> clientRepo("Data/ClientDatabase");
+            InMemoryRepository<Manager> managerRepo("Data/ManagerDatabase");
+            InMemoryRepository<ElectricScooter> scooterRepo("Data/ScooterDatabase");
 
-        scooterController = make_shared<ElectricScooterController>(
-                make_shared<InMemoryRepository<ElectricScooter>>(scooterRepo));
-        userController = make_shared<UserController>(make_shared<InMemoryRepository<Client>>(clientRepo),
-                                                     make_shared<InMemoryRepository<Manager>>(managerRepo));
+            scooterController = make_shared<ElectricScooterController>(
+                    make_shared<InMemoryRepository<ElectricScooter>>(scooterRepo));
+            userController = make_shared<UserController>(make_shared<InMemoryRepository<Client>>(clientRepo),
+                                                         make_shared<InMemoryRepository<Manager>>(managerRepo));
+        }
+    } catch (const exception &exception){
+        QMessageBox::critical(this, "Login Error", "File not found");
+        return;
     }
 
     bool loginSuccess;
@@ -63,7 +67,6 @@ void UI::MainWindow::handleLogin(const QString &username, const QString &passwor
     // Create the manager and client labels
     managerLabel = std::make_unique<UI::ManagerLabel>(scooterController);
 //    clientLabel = std::make_unique<UI::ClientLabel>(scooterController);
-    clientLabel = std::make_unique<UI::ClientLabel>();
 
     // Clear the existing layout of the central widget
     auto *existingLayout = centralWidget->layout();

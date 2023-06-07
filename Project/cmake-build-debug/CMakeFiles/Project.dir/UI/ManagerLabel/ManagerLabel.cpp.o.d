@@ -377,4 +377,15 @@ CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.o: \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtextoption.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QMessageBox \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qmessagebox.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qdialog.h
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qdialog.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QApplication \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qapplication.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qcoreapplication.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qcoreevent.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qeventloop.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qguiapplication.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qinputmethod.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QMenu \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qmenu.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qaction.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qactiongroup.h

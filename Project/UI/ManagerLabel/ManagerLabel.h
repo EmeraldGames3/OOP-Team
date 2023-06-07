@@ -28,6 +28,8 @@ namespace UI {
         void handleMileageFilteredClicked();
         void handleLastLocationSearchClicked();
         void handleHeaderClicked(int index);
+        void exitApplication();
+        void cellDoubleClicked(int rowIndex, int columnIndex);
 
     private:
         QPushButton *viewAllScootersButton;
@@ -38,6 +40,7 @@ namespace UI {
         QPushButton *mileageFilteredButton;
         QPushButton *lastLocationSearchButton;
         QTableWidget *table;
+        QPushButton *exitButton;
 
         std::shared_ptr<ElectricScooterController> scooterController;
 
