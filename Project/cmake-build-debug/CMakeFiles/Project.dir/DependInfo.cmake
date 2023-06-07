@@ -30,9 +30,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp" "CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o" "gcc" "CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp" "CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o" "gcc" "CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestRepository.cpp" "CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o" "gcc" "CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o.d"
-  "/home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable/ElectricScooterTable.cpp" "CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.o" "gcc" "CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.o.d"
+  "/home/bogdan/Programming/University/OOP-Team/Project/UI/ClientLabel/ClientLabel.cpp" "CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.o" "gcc" "CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/UI/LoginPage/LoginPage.cpp" "CMakeFiles/Project.dir/UI/LoginPage/LoginPage.cpp.o" "gcc" "CMakeFiles/Project.dir/UI/LoginPage/LoginPage.cpp.o.d"
-  "/home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.cpp" "CMakeFiles/Project.dir/UI/MainWindow.cpp.o" "gcc" "CMakeFiles/Project.dir/UI/MainWindow.cpp.o.d"
+  "/home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow/MainWindow.cpp" "CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.o" "gcc" "CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.o.d"
+  "/home/bogdan/Programming/University/OOP-Team/Project/UI/ManagerLabel/ManagerLabel.cpp" "CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.o" "gcc" "CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.o.d"
   "/home/bogdan/Programming/University/OOP-Team/Project/main.cpp" "CMakeFiles/Project.dir/main.cpp.o" "gcc" "CMakeFiles/Project.dir/main.cpp.o.d"
   )
 

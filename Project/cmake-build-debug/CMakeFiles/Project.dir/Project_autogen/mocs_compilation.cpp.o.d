@@ -1,7 +1,7 @@
 CMakeFiles/Project.dir/Project_autogen/mocs_compilation.cpp.o: \
  /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/RQC4ALXHNR/moc_LoginPage.cpp \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/JGDN2FMBKU/moc_ClientLabel.cpp \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -199,7 +199,7 @@ CMakeFiles/Project.dir/Project_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/RQC4ALXHNR/../../../UI/LoginPage/LoginPage.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/JGDN2FMBKU/../../../UI/ClientLabel/ClientLabel.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QWidget \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qwidget.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -312,6 +312,14 @@ CMakeFiles/Project.dir/Project_autogen/mocs_compilation.cpp.o: \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlabel.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qframe.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qwidget.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QVBoxLayout \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qboxlayout.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlayout.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlayoutitem.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qboxlayout.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qgridlayout.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/RQC4ALXHNR/moc_LoginPage.cpp \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/RQC4ALXHNR/../../../UI/LoginPage/LoginPage.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QLineEdit \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlineedit.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtextcursor.h \
@@ -325,34 +333,51 @@ CMakeFiles/Project.dir/Project_autogen/mocs_compilation.cpp.o: \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qpushbutton.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractbutton.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qicon.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QVBoxLayout \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qboxlayout.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlayout.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlayoutitem.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qboxlayout.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qgridlayout.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QCheckBox \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qcheckbox.h \
- /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/moc_MainWindow.cpp \
- /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/MainWindow.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/S5QT2ZAYUE/moc_MainWindow.cpp \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/S5QT2ZAYUE/../../../UI/MainWindow/MainWindow.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QMainWindow \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qmainwindow.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtabwidget.h \
- /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/Controller.h \
- /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/ElectricScooterController.h \
- /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/UserController.h \
- /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/Repository.h \
- /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/CrudRepository.h \
- /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/Domain.h \
- /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/Date/Date.h \
- /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/Client.h \
- /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/../User/User.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/S5QT2ZAYUE/../../../UI/MainWindow/../../Controller/Controller.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/S5QT2ZAYUE/../../../UI/MainWindow/../../Controller/ElectricScooterController/ElectricScooterController.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/S5QT2ZAYUE/../../../UI/MainWindow/../../Controller/ElectricScooterController/../UserController/UserController.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/S5QT2ZAYUE/../../../UI/MainWindow/../../Controller/ElectricScooterController/../UserController/../../Repository/Repository.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/S5QT2ZAYUE/../../../UI/MainWindow/../../Controller/ElectricScooterController/../UserController/../../Repository/CrudRepository.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/S5QT2ZAYUE/../../../UI/MainWindow/../../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/Domain.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/S5QT2ZAYUE/../../../UI/MainWindow/../../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/Date/Date.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/S5QT2ZAYUE/../../../UI/MainWindow/../../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/Client.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/S5QT2ZAYUE/../../../UI/MainWindow/../../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/../User/User.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/../User/../../ObjectWithID.h \
- /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/../../ElectricScooter/ElectricScooter.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/S5QT2ZAYUE/../../../UI/MainWindow/../../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/../User/../../ObjectWithID.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/S5QT2ZAYUE/../../../UI/MainWindow/../../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Client/../../ElectricScooter/ElectricScooter.h \
  /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
- /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Manager/Manager.h \
- /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/InMemoryRepository/InMemoryRepository.h \
- /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/KRKR4BN5RM/../../../UI/../Controller/ElectricScooterController/../UserController/../../Repository/CSV-FileRepository/CSV-FileRepository.h
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/S5QT2ZAYUE/../../../UI/MainWindow/../../Controller/ElectricScooterController/../UserController/../../Repository/../Domain/User/Manager/Manager.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/S5QT2ZAYUE/../../../UI/MainWindow/../../Controller/ElectricScooterController/../UserController/../../Repository/InMemoryRepository/InMemoryRepository.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/S5QT2ZAYUE/../../../UI/MainWindow/../../Controller/ElectricScooterController/../UserController/../../Repository/CSV-FileRepository/CSV-FileRepository.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/S5QT2ZAYUE/../../../UI/MainWindow/../ManagerLabel/ManagerLabel.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QTableWidget \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtablewidget.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtableview.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractitemview.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qabstractitemmodel.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qitemselectionmodel.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qset.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qstyleoption.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qlocale.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractspinbox.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qvalidator.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qregularexpression.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qslider.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractslider.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qstyle.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtabbar.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qrubberband.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHeaderView \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qheaderview.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/LGGCL6OJNY/moc_ManagerLabel.cpp

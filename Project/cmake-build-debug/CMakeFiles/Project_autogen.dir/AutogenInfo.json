@@ -221,9 +221,9 @@
 			null
 		],
 		[
-			"/home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable/ElectricScooterTable.h",
+			"/home/bogdan/Programming/University/OOP-Team/Project/UI/ClientLabel/ClientLabel.h",
 			"Mu",
-			"BHOKXO6F6Q/moc_ElectricScooterTable.cpp",
+			"JGDN2FMBKU/moc_ClientLabel.cpp",
 			null
 		],
 		[
@@ -233,9 +233,15 @@
 			null
 		],
 		[
-			"/home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.h",
+			"/home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow/MainWindow.h",
 			"Mu",
-			"KRKR4BN5RM/moc_MainWindow.cpp",
+			"S5QT2ZAYUE/moc_MainWindow.cpp",
+			null
+		],
+		[
+			"/home/bogdan/Programming/University/OOP-Team/Project/UI/ManagerLabel/ManagerLabel.h",
+			"Mu",
+			"LGGCL6OJNY/moc_ManagerLabel.cpp",
 			null
 		]
 	],
@@ -395,7 +401,7 @@
 			null
 		],
 		[
-			"/home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable/ElectricScooterTable.cpp",
+			"/home/bogdan/Programming/University/OOP-Team/Project/UI/ClientLabel/ClientLabel.cpp",
 			"Mu",
 			null
 		],
@@ -405,7 +411,12 @@
 			null
 		],
 		[
-			"/home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.cpp",
+			"/home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow/MainWindow.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/bogdan/Programming/University/OOP-Team/Project/UI/ManagerLabel/ManagerLabel.cpp",
 			"Mu",
 			null
 		],

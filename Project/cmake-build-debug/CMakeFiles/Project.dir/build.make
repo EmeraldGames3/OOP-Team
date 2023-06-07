@@ -391,19 +391,19 @@ CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestRepository.cpp -o CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.s
 
-CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable/ElectricScooterTable.cpp
-CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.o -MF CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.o.d -o CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable/ElectricScooterTable.cpp
+CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/UI/ClientLabel/ClientLabel.cpp
+CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.o -MF CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.o.d -o CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/UI/ClientLabel/ClientLabel.cpp
 
-CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable/ElectricScooterTable.cpp > CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.i
+CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/UI/ClientLabel/ClientLabel.cpp > CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.i
 
-CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable/ElectricScooterTable.cpp -o CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.s
+CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/UI/ClientLabel/ClientLabel.cpp -o CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.s
 
 CMakeFiles/Project.dir/UI/LoginPage/LoginPage.cpp.o: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/UI/LoginPage/LoginPage.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/UI/LoginPage/LoginPage.cpp
@@ -419,19 +419,33 @@ CMakeFiles/Project.dir/UI/LoginPage/LoginPage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/UI/LoginPage/LoginPage.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/UI/LoginPage/LoginPage.cpp -o CMakeFiles/Project.dir/UI/LoginPage/LoginPage.cpp.s
 
-CMakeFiles/Project.dir/UI/MainWindow.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/UI/MainWindow.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.cpp
-CMakeFiles/Project.dir/UI/MainWindow.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/Project.dir/UI/MainWindow.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/UI/MainWindow.cpp.o -MF CMakeFiles/Project.dir/UI/MainWindow.cpp.o.d -o CMakeFiles/Project.dir/UI/MainWindow.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.cpp
+CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow/MainWindow.cpp
+CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.o -MF CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.o.d -o CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow/MainWindow.cpp
 
-CMakeFiles/Project.dir/UI/MainWindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/UI/MainWindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.cpp > CMakeFiles/Project.dir/UI/MainWindow.cpp.i
+CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow/MainWindow.cpp > CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.i
 
-CMakeFiles/Project.dir/UI/MainWindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/UI/MainWindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.cpp -o CMakeFiles/Project.dir/UI/MainWindow.cpp.s
+CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow/MainWindow.cpp -o CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.s
+
+CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.o: /home/bogdan/Programming/University/OOP-Team/Project/UI/ManagerLabel/ManagerLabel.cpp
+CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.o: CMakeFiles/Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.o -MF CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.o.d -o CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.o -c /home/bogdan/Programming/University/OOP-Team/Project/UI/ManagerLabel/ManagerLabel.cpp
+
+CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bogdan/Programming/University/OOP-Team/Project/UI/ManagerLabel/ManagerLabel.cpp > CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.i
+
+CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bogdan/Programming/University/OOP-Team/Project/UI/ManagerLabel/ManagerLabel.cpp -o CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.s
 
 # Object files for target Project
 Project_OBJECTS = \
@@ -458,9 +472,10 @@ Project_OBJECTS = \
 "CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o" \
 "CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o" \
 "CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o" \
-"CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.o" \
+"CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.o" \
 "CMakeFiles/Project.dir/UI/LoginPage/LoginPage.cpp.o" \
-"CMakeFiles/Project.dir/UI/MainWindow.cpp.o"
+"CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.o" \
+"CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.o"
 
 # External object files for target Project
 Project_EXTERNAL_OBJECTS =
@@ -488,15 +503,16 @@ Project: CMakeFiles/Project.dir/Tests/TestDomain/TestUser/TestUser.cpp.o
 Project: CMakeFiles/Project.dir/Tests/TestRepository/TestCSVFileRepository/TestCSVFileRepository.cpp.o
 Project: CMakeFiles/Project.dir/Tests/TestRepository/TestInMemoryRepository/TestInMemoryRepository.cpp.o
 Project: CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.o
-Project: CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.o
+Project: CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.o
 Project: CMakeFiles/Project.dir/UI/LoginPage/LoginPage.cpp.o
-Project: CMakeFiles/Project.dir/UI/MainWindow.cpp.o
+Project: CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.o
+Project: CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.o
 Project: CMakeFiles/Project.dir/build.make
 Project: /home/bogdan/Qt/5.15.2/gcc_64/lib/libQt5Widgets.so.5.15.2
 Project: /home/bogdan/Qt/5.15.2/gcc_64/lib/libQt5Gui.so.5.15.2
 Project: /home/bogdan/Qt/5.15.2/gcc_64/lib/libQt5Core.so.5.15.2
 Project: CMakeFiles/Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable Project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable Project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -15,8 +15,6 @@ namespace UI {
     public:
         explicit LoginPage(QWidget *parent = nullptr);
 
-        ~LoginPage() override;
-
     signals:
         void loginClicked(const QString &username, const QString &password, bool saveData, bool manager,
                           const QString &fileName);
@@ -28,15 +26,15 @@ namespace UI {
         void handleRegisterButtonClicked();
 
     private:
-        QLabel *usernameLabel;
-        QLineEdit *usernameLineEdit;
-        QLabel *passwordLabel;
-        QLineEdit *passwordLineEdit;
-        QLabel *fileNameLabel;
-        QLineEdit *fileNameLineEdit;
-        QPushButton *loginButton;
-        QPushButton *registerButton;
-        QCheckBox *saveDataButton;
-        QCheckBox *managerButton;
+        std::unique_ptr<QLabel> usernameLabel;
+        std::unique_ptr<QLineEdit> usernameLineEdit;
+        std::unique_ptr<QLabel> passwordLabel;
+        std::unique_ptr<QLineEdit> passwordLineEdit;
+        std::unique_ptr<QLabel> fileNameLabel;
+        std::unique_ptr<QLineEdit> fileNameLineEdit;
+        std::unique_ptr<QPushButton> loginButton;
+        std::unique_ptr<QPushButton> registerButton;
+        std::unique_ptr<QCheckBox> saveDataButton;
+        std::unique_ptr<QCheckBox> managerButton;
     };
 }

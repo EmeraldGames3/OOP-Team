@@ -670,29 +670,29 @@ Tests/TestRepository/TestRepository.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Tests/TestRepository/TestRepository.cpp.s
 .PHONY : Tests/TestRepository/TestRepository.cpp.s
 
-UI/ElectricScooterTable/ElectricScooterTable.o: UI/ElectricScooterTable/ElectricScooterTable.cpp.o
-.PHONY : UI/ElectricScooterTable/ElectricScooterTable.o
+UI/ClientLabel/ClientLabel.o: UI/ClientLabel/ClientLabel.cpp.o
+.PHONY : UI/ClientLabel/ClientLabel.o
 
 # target to build an object file
-UI/ElectricScooterTable/ElectricScooterTable.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.o
-.PHONY : UI/ElectricScooterTable/ElectricScooterTable.cpp.o
+UI/ClientLabel/ClientLabel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.o
+.PHONY : UI/ClientLabel/ClientLabel.cpp.o
 
-UI/ElectricScooterTable/ElectricScooterTable.i: UI/ElectricScooterTable/ElectricScooterTable.cpp.i
-.PHONY : UI/ElectricScooterTable/ElectricScooterTable.i
+UI/ClientLabel/ClientLabel.i: UI/ClientLabel/ClientLabel.cpp.i
+.PHONY : UI/ClientLabel/ClientLabel.i
 
 # target to preprocess a source file
-UI/ElectricScooterTable/ElectricScooterTable.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.i
-.PHONY : UI/ElectricScooterTable/ElectricScooterTable.cpp.i
+UI/ClientLabel/ClientLabel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.i
+.PHONY : UI/ClientLabel/ClientLabel.cpp.i
 
-UI/ElectricScooterTable/ElectricScooterTable.s: UI/ElectricScooterTable/ElectricScooterTable.cpp.s
-.PHONY : UI/ElectricScooterTable/ElectricScooterTable.s
+UI/ClientLabel/ClientLabel.s: UI/ClientLabel/ClientLabel.cpp.s
+.PHONY : UI/ClientLabel/ClientLabel.s
 
 # target to generate assembly for a file
-UI/ElectricScooterTable/ElectricScooterTable.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/ElectricScooterTable/ElectricScooterTable.cpp.s
-.PHONY : UI/ElectricScooterTable/ElectricScooterTable.cpp.s
+UI/ClientLabel/ClientLabel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/ClientLabel/ClientLabel.cpp.s
+.PHONY : UI/ClientLabel/ClientLabel.cpp.s
 
 UI/LoginPage/LoginPage.o: UI/LoginPage/LoginPage.cpp.o
 .PHONY : UI/LoginPage/LoginPage.o
@@ -718,29 +718,53 @@ UI/LoginPage/LoginPage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/LoginPage/LoginPage.cpp.s
 .PHONY : UI/LoginPage/LoginPage.cpp.s
 
-UI/MainWindow.o: UI/MainWindow.cpp.o
-.PHONY : UI/MainWindow.o
+UI/MainWindow/MainWindow.o: UI/MainWindow/MainWindow.cpp.o
+.PHONY : UI/MainWindow/MainWindow.o
 
 # target to build an object file
-UI/MainWindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/MainWindow.cpp.o
-.PHONY : UI/MainWindow.cpp.o
+UI/MainWindow/MainWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.o
+.PHONY : UI/MainWindow/MainWindow.cpp.o
 
-UI/MainWindow.i: UI/MainWindow.cpp.i
-.PHONY : UI/MainWindow.i
+UI/MainWindow/MainWindow.i: UI/MainWindow/MainWindow.cpp.i
+.PHONY : UI/MainWindow/MainWindow.i
 
 # target to preprocess a source file
-UI/MainWindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/MainWindow.cpp.i
-.PHONY : UI/MainWindow.cpp.i
+UI/MainWindow/MainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.i
+.PHONY : UI/MainWindow/MainWindow.cpp.i
 
-UI/MainWindow.s: UI/MainWindow.cpp.s
-.PHONY : UI/MainWindow.s
+UI/MainWindow/MainWindow.s: UI/MainWindow/MainWindow.cpp.s
+.PHONY : UI/MainWindow/MainWindow.s
 
 # target to generate assembly for a file
-UI/MainWindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/MainWindow.cpp.s
-.PHONY : UI/MainWindow.cpp.s
+UI/MainWindow/MainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/MainWindow/MainWindow.cpp.s
+.PHONY : UI/MainWindow/MainWindow.cpp.s
+
+UI/ManagerLabel/ManagerLabel.o: UI/ManagerLabel/ManagerLabel.cpp.o
+.PHONY : UI/ManagerLabel/ManagerLabel.o
+
+# target to build an object file
+UI/ManagerLabel/ManagerLabel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.o
+.PHONY : UI/ManagerLabel/ManagerLabel.cpp.o
+
+UI/ManagerLabel/ManagerLabel.i: UI/ManagerLabel/ManagerLabel.cpp.i
+.PHONY : UI/ManagerLabel/ManagerLabel.i
+
+# target to preprocess a source file
+UI/ManagerLabel/ManagerLabel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.i
+.PHONY : UI/ManagerLabel/ManagerLabel.cpp.i
+
+UI/ManagerLabel/ManagerLabel.s: UI/ManagerLabel/ManagerLabel.cpp.s
+.PHONY : UI/ManagerLabel/ManagerLabel.s
+
+# target to generate assembly for a file
+UI/ManagerLabel/ManagerLabel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/UI/ManagerLabel/ManagerLabel.cpp.s
+.PHONY : UI/ManagerLabel/ManagerLabel.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -842,15 +866,18 @@ help:
 	@echo "... Tests/TestRepository/TestRepository.o"
 	@echo "... Tests/TestRepository/TestRepository.i"
 	@echo "... Tests/TestRepository/TestRepository.s"
-	@echo "... UI/ElectricScooterTable/ElectricScooterTable.o"
-	@echo "... UI/ElectricScooterTable/ElectricScooterTable.i"
-	@echo "... UI/ElectricScooterTable/ElectricScooterTable.s"
+	@echo "... UI/ClientLabel/ClientLabel.o"
+	@echo "... UI/ClientLabel/ClientLabel.i"
+	@echo "... UI/ClientLabel/ClientLabel.s"
 	@echo "... UI/LoginPage/LoginPage.o"
 	@echo "... UI/LoginPage/LoginPage.i"
 	@echo "... UI/LoginPage/LoginPage.s"
-	@echo "... UI/MainWindow.o"
-	@echo "... UI/MainWindow.i"
-	@echo "... UI/MainWindow.s"
+	@echo "... UI/MainWindow/MainWindow.o"
+	@echo "... UI/MainWindow/MainWindow.i"
+	@echo "... UI/MainWindow/MainWindow.s"
+	@echo "... UI/ManagerLabel/ManagerLabel.o"
+	@echo "... UI/ManagerLabel/ManagerLabel.i"
+	@echo "... UI/ManagerLabel/ManagerLabel.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

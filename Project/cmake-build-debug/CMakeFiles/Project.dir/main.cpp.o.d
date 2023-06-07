@@ -310,26 +310,11 @@ CMakeFiles/Project.dir/main.cpp.o: \
  /home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController/ElectricScooterController.h \
  /home/bogdan/Programming/University/OOP-Team/Project/Controller/ElectricScooterController/../UserController/UserController.h \
  /home/bogdan/Programming/University/OOP-Team/Project/UI/UI.h \
- /home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable/ElectricScooterTable.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/QDebug \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qdebug.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qiodevice.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qset.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qcontiguouscache.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer_impl.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QVBoxLayout \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qboxlayout.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlayout.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlayoutitem.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qsizepolicy.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qrect.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qboxlayout.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qgridlayout.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/LoginPage/LoginPage.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QWidget \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qwidget.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qpaintdevice.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qrect.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qpalette.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qcolor.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qrgb.h \
@@ -339,43 +324,23 @@ CMakeFiles/Project.dir/main.cpp.o: \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qpolygon.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qregion.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qdatastream.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qiodevice.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qline.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtransform.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qimage.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qpixelformat.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qpixmap.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer_impl.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qfont.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qfontmetrics.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qfontinfo.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qsizepolicy.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qkeysequence.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHeaderView \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qheaderview.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractitemview.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractscrollarea.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qframe.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qwidget.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qabstractitemmodel.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qitemselectionmodel.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qstyleoption.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractspinbox.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qvalidator.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qregularexpression.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qicon.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qslider.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractslider.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qstyle.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtabbar.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtabwidget.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qrubberband.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/QDate \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qdatetime.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QTableWidget \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtablewidget.h \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtableview.h \
- /home/bogdan/Programming/University/OOP-Team/Project/UI/LoginPage/LoginPage.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QLabel \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlabel.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qframe.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qwidget.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QLineEdit \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlineedit.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qtextcursor.h \
@@ -385,9 +350,39 @@ CMakeFiles/Project.dir/main.cpp.o: \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QPushButton \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qpushbutton.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractbutton.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qicon.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QVBoxLayout \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qboxlayout.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlayout.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qlayoutitem.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qboxlayout.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qgridlayout.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHBoxLayout \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QCheckBox \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qcheckbox.h \
- /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow/MainWindow.h \
  /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QMainWindow \
- /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qmainwindow.h
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qmainwindow.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtabwidget.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow/../ClientLabel/ClientLabel.h \
+ /home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow/../ManagerLabel/ManagerLabel.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QTableWidget \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtablewidget.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtableview.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractitemview.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qabstractitemmodel.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qitemselectionmodel.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qset.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qstyleoption.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractspinbox.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtGui/qvalidator.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtCore/qregularexpression.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qslider.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qabstractslider.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qstyle.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qtabbar.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qrubberband.h \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/QHeaderView \
+ /home/bogdan/Qt/5.15.2/gcc_64/include/QtWidgets/qheaderview.h

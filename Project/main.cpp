@@ -5,7 +5,7 @@
 #include "Repository/Repository.h"
 #include "Controller/Controller.h"
 #include "UI/UI.h"
-#include "UI/MainWindow.h"
+#include "UI/MainWindow/MainWindow.h"
 
 using namespace Repository;
 using namespace Domain;

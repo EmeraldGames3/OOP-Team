@@ -236,10 +236,10 @@
 		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/Tests/TestRepository/TestRepository.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable/ElectricScooterTable.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/ClientLabel/ClientLabel.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/ElectricScooterTable/ElectricScooterTable.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/ClientLabel/ClientLabel.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/LoginPage/LoginPage.cpp">
@@ -248,10 +248,16 @@
 		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/LoginPage/LoginPage.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.cpp">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow/MainWindow.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow.h">
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/MainWindow/MainWindow.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/ManagerLabel/ManagerLabel.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/UI/ManagerLabel/ManagerLabel.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="/home/bogdan/Programming/University/OOP-Team/Project/cmake-build-debug/Project_autogen/mocs_compilation.cpp">
